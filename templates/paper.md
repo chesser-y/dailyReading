@@ -1,4 +1,6 @@
-# English Paper Title
+# ARXIV-ID · Short Paper Title
+
+**论文全名：** Full English Paper Title
 
 [原文](https://arxiv.org/abs/ID) · [alphaXiv](https://www.alphaxiv.org/abs/ID)
 

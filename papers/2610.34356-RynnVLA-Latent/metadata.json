@@ -55,5 +55,6 @@
       "kind": "paper_figure_crop"
     }
   ],
-  "pdf_sha256": "4137b11a3d9c29051a6c4923e17a9009843cc5da192ee94d084709d033e09982"
+  "pdf_sha256": "4137b11a3d9c29051a6c4923e17a9009843cc5da192ee94d084709d033e09982",
+  "directory": "papers/2610.34356-RynnVLA-Latent"
 }

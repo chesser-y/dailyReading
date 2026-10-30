@@ -42,5 +42,6 @@
       "kind": "paper_figure_crop"
     }
   ],
-  "pdf_sha256": "57f42afd50a9e3f4ed6a3ff6a03814fdd7a9e74836c262eb3ae7420620139c7b"
+  "pdf_sha256": "57f42afd50a9e3f4ed6a3ff6a03814fdd7a9e74836c262eb3ae7420620139c7b",
+  "directory": "papers/2610.36791-RynnWorld-Latent"
 }

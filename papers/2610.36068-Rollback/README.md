@@ -1,4 +1,6 @@
-# Rollback: Experience Backtracking in World Models for Policy Improvement
+# 2610.36068 · Rollback
+
+**论文全名：** Rollback: Experience Backtracking in World Models for Policy Improvement
 
 [原文](https://arxiv.org/abs/2610.36068) · [PDF](https://arxiv.org/pdf/2610.36068v1) · [alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.36068) · [返回当日日报](../../reports/2026/10/30.md)
 

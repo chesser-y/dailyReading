@@ -1,4 +1,6 @@
-# RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions
+# 2610.34356 · RynnVLA-Latent
+
+**论文全名：** RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions
 
 [原文](https://arxiv.org/abs/2610.34356) · [PDF](https://arxiv.org/pdf/2610.34356v1) · [alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.34356) · [返回当日日报](../../reports/2026/10/30.md)
 

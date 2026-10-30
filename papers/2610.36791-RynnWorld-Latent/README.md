@@ -1,4 +1,6 @@
-# RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions
+# 2610.36791 · RynnWorld-Latent
+
+**论文全名：** RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions
 
 [原文](https://arxiv.org/abs/2610.36791) · [PDF](https://arxiv.org/pdf/2610.36791v1) · [alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.36791) · [返回当日日报](../../reports/2026/10/30.md)
 

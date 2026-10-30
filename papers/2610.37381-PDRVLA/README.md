@@ -1,4 +1,6 @@
-# PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations
+# 2610.37381 · PDRVLA
+
+**论文全名：** PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations
 
 [原文](https://arxiv.org/abs/2610.37381) · [PDF](https://arxiv.org/pdf/2610.37381v1) · [alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.37381) · [返回当日日报](../../reports/2026/10/30.md)
 

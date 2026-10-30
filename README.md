@@ -8,11 +8,13 @@
 
 [2026-10-30 首期日报](reports/2026/10/30.md)：潜在动作预训练、紧凑未来预测、训练期动力学监督与反事实策略改进。该期检索窗口为10月23日中午至10月30日12:51；本次增加原文图像、alphaXiv补充和逐篇阅读笔记。
 
-- [RynnVLA-Latent](papers/2610.34356/README.md)：从异构视频到潜在动作监督；关注几何约束、Stage-1/2接口与权重条件。
-- [GAWM](papers/2610.37091/README.md)：未来特征如何进入紧凑策略；区分训练正则与执行条件。
-- [RynnWorld-Latent](papers/2610.36791/README.md)：共享动作接口如何驱动视频与训练数据生成。
-- [PDRVLA](papers/2610.37381/README.md)：训练期世界模型监督如何压缩到physical tokens。
-- [Rollback](papers/2610.36068/README.md)：从同一历史比较不同动作后果，形成策略改进监督。
+- [2610.34356 · RynnVLA-Latent](papers/2610.34356-RynnVLA-Latent/README.md)：从异构视频到潜在动作监督；关注几何约束、Stage-1/2接口与权重条件。
+- [2610.36068 · Rollback](papers/2610.36068-Rollback/README.md)：从同一历史比较不同动作后果，形成策略改进监督。
+- [2610.36791 · RynnWorld-Latent](papers/2610.36791-RynnWorld-Latent/README.md)：共享动作接口如何驱动视频与训练数据生成。
+- [2610.37091 · GAWM](papers/2610.37091-GAWM/README.md)：未来特征如何进入紧凑策略；区分训练正则与执行条件。
+- [2610.37381 · PDRVLA](papers/2610.37381-PDRVLA/README.md)：训练期世界模型监督如何压缩到physical tokens。
+
+[按 arXiv 号浏览全部论文](papers/README.md)
 
 ## 阅读方式
 
@@ -24,9 +26,9 @@
 
 ```text
 reports/YYYY/MM/DD.md       每日精选与跨论文联系
-papers/<arxiv-id>/README.md 逐篇阅读报告
-papers/<arxiv-id>/assets/   方法图、摘要卡片、阅读卡片
-papers/<arxiv-id>/metadata.json 来源、版本、阅读程度与图像记录
+papers/<arxiv-id>-<short-title>/README.md 逐篇阅读报告
+papers/<arxiv-id>-<short-title>/assets/   方法图、摘要卡片、阅读卡片
+papers/<arxiv-id>-<short-title>/metadata.json 来源、版本、阅读程度与图像记录
 data/catalog.json           可检索论文目录
 data/state.json             成功检索边界和去重记录
 docs/WORKFLOW.md            每日执行与提交流程

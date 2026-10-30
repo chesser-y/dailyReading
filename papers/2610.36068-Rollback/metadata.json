@@ -42,5 +42,6 @@
       "kind": "paper_figure_crop"
     }
   ],
-  "pdf_sha256": "d9d2906181805b3a6ac188d8ca557569ea35adf7fee894d3a07eaa0707620085"
+  "pdf_sha256": "d9d2906181805b3a6ac188d8ca557569ea35adf7fee894d3a07eaa0707620085",
+  "directory": "papers/2610.36068-Rollback"
 }

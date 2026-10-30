@@ -1,4 +1,6 @@
-# GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation
+# 2610.37091 · GAWM
+
+**论文全名：** GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation
 
 [原文](https://arxiv.org/abs/2610.37091) · [PDF](https://arxiv.org/pdf/2610.37091v1) · [alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.37091) · [返回当日日报](../../reports/2026/10/30.md)
 

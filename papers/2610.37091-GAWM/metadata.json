@@ -42,5 +42,6 @@
       "kind": "paper_figure_crop"
     }
   ],
-  "pdf_sha256": "f0dba1d6ea2681b456bf167b16a7d10c3adc81cf4fffad8b20b1fac1d59485e1"
+  "pdf_sha256": "f0dba1d6ea2681b456bf167b16a7d10c3adc81cf4fffad8b20b1fac1d59485e1",
+  "directory": "papers/2610.37091-GAWM"
 }

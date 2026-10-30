@@ -3,13 +3,19 @@ import json,pathlib,re,struct,sys
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 errors=[]
 catalog=json.loads((ROOT/'data/catalog.json').read_text());ids=set()
+if [item['id'] for item in catalog]!=sorted(item['id'] for item in catalog):errors.append('Catalog must be sorted by arXiv ID')
 for item in catalog:
     ident=item['id']
     if ident in ids:errors.append(f'Duplicate paper: {ident}')
-    ids.add(ident);directory=ROOT/'papers'/ident
+    ids.add(ident);directory=(ROOT/item['directory']).resolve()
+    if directory.parent!=ROOT/'papers' or directory.name!=f"{ident}-{item['short']}":
+        errors.append(f'Paper directory must be arXiv ID then short title: {ident}')
+        continue
     for name in ['README.md','metadata.json','assets/abstract-summary.png','assets/reading-card.png']:
         if not (directory/name).is_file():errors.append(f'Missing {ident}/{name}')
     meta=json.loads((directory/'metadata.json').read_text())
+    if meta.get('id')!=ident or meta.get('directory')!=item['directory']:errors.append(f'Catalog/metadata mismatch: {ident}')
+    if not (directory/'README.md').read_text().startswith(f"# {ident} · {item['short']}\n"):errors.append(f'Paper heading must be ID then short title: {ident}')
     for key in ['arxiv','alphaxiv','read','retrieved_at','version','pdf_sha256','figures']:
         if not meta.get(key):errors.append(f'{ident} missing {key}')
     for figure in meta['figures']:

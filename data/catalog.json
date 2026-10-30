@@ -13,55 +13,8 @@
     "arxiv": "https://arxiv.org/abs/2610.34356",
     "alphaxiv": "https://www.alphaxiv.org/abs/2610.34356",
     "version": "v1",
-    "first_archived": "2026-10-30"
-  },
-  {
-    "id": "2610.37091",
-    "short": "GAWM",
-    "title": "GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation",
-    "date": "2026-10-27",
-    "tags": [
-      "WAM",
-      "latent-forecast",
-      "efficient-control",
-      "JEPA"
-    ],
-    "arxiv": "https://arxiv.org/abs/2610.37091",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37091",
-    "version": "v1",
-    "first_archived": "2026-10-30"
-  },
-  {
-    "id": "2610.36791",
-    "short": "RynnWorld-Latent",
-    "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
-    "date": "2026-10-27",
-    "tags": [
-      "world-model",
-      "latent-action",
-      "synthetic-data",
-      "cross-embodiment"
-    ],
-    "arxiv": "https://arxiv.org/abs/2610.36791",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2610.36791",
-    "version": "v1",
-    "first_archived": "2026-10-30"
-  },
-  {
-    "id": "2610.37381",
-    "short": "PDRVLA",
-    "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
-    "date": "2026-10-27",
-    "tags": [
-      "VLA",
-      "physical-tokens",
-      "future-supervision",
-      "world-model-distillation"
-    ],
-    "arxiv": "https://arxiv.org/abs/2610.37381",
-    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37381",
-    "version": "v1",
-    "first_archived": "2026-10-30"
+    "first_archived": "2026-10-30",
+    "directory": "papers/2610.34356-RynnVLA-Latent"
   },
   {
     "id": "2610.36068",
@@ -77,6 +30,58 @@
     "arxiv": "https://arxiv.org/abs/2610.36068",
     "alphaxiv": "https://www.alphaxiv.org/abs/2610.36068",
     "version": "v1",
-    "first_archived": "2026-10-30"
+    "first_archived": "2026-10-30",
+    "directory": "papers/2610.36068-Rollback"
+  },
+  {
+    "id": "2610.36791",
+    "short": "RynnWorld-Latent",
+    "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+    "date": "2026-10-27",
+    "tags": [
+      "world-model",
+      "latent-action",
+      "synthetic-data",
+      "cross-embodiment"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.36791",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.36791",
+    "version": "v1",
+    "first_archived": "2026-10-30",
+    "directory": "papers/2610.36791-RynnWorld-Latent"
+  },
+  {
+    "id": "2610.37091",
+    "short": "GAWM",
+    "title": "GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation",
+    "date": "2026-10-27",
+    "tags": [
+      "WAM",
+      "latent-forecast",
+      "efficient-control",
+      "JEPA"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.37091",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37091",
+    "version": "v1",
+    "first_archived": "2026-10-30",
+    "directory": "papers/2610.37091-GAWM"
+  },
+  {
+    "id": "2610.37381",
+    "short": "PDRVLA",
+    "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+    "date": "2026-10-27",
+    "tags": [
+      "VLA",
+      "physical-tokens",
+      "future-supervision",
+      "world-model-distillation"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.37381",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37381",
+    "version": "v1",
+    "first_archived": "2026-10-30",
+    "directory": "papers/2610.37381-PDRVLA"
   }
 ]
