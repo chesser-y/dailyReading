@@ -23,6 +23,7 @@ def main():
     git('add','--',*existing)
     changes=git('diff','--cached','--name-only','-z').stdout.split('\0')
     for name in filter(None,changes):
+        if pathlib.Path(name).parts[0] not in allowed:raise SystemExit(f'Unexpected staged path: {name}')
         if pathlib.Path(name).suffix not in {'.md','.json','.png','.py','.txt',''} and name!='.gitignore':raise SystemExit(f'Unexpected staged file: {name}')
     if git('diff','--cached','--quiet',check=False).returncode!=0:git('commit','-m',args.message)
     sha=git('rev-parse','HEAD').stdout.strip();print('Commit:',sha)

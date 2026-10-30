@@ -24,7 +24,7 @@ def render(meta,sections,path,font_path):
     font=ImageFont.truetype(font_path,31);small=ImageFont.truetype(font_path,23)
     heading=ImageFont.truetype(font_path,33);title=ImageFont.truetype(font_path,53)
     d.rectangle((0,0,width,14),fill='#116f72');y=65
-    d.text((left,y),'DAILY READING  /  2026-10-30',font=small,fill='#116f72');y+=53
+    d.text((left,y),'DAILY READING  /  '+meta['first_archived'],font=small,fill='#116f72');y+=53
     for line in wrap(meta['short'],title,available,d):d.text((left,y),line,font=title,fill='#152d39');y+=67
     d.text((left,y),f"arXiv:{meta['id']}  |  {meta['version']}  |  AI中文阅读笔记",font=small,fill='#52636c');y+=60
     for label,text in sections:
