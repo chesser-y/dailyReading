@@ -1,0 +1,46 @@
+{
+  "id": "2610.36791",
+  "short": "RynnWorld-Latent",
+  "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+  "date": "2026-10-27",
+  "tags": [
+    "world-model",
+    "latent-action",
+    "synthetic-data",
+    "cross-embodiment"
+  ],
+  "repo": "https://github.com/alibaba-damo-academy/RynnWorld-Latent",
+  "read": "选读PDF第3节接口与数据引擎、预测与合成数据实验/消融相关段落；阅读alphaXiv AI Overview、官方README；未运行代码。",
+  "abstract": "本文用RynnLAM从视频提取的连续潜在动作作为跨本体视频世界模型的共享条件，联合利用23个数据集、约553.5M帧。视频模型结合全局动作tokens与逐帧对齐的局部条件路径，再通过目标机器人后训练引入原生动作接口。它既可接受操作者控制生成数字示范，也可把源视频的运动迁移到编辑后的初始场景，用于合成策略训练数据。",
+  "intro": "与RynnVLA学习“从观察预测动作”相对应，这篇学习“给定动作描述预测观察”。同一潜在动作可连接两类模型，但接口共享不等于预测与控制已经闭环一致。最需要追问的是生成视频里的接触、几何与配套伪动作是否足以训练实际机器人策略。",
+  "method": "人类/机器人/仿真视频 → 冻结RynnLAM提取共享描述符 → 初始帧＋描述符序列条件下生成未来视频。全局动作tokens参与模型注意力，局部路径对齐相应未来视频latent帧。目标机器人后训练另加动作编码器。合成可走两条路径：机器人控制→视频；或源视频提取动作＋编辑首帧→新场景视频，再配准伪动作。",
+  "design": "局部视觉注入路径从恒等映射初始化，尽量保留预训练视频生成能力；动作时间步与视频latent时间压缩对应。预训练约6,190小时、23来源，与RynnVLA的30.1K小时语料不是同一个规模。描述符含相机成分，不能简单称为视角无关、可直接执行的动作。",
+  "evidence": "Marvin-WUJI预测评测中，完整模型PSNR/SSIM/LPIPS为21.86/0.80/0.12；无逐帧对齐注入为21.14/0.76/0.18。该消融支持局部条件路径，但图像质量不等于接触动力学准确。作者还报告合成中训练改善下游策略，然而增加了数据与优化计算，未完全分离这些因素。",
+  "limits": "预测评测是已有任务中的留出episode，不能写成未见任务泛化。定性动作跟随不代表可执行动作追踪；真机结果经过目标机器人适配，不是未经适配的零样本跨本体部署。视频与伪动作来自不同处理过程，即使时间对齐也不保证物理一致。",
+  "inference": "我的推断：统一模型可以复用同一动作表示训练正向视觉预测与逆向动作预测，再单独测量两者的一致性。应先做接触/物体位姿等状态评估，再决定是否把生成视频扩充到策略训练，避免仅按PSNR过滤数据。",
+  "alpha": "alphaXiv区分“共享潜在动作预训练”“原生机器人动作适配”和“两条合成数据路线”，并提醒合成数据收益与额外训练计算尚未分开。其解读也强调图像预测指标不验证接触准确性，数字遥操作尚未替代真实示范。",
+  "availability": "代码、RynnWorld-Latent权重页面与少量样例可访问；基座权重存在访问条件。完整训练/评测语料与所有下游流程的可复现性未核实。",
+  "arxiv": "https://arxiv.org/abs/2610.36791",
+  "alphaxiv": "https://www.alphaxiv.org/abs/2610.36791",
+  "version": "v1",
+  "first_archived": "2026-10-30",
+  "retrieved_at": "2026-10-30T19:53:57+08:00",
+  "update_type": "first_publication",
+  "alphaxiv_status": "AI Overview retrieved via HTTPS; distilled, not verbatim",
+  "figures": [
+    {
+      "file": "assets/data-engine.png",
+      "page": 7,
+      "box_pt": [
+        57,
+        142,
+        557,
+        405
+      ],
+      "caption": "Figure 2：源运动迁移与数字遥操作两条数据生成通路。",
+      "source": "https://arxiv.org/pdf/2610.36791v1#page=7",
+      "kind": "paper_figure_crop"
+    }
+  ],
+  "pdf_sha256": "57f42afd50a9e3f4ed6a3ff6a03814fdd7a9e74836c262eb3ae7420620139c7b"
+}

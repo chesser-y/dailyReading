@@ -1,0 +1,46 @@
+{
+  "id": "2610.37381",
+  "short": "PDRVLA",
+  "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+  "date": "2026-10-27",
+  "tags": [
+    "VLA",
+    "physical-tokens",
+    "future-supervision",
+    "world-model-distillation"
+  ],
+  "repo": null,
+  "read": "选读原文模型/训练流程与受控未来预测实验（含附录）；阅读alphaXiv AI Overview；未完整阅读全文、未核查代码实现。",
+  "abstract": "PDRVLA通过轻量Physical Dynamics Module把视觉语言特征变为physical tokens，为动作生成提供未来场景信息。训练直接预测未来RGB、深度、光流特征，并借助冻结视频世界模型提供辅助监督。动作策略部署时不运行视频生成模型。作者报告四个仿真基准结果，当前证据不能解释为真机验证或已测量的实时控制加速。",
+  "intro": "这条路线把世界模型放在训练侧，让执行侧仅保留紧凑表征。值得阅读的不只是基准成功率，还包括冻结教师如何向physical tokens传递梯度，以及辅助未来预测的改善能否解释控制收益。部署移除视频模型是结构事实，实际加速仍需测量。",
+  "method": "图像＋指令 → Qwen3.5-4B中间层特征 → 物理模块生成50个tokens；这些tokens与VLM最终层特征、机器人状态共同送入动作专家 → 8步动作块。物理预训练使用直接未来特征损失和冻结视频模型辅助损失；联合策略训练保留直接预测，移除视频教师分支；执行时两类未来预测头均不运行。",
+  "design": "读取32层主干的第8层特征；物理模块约57.3M参数。动作流匹配采样采用4次Euler步。冻结教师意味着不更新其权重，不意味着阻断梯度：训练物理模块仍需通过教师反传。动作专家同时接收原始VLM上下文，不能据此认定所有控制能力都来自physical tokens。",
+  "evidence": "受控实验固定基模、训练样本预算、学习率和直接损失计划，对比直接预测与增加世界模型辅助。100个留出RoboCOIN episode的828个clips上，三模态等权归一化MSE从0.6439到0.6354，相对下降1.32%。RGB和深度改善更清楚；光流改善0.62%，区间跨零。此证据验证未来特征预测，不直接隔离策略成功率的因果来源。",
+  "limits": "LIBERO/Plus、RoboTwin和SimplerEnv都是仿真；基线数字取自不同论文或仓库，并非全数受控重训。未核实代码/权重/处理后数据发布；未见已测量控制延迟，因此不使用“实时”“显著加速”等结论。",
+  "inference": "我的推断：如果训练成本允许，可以将昂贵视频模型限制在预训练阶段，执行只保留小模块；但实验需同时消融physical tokens、直接监督与视频教师，并报告真机查询延迟。单看未来特征误差下降不能决定哪一支有助于动作预测。",
+  "alpha": "alphaXiv强调区分训练期视频教师与执行期动作生成，指出移除在线视频生成尚无延迟测量。其解读把受控RoboCOIN预测实验与基准策略分数分开，避免把1.32%的预测误差改善直接解释为动作成功率提升。",
+  "availability": "论文可访问；官方代码、权重和处理后语料开放状态未核实。基模、模块参数与实验条件来自原文，训练总成本未独立核实。",
+  "arxiv": "https://arxiv.org/abs/2610.37381",
+  "alphaxiv": "https://www.alphaxiv.org/abs/2610.37381",
+  "version": "v1",
+  "first_archived": "2026-10-30",
+  "retrieved_at": "2026-10-30T19:53:57+08:00",
+  "update_type": "first_publication",
+  "alphaxiv_status": "AI Overview retrieved via HTTPS; distilled, not verbatim",
+  "figures": [
+    {
+      "file": "assets/overview.png",
+      "page": 1,
+      "box_pt": [
+        61,
+        411,
+        556,
+        608
+      ],
+      "caption": "Figure 1：架构与四个仿真基准概览；右侧分数不能跨条件直接排名。",
+      "source": "https://arxiv.org/pdf/2610.37381v1#page=1",
+      "kind": "paper_figure_crop"
+    }
+  ],
+  "pdf_sha256": "252b6f6d0e32898574c9b907023a187a97b664f580c0b41cd6837a5fb1950547"
+}

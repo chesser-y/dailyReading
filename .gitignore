@@ -1,0 +1,15 @@
+# Local caches and credentials
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.pdf
+*.safetensors
+*.pt
+*.pth
+*.log
+.venv/

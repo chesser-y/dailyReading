@@ -1,0 +1,48 @@
+# dailyReading
+
+具身智能与机器人基础模型阅读档案。主线是**统一多模态模型的动作预测能力**，开放覆盖VLA、WAM、动作表示、视频预测、数据规模化、后训练、评测与部署。
+
+每日北京时间 **07:00（Asia/Shanghai）** 由Codex已配置的定时研究任务检索、阅读、归档并提交。定时执行器在Codex中；本仓库的GitHub Actions只校验文档，不负责调用模型或联网研究。
+
+## 最新阅读
+
+[2026-10-30 首期日报](reports/2026/10/30.md)：潜在动作预训练、紧凑未来预测、训练期动力学监督与反事实策略改进。该期检索窗口为10月23日中午至10月30日12:51；本次增加原文图像、alphaXiv补充和逐篇阅读笔记。
+
+- [RynnVLA-Latent](papers/2610.34356/README.md)：从异构视频到潜在动作监督；关注几何约束、Stage-1/2接口与权重条件。
+- [GAWM](papers/2610.37091/README.md)：未来特征如何进入紧凑策略；区分训练正则与执行条件。
+- [RynnWorld-Latent](papers/2610.36791/README.md)：共享动作接口如何驱动视频与训练数据生成。
+- [PDRVLA](papers/2610.37381/README.md)：训练期世界模型监督如何压缩到physical tokens。
+- [Rollback](papers/2610.36068/README.md)：从同一历史比较不同动作后果，形成策略改进监督。
+
+## 阅读方式
+
+每篇包含中文摘要、AI撰写介绍、输入→处理→输出、关键设计、论文方法图截图、实验证据、局限、研究借鉴及alphaXiv解读补充。**除实验数据外，使用段落和少量列表，不使用大表格承载解释。**
+
+阅读程度逐篇标注。原文作者结论、alphaXiv解读与本项目推断分开；未读全文、未核查代码、未复现实验会直说。摘要与阅读卡片为自写内容的排版图；方法图为PDF局部截图，保留来源、图号、页码和裁剪坐标。
+
+## 目录
+
+```text
+reports/YYYY/MM/DD.md       每日精选与跨论文联系
+papers/<arxiv-id>/README.md 逐篇阅读报告
+papers/<arxiv-id>/assets/   方法图、摘要卡片、阅读卡片
+papers/<arxiv-id>/metadata.json 来源、版本、阅读程度与图像记录
+data/catalog.json           可检索论文目录
+data/state.json             成功检索边界和去重记录
+docs/WORKFLOW.md            每日执行与提交流程
+templates/paper.md          新论文笔记模板
+scripts/                   截图、卡片排版、链接校验和Git提交
+```
+
+## 本地检查与发布
+
+```bash
+python3 scripts/validate.py
+python3 scripts/publish.py --message "docs: add YYYY-MM-DD research reading"
+```
+
+发布脚本仅提交该仓库文档及图像；没有origin时停止，不创建重复仓库，不强推。用法与依赖见[工作流程](docs/WORKFLOW.md)。PDF、网页原始抓取、模型权重和凭据留在忽略的本地缓存中。
+
+## 来源与使用
+
+所有论文附arXiv与alphaXiv链接。第三方图像、论文及解读的权利归其权利人；本项目保存有限图像摘录及独立撰写的研究笔记。数值采用原文对应设置，不跨不同数据量、相机数、任务输入或评估条件直接排名。
