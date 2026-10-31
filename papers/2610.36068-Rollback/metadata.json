@@ -43,5 +43,9 @@
     }
   ],
   "pdf_sha256": "d9d2906181805b3a6ac188d8ca557569ea35adf7fee894d3a07eaa0707620085",
-  "directory": "papers/2610.36068-Rollback"
+  "directory": "papers/2610.36068-Rollback",
+  "alphaxiv_preferred_language": "zh",
+  "alphaxiv_zh": "https://www.alphaxiv.org/zh/abs/2610.36068",
+  "alphaxiv_zh_status": "入口曾访问，中文AI概述正文尚未核实；现有提炼源自英文版",
+  "alpha_summary_source_language": "en"
 }

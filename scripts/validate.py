@@ -16,11 +16,14 @@ for item in catalog:
     meta=json.loads((directory/'metadata.json').read_text())
     if meta.get('id')!=ident or meta.get('directory')!=item['directory']:errors.append(f'Catalog/metadata mismatch: {ident}')
     if not (directory/'README.md').read_text().startswith(f"# {ident} · {item['short']}\n"):errors.append(f'Paper heading must be ID then short title: {ident}')
-    for key in ['arxiv','alphaxiv','read','retrieved_at','version','pdf_sha256','figures']:
+    for key in ['arxiv','alphaxiv','read','retrieved_at','version','figures']:
         if not meta.get(key):errors.append(f'{ident} missing {key}')
     for figure in meta['figures']:
         if not (directory/figure['file']).is_file():errors.append(f'Missing figure {ident}/{figure["file"]}')
-        if not figure.get('page') or not figure.get('box_pt') or not figure.get('source'):errors.append(f'Missing provenance {ident}')
+        if figure.get('kind')=='arxiv_html_figure':
+            if not figure.get('source') or not figure.get('source_image_sha256') or not figure.get('figure_number'):errors.append(f'Missing HTML figure provenance {ident}')
+        elif not meta.get('pdf_sha256') or not figure.get('page') or not figure.get('box_pt') or not figure.get('source'):
+            errors.append(f'Missing PDF figure provenance {ident}')
 for path in ROOT.rglob('*.md'):
     if '.git' in path.parts or '.cache' in path.parts:continue
     text=path.read_text()

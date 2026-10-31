@@ -1,15 +1,31 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-10-30",
-  "last_successful_search_cutoff": "2026-10-30T12:51:00+08:00",
+  "last_report": "2026-10-31",
+  "last_successful_search_cutoff": "2026-10-31T13:03:11+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.34356",
-    "2610.37091",
+    "2610.36068",
     "2610.36791",
+    "2610.37091",
     "2610.37381",
-    "2610.36068"
+    "2610.39721",
+    "2610.40207",
+    "2610.40271",
+    "2610.40401"
   ],
-  "history_scope": "首期日报与本仓库记录",
-  "notes": "本次补充阅读与归档，不推进新论文检索边界；后续检索自成功边界起并重叠最近7天。Git发布状态独立于检索成功。"
+  "history_scope": "仓库2026-10-30与2026-10-31日报，按arXiv ID去重",
+  "notes": "本期完成4篇7天补漏。发现/阅读成功与Git推送独立核验；未穷尽未索引修订。",
+  "pending_source_checks": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    }
+  ]
 }

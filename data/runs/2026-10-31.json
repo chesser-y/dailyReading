@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-31",
+  "search_cutoff": "2026-10-31T13:03:11+08:00",
+  "selected": [
+    "2610.39721",
+    "2610.40207",
+    "2610.40271",
+    "2610.40401"
+  ],
+  "update_type": "7-day overlap backfill; first archived today",
+  "zh_overview_status": "4 selected papers: Chinese AI概述正文 read",
+  "dedup_against": [
+    "2610.34356",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381"
+  ],
+  "discovery_methods": [
+    "multi-keyword English searches",
+    "arXiv abstract and HTML",
+    "official GitHub/HF release pages",
+    "alphaXiv zh"
+  ],
+  "omitted_candidates": [
+    "2610.40210",
+    "2610.40430",
+    "2610.38000",
+    "2610.39287"
+  ],
+  "release_check_limits": "Official link checks, not a full release-feed enumeration",
+  "publication": "Push verification is recorded by the Git commit and scheduler final response; this record is not a pre-emptive success claim.",
+  "overlap_window_start": "2026-10-24T13:03:11+08:00",
+  "search_window_start": "2026-10-30T12:51:00+08:00"
+}

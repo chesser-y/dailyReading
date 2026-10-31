@@ -1,6 +1,7 @@
 """Render versioned paper figure crops described by each metadata.json."""
-import argparse, hashlib, json, pathlib, urllib.request
+import argparse, hashlib, io, json, pathlib, urllib.request
 import pypdfium2 as pdfium
+from PIL import Image
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 
@@ -12,6 +13,16 @@ def main():
     for meta_path in sorted((ROOT/'papers').glob('*/metadata.json')):
         meta=json.loads(meta_path.read_text())
         if args.paper and meta['id']!=args.paper: continue
+        html_figures=[f for f in meta['figures'] if f.get('kind')=='arxiv_html_figure']
+        for figure in html_figures:
+            dest=meta_path.parent/figure['file']
+            if dest.exists():continue
+            with urllib.request.urlopen(figure['source'],timeout=30) as response:data=response.read()
+            if hashlib.sha256(data).hexdigest()!=figure['source_image_sha256']:raise ValueError('HTML source figure digest changed')
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            Image.open(io.BytesIO(data)).convert('RGB').save(dest,optimize=True)
+        pdf_figures=[f for f in meta['figures'] if f.get('kind')!='arxiv_html_figure']
+        if not pdf_figures:continue
         cache=(args.source_dir or ROOT/'.cache')/meta['id']/'paper.pdf'
         if not cache.exists():
             cache.parent.mkdir(parents=True,exist_ok=True)
@@ -24,7 +35,7 @@ def main():
         if sha!=meta['pdf_sha256']:
             raise ValueError(f"PDF digest changed for {meta['id']}; review the version before recapturing")
         doc=pdfium.PdfDocument(str(cache))
-        for figure in meta['figures']:
+        for figure in pdf_figures:
             page=doc[figure['page']-1]
             width,height=page.get_size()
             x0,y0,x1,y1=figure['box_pt']

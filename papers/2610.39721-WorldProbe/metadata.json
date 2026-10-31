@@ -1,0 +1,47 @@
+{
+  "id": "2610.39721",
+  "short": "WorldProbe",
+  "title": "WorldProbe: When Video World Models Fall Apart under Long-Horizon Spatial Exploration",
+  "date": "2026-10-29",
+  "tags": [
+    "world-model",
+    "evaluation",
+    "long-horizon",
+    "spatial-consistency"
+  ],
+  "read": "选读原文第3节探测与指标、第4节结果和附录实现范围；已读alphaXiv zh AI概述；原文所给GitHub地址本次返回404，未核查实现。",
+  "abstract": "WorldProbe让目标条件多模态智能体根据不断生成的新画面，在线选择相机动作，以探测视频世界模型的长时空间一致性。它覆盖164个案例、四类任务及10个模型，最长评估至180秒，将局部画面质量与重访记忆、世界演化分开。本文提供评测诊断，而不是机器人操作策略；结论不能直接外推为操作成功率。",
+  "intro": "未来画面持续清晰，并不说明同一世界被稳定维护。对会利用生成视频规划动作的统一模型，重要问题是：转身返回后对象与空间是否一致，物体变化能否由行动解释。这个评测提供了与单帧质量互补的测试思路。",
+  "method": "首帧＋空间目标 → 智能体读取近期生成画面与辅助空间信息 → 选择离散相机动作 → 视频模型生成下一片段 → 更新观察并继续探测。评测分别测局部视觉/内容质量、重访后的空间记忆及世界演化。目标追踪与近场体素用于稳定探测，不是统一真值地图。",
+  "design": "四类任务包括几何约束接近、开放式行进、跨视角观察和连续区域探索。SAM3.1提供目标追踪，Depth-Anything 3支持近场几何检查。局部图像评分、单帧VLM内容评分与跨时刻记忆/演化评分使用不同证据，因此应分开解释。",
+  "evidence": "作者观察到较新模型能够维持局部图像质量更久，但重访与演化仍出现对象身份、布局和因果关系不一致。局部评价不能验证长期世界一致性。论文没有固定轨迹/评分协议下分别移除自适应控制、追踪和防碰撞的完整消融，不能将结果归因于某个单独机制。",
+  "limits": "长程一致性主要由学习式工具和VLM评判，不是与已知真实三维世界逐帧比较。任务偏相机探索，尚未验证操作接触动力学。摘要写超过1,600条rollout，而概览图标为1,201，计数口径未核实；本笔记不据总量做进一步推断。原文代码链接404只代表本次不可访问，不代表永久没有发布。",
+  "inference": "我的推断：在机器人操作世界模型上可加入“移开视角再返回”“暂时遮挡后重新观察”“重复访问同一物体”等小测试，并同时记录状态误差、图像质量和动作成功率；不能只根据生成视频看起来合理决定训练数据质量。",
+  "alpha": "zh解读把局部渲染、跨时记忆和世界演化分开，并强调这些一致性评分依赖VLM，而非真实世界真值。它也指出探测工具的作用尚未被独立消融，不能据此解释模型失败的单一原因。",
+  "availability": "原文称代码及基准可用，但 https://github.com/Untitled-W/WorldProbe 本次返回404；代码、基准实际下载和权重状态未核实。",
+  "directory": "papers/2610.39721-WorldProbe",
+  "version": "v1",
+  "first_archived": "2026-10-31",
+  "retrieved_at": "2026-10-31T13:03:11+08:00",
+  "arxiv": "https://arxiv.org/abs/2610.39721",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.39721",
+  "alphaxiv_language": "zh",
+  "alphaxiv_status": "zh AI概述正文已读取，中文独立提炼；非全文转载",
+  "update_type": "first_publication_backfill",
+  "pdf_sha256": "5d3d737c64b1259fa9f015fd05292a5113fd640f1cf82a4b6e9e19da3cdbe4bd",
+  "figures": [
+    {
+      "file": "assets/probe-loop.png",
+      "caption": "Figure 1：智能体根据生成画面闭环选择相机动作，同时诊断局部与长时一致性。",
+      "kind": "paper_figure_crop",
+      "page": 2,
+      "box_pt": [
+        62,
+        79,
+        554,
+        289
+      ],
+      "source": "https://arxiv.org/pdf/2610.39721v1#page=2"
+    }
+  ]
+}

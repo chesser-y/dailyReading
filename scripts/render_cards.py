@@ -32,7 +32,8 @@ def render(meta,sections,path,font_path):
         d.text((left,y),label,font=heading,fill='#116f72');y+=53
         for line in wrap(text,font,available,d):d.text((left,y),line,font=font,fill='#26353c');y+=48
         y+=32
-    footer=f"来源：arxiv.org/abs/{meta['id']} · alphaxiv.org/abs/{meta['id']}"
+    alpha_url=meta['alphaxiv'].replace('https://www.','').replace('https://','')
+    footer=f"来源：arxiv.org/abs/{meta['id']} · {alpha_url}"
     d.text((left,y),footer,font=small,fill='#52636c');y+=43
     d.text((left,y),'本项目自写摘要与解读的排版图；非第三方网页截图；核查程度见逐篇笔记。',font=small,fill='#52636c');y+=62
     if y>6000:raise ValueError('Card too tall')

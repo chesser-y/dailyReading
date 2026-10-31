@@ -2,7 +2,7 @@
 
 **论文全名：** Full English Paper Title
 
-[原文](https://arxiv.org/abs/ID) · [alphaXiv](https://www.alphaxiv.org/abs/ID)
+[原文](https://arxiv.org/abs/ID) · [alphaXiv 中文版](https://www.alphaxiv.org/zh/abs/ID)
 
 版本、日期与更新类型；实际阅读程度；新变化。
 
@@ -38,4 +38,4 @@
 
 ## alphaXiv 解读补充（中文提炼）
 
-保留来源和抓取时间。概括要点并回查原文；不可访问则写缺失，不虚构已读。
+优先读取zh中文版，保留来源、实际语言和抓取时间。中文原文、自行翻译与独立摘要须区分。概括要点并回查论文；不可访问则写缺失，不虚构已读。

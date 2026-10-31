@@ -83,5 +83,73 @@
     "version": "v1",
     "first_archived": "2026-10-30",
     "directory": "papers/2610.37381-PDRVLA"
+  },
+  {
+    "id": "2610.39721",
+    "short": "WorldProbe",
+    "title": "WorldProbe: When Video World Models Fall Apart under Long-Horizon Spatial Exploration",
+    "date": "2026-10-29",
+    "tags": [
+      "world-model",
+      "evaluation",
+      "long-horizon",
+      "spatial-consistency"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.39721",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.39721",
+    "version": "v1",
+    "first_archived": "2026-10-31",
+    "directory": "papers/2610.39721-WorldProbe"
+  },
+  {
+    "id": "2610.40207",
+    "short": "RoboAtom",
+    "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning",
+    "date": "2026-10-29",
+    "tags": [
+      "data",
+      "atomic-actions",
+      "hierarchical-policy",
+      "temporal-annotation"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40207",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40207",
+    "version": "v1",
+    "first_archived": "2026-10-31",
+    "directory": "papers/2610.40207-RoboAtom"
+  },
+  {
+    "id": "2610.40271",
+    "short": "GAR",
+    "title": "Gaussian Distillation of Flow Policies",
+    "date": "2026-10-29",
+    "tags": [
+      "flow-matching",
+      "policy-distillation",
+      "gaussian-readout",
+      "inference-efficiency"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40271",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40271",
+    "version": "v1",
+    "first_archived": "2026-10-31",
+    "directory": "papers/2610.40271-GAR"
+  },
+  {
+    "id": "2610.40401",
+    "short": "CoAWM",
+    "title": "Continuous-Action World Models: Learning Cross-Embodiment Spatiotemporal Dynamics Priors",
+    "date": "2026-10-30",
+    "tags": [
+      "WAM",
+      "continuous-time-actions",
+      "cross-frequency",
+      "latent-function"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40401",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40401",
+    "version": "v1",
+    "first_archived": "2026-10-31",
+    "directory": "papers/2610.40401-CoAWM"
   }
 ]

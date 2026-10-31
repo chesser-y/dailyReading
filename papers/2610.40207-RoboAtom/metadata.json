@@ -1,0 +1,45 @@
+{
+  "id": "2610.40207",
+  "short": "RoboAtom",
+  "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning",
+  "date": "2026-10-29",
+  "tags": [
+    "data",
+    "atomic-actions",
+    "hierarchical-policy",
+    "temporal-annotation"
+  ],
+  "read": "选读原文HTML第3节数据协议/传播、第5节策略实验、第6节局限；已读alphaXiv zh概述；核查官方README、数据卡和模型卡；PDF下载未完成，未运行代码。",
+  "abstract": "RoboAtom把技能标签、对象相关描述及起止边界统一到多来源机器人轨迹上。人工审核的种子标注经PhysExtend传播到同任务且动作顺序相同的重复执行，再做质量控制。作者构建数据、标注基准与标注模型，并将原子动作条件用于分层策略。它增加的是可组合的中间语义监督，而非一种新的低层控制编码。",
+  "intro": "仅用任务最终目标监督动作，难以区分当前应该执行哪一步。共享词汇和时间边界为不同数据源建立中间动作接口，但其价值要同时从标注质量和闭环控制检验，而不只看轨迹规模。",
+  "method": "轨迹与已有标注 → 人工审核语义、顺序和边界 → PhysExtend利用状态/动作物理线索传播同序技能 → 质量筛选与纠错。策略训练以技能和描述条件化System 1；执行时System 2根据观察和历史选择/保留下一步指令，再由System 1输出动作。",
+  "design": "每个原子动作含技能类别、对象描述和时间区间。PhysExtend需要同任务参考和相同有序技能序列，用动态规划及事件约束定位边界；它不能仅凭无状态视频发现未知动作顺序。原文描述约1.45M轨迹、6.88M技能片段、16,882.1小时；官方当前发布卡说明提供11个数据集的标注，不能等同为全部原始轨迹均已发布。",
+  "evidence": "同后训练预算、观测和动作空间且不使用图像增强的对比中，LIBERO-Long成功率从π₀.₅的95.00%到98.20%，LIBERO-Plus总体84.05%到88.18%。但训练原子动作条件和执行期System 2调度同时变化，不能把差值单独归给标注。Spatial子项反向，收益并非全面。",
+  "limits": "尚未检验大规模策略预训练收益，当前未纳入人类第一视角视频。动作顺序不相同的演示不能直接套用同序传播。数据卡发布范围小于论文所述全量来源；代码与权重页面可访问不等于本期已复现。PDF未完整取得，本笔记图像来自arXiv HTML官方原图，未填写未知PDF页码。",
+  "inference": "我的推断：可先给统一模型增加当前技能和边界预测的辅助监督，再固定同一个执行器对比“任务条件”“技能条件”“技能条件＋上层调度”，分离语义监督与分层推理的作用。",
+  "alpha": "zh解读强调PhysExtend的同序技能假设，并把种子审核、状态传播和质量控制成本分开。它提醒控制实验同时改变训练条件与调度，不能证明原子标注单独带来全部收益。",
+  "availability": "官方代码 https://github.com/InternRobotics/RoboAtom 可访问；HF数据卡提供11来源标注及500条基准轨迹，模型卡列9B/27B合并权重；未下载模型。论文全量与当前发布范围需区分。实际释放日期未核实。",
+  "directory": "papers/2610.40207-RoboAtom",
+  "version": "v1",
+  "first_archived": "2026-10-31",
+  "retrieved_at": "2026-10-31T13:03:11+08:00",
+  "arxiv": "https://arxiv.org/abs/2610.40207",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40207",
+  "alphaxiv_language": "zh",
+  "alphaxiv_status": "zh AI概述正文已读取，中文独立提炼；非全文转载",
+  "update_type": "first_publication_backfill",
+  "pdf_sha256": null,
+  "pdf_status": "下载超时，未取得完整PDF；选读原文HTML。",
+  "figures": [
+    {
+      "file": "assets/atomic-overview.png",
+      "caption": "Figure 1：原子动作标注、数据与基准概览。原图来自arXiv HTML，不是PDF截图。",
+      "kind": "arxiv_html_figure",
+      "figure_number": 1,
+      "page": null,
+      "box_pt": null,
+      "source": "https://arxiv.org/html/2610.40207v1/fig1_roboatom_overview_20261018.png",
+      "source_image_sha256": "8a123c6c8923c593d3f6611257d3106908c7455897f43738ba47bcbad2692be1"
+    }
+  ]
+}

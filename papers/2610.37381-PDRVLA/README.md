@@ -51,6 +51,8 @@ LIBERO/Plus、RoboTwin和SimplerEnv都是仿真；基线数字取自不同论文
 
 ## alphaXiv 解读补充（中文提炼）
 
+**语言记录：**现有提炼最初依据英文版；[zh中文版入口](https://www.alphaxiv.org/zh/abs/2610.37381)的AI概述正文尚未核实，未冒充中文原文。
+
 alphaXiv强调区分训练期视频教师与执行期动作生成，指出移除在线视频生成尚无延迟测量。其解读把受控RoboCOIN预测实验与基准策略分数分开，避免把1.32%的预测误差改善直接解释为动作成功率提升。
 
 以上为对[alphaXiv AI Overview](https://www.alphaxiv.org/abs/2610.37381)的中文概括，非原文转载。原文核查以方法和实验证据为准；与本笔记中的作者结论、个人推断分开阅读。

@@ -14,6 +14,8 @@
 
 优先沿用alphaXiv解读的问题、方法、实验和边界来组织信息，减少重复介绍；未取得明确转载许可时保留链接、中文提炼和简短引用，不全文搬运。若有可转载许可或用户提供的可用全文，记录来源及授权范围，并按GitHub Markdown整理：标题、段落、列表、标准$...$与$$...$$公式、本地相对图片链接；移除依赖网页脚本、iframe或登录态的展示。当前[alphaXiv条款](https://www.alphaxiv.org/terms)未提供整篇公开转载许可（核查于2026-10-30）。
 
+语言首选为zh。使用https://www.alphaxiv.org/zh/abs/<arxiv-id>并核查AI Overview正文为中文，记录language、检查状态与时间；不要把英文原文的自译标成网站中文原文。目录、日报及逐篇来源链接统一指向已验证的中文版。缺失时如实标注，不回退后仍声称已读中文版。用户仅用于个人阅读与总结；仓库可见性仍沿用已确认设置。
+
 日报保存reports/YYYY/MM/DD.md，约1500至2500字；完整逐篇笔记保存papers/<id>-<short-title>/README.md。作者结论与本项目推断分开，数字带协议和条件，开放状态未核实就写未核实。访问失败必须写缺失范围，不能推断没有新研究。
 
 ## 截图与卡片
@@ -26,6 +28,8 @@ python3 scripts/render_cards.py --font /path/to/CJK-font.ttc
 ```
 
 截图源文件保留在本地缓存；Git只提交图像摘录。每张图在笔记中有图号、页码和来源。摘要卡片与阅读卡片由本项目自写内容排版，不能冒充alphaXiv网页原图。逐张目视检查文字大小、图边界与对应关系。
+
+PDF下载失败时，可保存arXiv HTML中直接提供的官方原图。元数据kind标为arxiv_html_figure，记录figure_number、原图URL和source_image_sha256；不虚构PDF页码、裁剪坐标或PDF SHA256，正文说明取图方式与PDF缺失。
 
 首次依赖可用python3 -m pip install -r requirements.txt安装；已提供Codex运行时依赖时优先复用，不修改用户全局环境。Markdown校验与Git发布只需Python标准库和Git。
 

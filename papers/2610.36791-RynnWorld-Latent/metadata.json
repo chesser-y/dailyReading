@@ -43,5 +43,9 @@
     }
   ],
   "pdf_sha256": "57f42afd50a9e3f4ed6a3ff6a03814fdd7a9e74836c262eb3ae7420620139c7b",
-  "directory": "papers/2610.36791-RynnWorld-Latent"
+  "directory": "papers/2610.36791-RynnWorld-Latent",
+  "alphaxiv_preferred_language": "zh",
+  "alphaxiv_zh": "https://www.alphaxiv.org/zh/abs/2610.36791",
+  "alphaxiv_zh_status": "入口曾访问，中文AI概述正文尚未核实；现有提炼源自英文版",
+  "alpha_summary_source_language": "en"
 }

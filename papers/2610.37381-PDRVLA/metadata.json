@@ -43,5 +43,9 @@
     }
   ],
   "pdf_sha256": "252b6f6d0e32898574c9b907023a187a97b664f580c0b41cd6837a5fb1950547",
-  "directory": "papers/2610.37381-PDRVLA"
+  "directory": "papers/2610.37381-PDRVLA",
+  "alphaxiv_preferred_language": "zh",
+  "alphaxiv_zh": "https://www.alphaxiv.org/zh/abs/2610.37381",
+  "alphaxiv_zh_status": "入口曾访问，中文AI概述正文尚未核实；现有提炼源自英文版",
+  "alpha_summary_source_language": "en"
 }
