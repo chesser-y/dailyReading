@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-01",
+  "search_window_start": "2026-10-31T13:03:11+08:00",
+  "search_cutoff": "2026-11-01T07:10:01+08:00",
+  "overlap_window_start": "2026-10-25T07:10:01+08:00",
+  "selected": [
+    "2610.36011",
+    "2610.39280",
+    "2610.40210"
+  ],
+  "update_type": "7-day overlap backfill; first archived today; no verified new revisions",
+  "dedup_against": [
+    "2610.34356",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381",
+    "2610.39721",
+    "2610.40207",
+    "2610.40271",
+    "2610.40401"
+  ],
+  "history_rechecks": {
+    "2610.34356": "arXiv submission history still v1",
+    "2610.36068": "arXiv submission history still v1",
+    "2610.36791": "arXiv submission history still v1",
+    "2610.37091": "arXiv submission history still v1",
+    "2610.37381": "arXiv submission history still v1",
+    "2610.39721": "arXiv submission history still v1",
+    "2610.40207": "arXiv submission history still v1",
+    "2610.40271": "arXiv submission history still v1",
+    "2610.40401": "arXiv submission history still v1"
+  },
+  "zh_overview_status": "3 selected papers: read Chinese AI 概述 body",
+  "figure_mode": "arXiv HTML official original image; PDF not downloaded or verified this run",
+  "discovery_methods": [
+    "multiple English keyword searches, with and without date constraints",
+    "arXiv cs.RO new/recent and primary submission histories",
+    "official author project pages and GitHub README/model card",
+    "alphaXiv zh overview body verified"
+  ],
+  "omitted_candidates": [
+    "2610.40430",
+    "2610.38000",
+    "2610.39287",
+    "2610.40532",
+    "2610.40565"
+  ],
+  "release_check_limits": "Not an exhaustive release-feed enumeration. HF Cosmos conversion card/commits failed; E0.5 Hub resource links documented but files not downloaded. WorldProbe and Cross-Controller code links returned 404.",
+  "pending_source_checks": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接",
+      "last_checked_at": "2026-11-01T07:10:01+08:00",
+      "last_result": "404"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    },
+    {
+      "id": "lerobot/cosmos3-nano",
+      "url": "https://huggingface.co/lerobot/cosmos3-nano/commits/main",
+      "reason": "模型卡与提交历史直接访问SSL握手超时；搜索有转换发布线索，未核实具体发布日与文件状态。",
+      "pending_window_start": "2026-10-25T07:10:01+08:00",
+      "pending_window_end": "2026-11-01T07:10:01+08:00"
+    },
+    {
+      "id": "2610.39280",
+      "url": "https://github.com/JonathanYang0127/icl_cross_controller",
+      "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
+      "checked_at": "2026-11-01T07:10:01+08:00"
+    }
+  ],
+  "publication": "No pre-emptive publication claim; final commit/push status verified separately."
+}

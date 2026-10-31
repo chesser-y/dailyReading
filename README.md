@@ -6,17 +6,22 @@
 
 ## 最新阅读
 
+[2026-11-01 日报](reports/2026/11/01.md)：E0.5未来几何目标、Cross-Controller交互上下文与AcrossDEX动作块连续性；三篇近7天补漏，均已读zh概述。
+
 [2026-10-31 日报](reports/2026/10/31.md)：GAR高斯读出、CoAWM连续时间动作、RoboAtom技能监督与WorldProbe长时一致性。四篇均为7天补漏，zh AI概述已读取。
 
 [2026-10-30 首期日报](reports/2026/10/30.md)：潜在动作预训练、紧凑世界模型与反事实策略改进。
 
 - [2610.34356 · RynnVLA-Latent](papers/2610.34356-RynnVLA-Latent/README.md)
+- [2610.36011 · E0.5](papers/2610.36011-E0.5/README.md)
 - [2610.36068 · Rollback](papers/2610.36068-Rollback/README.md)
 - [2610.36791 · RynnWorld-Latent](papers/2610.36791-RynnWorld-Latent/README.md)
 - [2610.37091 · GAWM](papers/2610.37091-GAWM/README.md)
 - [2610.37381 · PDRVLA](papers/2610.37381-PDRVLA/README.md)
+- [2610.39280 · Cross-Controller](papers/2610.39280-Cross-Controller/README.md)
 - [2610.39721 · WorldProbe](papers/2610.39721-WorldProbe/README.md)
 - [2610.40207 · RoboAtom](papers/2610.40207-RoboAtom/README.md)
+- [2610.40210 · AcrossDEX](papers/2610.40210-AcrossDEX/README.md)
 - [2610.40271 · GAR](papers/2610.40271-GAR/README.md)
 - [2610.40401 · CoAWM](papers/2610.40401-CoAWM/README.md)
 
@@ -26,7 +31,7 @@
 
 每篇包含中文摘要、AI撰写介绍、输入→处理→输出、关键设计、论文方法图截图、实验证据、局限、研究借鉴及alphaXiv解读补充。**除实验数据外，使用段落和少量列表，不使用大表格承载解释。**
 
-阅读程度逐篇标注。原文作者结论、alphaXiv解读与本项目推断分开；未读全文、未核查代码、未复现实验会直说。摘要与阅读卡片为自写内容的排版图；方法图为PDF局部截图，保留来源、图号、页码和裁剪坐标。
+阅读程度逐篇标注。原文作者结论、alphaXiv解读与本项目推断分开；未读全文、未核查代码、未复现实验会直说。摘要与阅读卡片为自写内容的排版图；方法图来自PDF局部截图或arXiv HTML官方原图；按实际取图方式记录来源、图号、页码/裁剪坐标或原图哈希。
 
 alphaXiv优先使用 **zh中文版AI Overview**，链接格式为`https://www.alphaxiv.org/zh/abs/<arxiv-id>`。中文原文与本项目摘要/自译明确区分；中文版缺失时如实说明。10月30日笔记最初基于英文版，10月31日新增笔记已读取zh AI概述；实际语言与检查状态记录在各篇metadata.json中。
 

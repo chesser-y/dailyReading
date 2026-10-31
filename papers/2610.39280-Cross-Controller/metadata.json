@@ -1,0 +1,63 @@
+{
+  "id": "2610.39280",
+  "short": "Cross-Controller",
+  "title": "Cross-Controller Transfer via In-Context Behavior Adaptation",
+  "date": "2026-10-29",
+  "submitted_at": "2026-10-29T11:31:22+08:00",
+  "tags": [
+    "VLA",
+    "in-context-adaptation",
+    "controller-transfer",
+    "contact"
+  ],
+  "read": "选读原文HTML第III至VI节问题、方法与实验证据及结论局限；已读alphaXiv zh AI概述和作者项目页。项目代码链接返回404，未核查实现或运行实验。",
+  "abstract": "不同控制器会使相同动作数值产生不同运动，接触任务还需要不同策略。该工作用图像、命令与实际状态转移构成交互上下文，经Perceiver式编码压缩后条件化π0.5动作生成，并配合扭矩匹配重标记扩充训练数据。真实机器人留出测试显示交互证据优于仅提供动力学信息，但适应依赖部署控制器下的示例，并非完全没有校准交互。",
+  "intro": "跨本体动作对齐之外还有控制器语义：同一机器人同一场景中的动作标签也可能冲突。将控制器信息仅作为ID或数值增益不一定足够；接触中的“命令—结果”示例可能更直接提供行为条件。",
+  "method": "部署控制器下3条示例轨迹的RGB、初始构型、命令及随后实际构型 → 采样128个转移 → 冻结DINOv2图像编码＋转移MLP → 256个Perceiver潜在token → 与控制器文字元数据、当前观察和任务共同条件化π0.5 → 20步动作块。上下文回合开始时编码并缓存KV，测试时不更新参数。",
+  "design": "编码器以固定查询跨注意力汇聚视觉和交互token，再用6层潜在自注意力。训练用同任务/同控制器的独立上下文轨迹，禁止把目标轨迹本身输入；编码器与策略联合flow matching训练。解析重标记保留瞬时扭矩，可覆盖动作接口，却不会创造专家在另一控制器下的新接触策略。跨任务上下文复用是评测出来的泛化能力，非显式跨任务监督。",
+  "evidence": "WidowX、π0.5、H=20；4源任务×6控制器×4增益×30示范，共2,880轨迹。留出任务—控制器单元的零样本评测每单元20次：行为上下文50.0%，SysID27.0%，仅控制器真值元数据12.0%。另一个留出控制器模式实验每模式汇总60次：50.3%对朴素混合17.5%。四组未见增益每组50次：52.0%对混合28.5%。这些设置不能合并成一个成功率。",
+  "limits": "零样本仍提供部署控制器下其他任务的专家交互轨迹，不表示完全无目标控制器数据。视觉与物理证据同时改变，未证明潜在token显式编码策略。解析重标记依赖阻抗式假设，导纳控制未验证；只测一种VLA与一个实验室机器人设置。代码/数据/权重尚未成功取得，训练成本未核实。",
+  "inference": "本项目推断：先在相同形态与场景上改变控制模式/增益，以避免模型用背景猜控制器。比较无条件、元数据、命令历史、命令—实际转移四组，同时固定动作头与任务覆盖；若仅加历史也改善，应继续分离接触事件和上下文长度的贡献。",
+  "alpha": "已核实网站zh正文。概述强调动力学映射与专家行为选择的区别，逐项解释零样本仍需同控制器上下文，并用接触事件消融说明信息来自何处；未把256个潜在token说成已识别出的显式策略。这里为独立中文提炼。",
+  "availability": "作者项目页可访问并链接JonathanYang0127/icl_cross_controller；该仓库README通过GitHub连接器查询返回404，本次不能确认代码、数据或权重已可用，不将社区“code released”标签当作发布证据。",
+  "official": "https://controller-transfer.github.io",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://controller-transfer.github.io"
+    ],
+    [
+      "作者列出的仓库（本次404）",
+      "https://github.com/JonathanYang0127/icl_cross_controller"
+    ]
+  ],
+  "directory": "papers/2610.39280-Cross-Controller",
+  "version": "v1",
+  "first_archived": "2026-11-01",
+  "retrieved_at": "2026-11-01T07:07:49+08:00",
+  "arxiv": "https://arxiv.org/abs/2610.39280",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.39280",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取zh AI概述中文正文；独立提炼，非整篇转载",
+  "update_type": "first_publication_backfill",
+  "pdf_sha256": null,
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "figure_number": 1,
+      "file": "assets/method.png",
+      "caption": "Figure 1：跨控制器示范、交互历史压缩及策略迁移。上半图的Perceiver上下文与控制器元数据共同条件化VLA，下半图展示控制器改变时的行为调整。",
+      "source": "https://arxiv.org/html/2610.39280v1/paper_figures/teaser_v2.png",
+      "source_image_sha256": "7fa68471e866c6a0d1eac50dd835cbfc5bc1f85710200721544627fed25156b4",
+      "asset_sha256": "13053f610411c13e03f2c5470d3c2aa05060f5dd4210b1cb5ef1d261b510e5e3",
+      "page": null,
+      "box_pt": null,
+      "version": "v1",
+      "captured_at": "2026-11-01T07:08:38+08:00"
+    }
+  ],
+  "source_html_sha256": "436f925578b44656b494804d106279e26b79c6d2a695c690bd62b5a1a59d6629",
+  "alphaxiv_checked_at": "2026-11-01T07:07:50+08:00",
+  "date_timezone": "Asia/Shanghai"
+}

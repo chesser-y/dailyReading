@@ -17,6 +17,23 @@
     "directory": "papers/2610.34356-RynnVLA-Latent"
   },
   {
+    "id": "2610.36011",
+    "short": "E0.5",
+    "title": "E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling",
+    "date": "2026-10-27",
+    "tags": [
+      "WAM",
+      "future-geometry",
+      "3D-foundation",
+      "flow-matching"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.36011",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.36011",
+    "version": "v1",
+    "first_archived": "2026-11-01",
+    "directory": "papers/2610.36011-E0.5"
+  },
+  {
     "id": "2610.36068",
     "short": "Rollback",
     "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
@@ -85,6 +102,23 @@
     "directory": "papers/2610.37381-PDRVLA"
   },
   {
+    "id": "2610.39280",
+    "short": "Cross-Controller",
+    "title": "Cross-Controller Transfer via In-Context Behavior Adaptation",
+    "date": "2026-10-29",
+    "tags": [
+      "VLA",
+      "in-context-adaptation",
+      "controller-transfer",
+      "contact"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.39280",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.39280",
+    "version": "v1",
+    "first_archived": "2026-11-01",
+    "directory": "papers/2610.39280-Cross-Controller"
+  },
+  {
     "id": "2610.39721",
     "short": "WorldProbe",
     "title": "WorldProbe: When Video World Models Fall Apart under Long-Horizon Spatial Exploration",
@@ -117,6 +151,23 @@
     "version": "v1",
     "first_archived": "2026-10-31",
     "directory": "papers/2610.40207-RoboAtom"
+  },
+  {
+    "id": "2610.40210",
+    "short": "AcrossDEX",
+    "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+    "date": "2026-10-29",
+    "tags": [
+      "human-motion",
+      "dexterous-manipulation",
+      "action-chunking",
+      "cross-embodiment"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40210",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40210",
+    "version": "v1",
+    "first_archived": "2026-11-01",
+    "directory": "papers/2610.40210-AcrossDEX"
   },
   {
     "id": "2610.40271",
