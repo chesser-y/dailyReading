@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-01",
-  "last_successful_search_cutoff": "2026-11-01T07:10:01+08:00",
+  "last_report": "2026-11-02",
+  "last_successful_search_cutoff": "2026-11-02T09:49:53+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.34356",
@@ -10,22 +10,25 @@
     "2610.36791",
     "2610.37091",
     "2610.37381",
+    "2610.37666",
+    "2610.38000",
     "2610.39280",
     "2610.39721",
     "2610.40207",
     "2610.40210",
     "2610.40271",
-    "2610.40401"
+    "2610.40401",
+    "2610.40430"
   ],
-  "history_scope": "本仓库2026-10-30、2026-10-31与2026-11-01日报，按arXiv ID去重",
-  "notes": "本期完成3篇近7天首发补漏，未核实到上次截止后的精选新发表；已收录9篇仍仅见v1。检索完成与Git推送独立核验；Hub及代码缺失来源保留补查。",
+  "history_scope": "本仓库2026-10-30至2026-11-02四份日报及版本检查记录，按arXiv ID去重",
+  "notes": "本期3篇近7天首发补漏；PDRVLA v2为引文格式修订补查，未作为新研究重复报告。Cosmos转换发布来源补查完成；检索和发布独立核验。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
       "source": "https://github.com/Untitled-W/WorldProbe",
       "status": "404，需后续核对发布链接",
-      "last_checked_at": "2026-11-01T07:10:01+08:00",
-      "last_result": "404"
+      "last_checked_at": "2026-11-02T09:49:53+08:00",
+      "last_result": "GitHub connector repository query: 404"
     },
     {
       "id": "2610.40207",
@@ -33,18 +36,23 @@
       "status": "下载未完成，已用原文HTML及官方原图完成笔记"
     },
     {
-      "id": "lerobot/cosmos3-nano",
-      "url": "https://huggingface.co/lerobot/cosmos3-nano/commits/main",
-      "reason": "模型卡与提交历史直接访问SSL握手超时；搜索有转换发布线索，未核实具体发布日与文件状态。",
-      "pending_window_start": "2026-10-25T07:10:01+08:00",
-      "pending_window_end": "2026-11-01T07:10:01+08:00"
-    },
-    {
       "id": "2610.39280",
       "url": "https://github.com/JonathanYang0127/icl_cross_controller",
       "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
-      "checked_at": "2026-11-01T07:10:01+08:00"
+      "checked_at": "2026-11-01T07:10:01+08:00",
+      "last_checked_at": "2026-11-02T09:49:53+08:00",
+      "last_result": "GitHub connector repository query: 404"
     }
   ],
-  "source_coverage": "论文检索和三篇阅读完成；Hub发布记录存在来源缺失，按pending_source_checks补查，未声称穷尽代码/权重发布。"
+  "source_coverage": "多组英文检索、arXiv列表、12篇历史及3篇原文/zh概述；发布渠道非穷尽。Cosmos模型卡/提交历史已取得，未下载权重。",
+  "resolved_source_checks": [
+    {
+      "id": "lerobot/Cosmos3-Nano",
+      "checked_at": "2026-11-02T09:49:53+08:00",
+      "record": "data/source-checks/2026-11-02-cosmos3-nano.json"
+    }
+  ],
+  "observed_versions": {
+    "2610.37381": "v2"
+  }
 }

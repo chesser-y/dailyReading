@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-02 日报](reports/2026/11/02.md)：ThinkWorld世界一致性训练、SPT偏好自标注、DEED数据与执行设计；另补查PDRVLA v2与Cosmos3转换记录。
+
 [2026-11-01 日报](reports/2026/11/01.md)：E0.5未来几何目标、Cross-Controller交互上下文与AcrossDEX动作块连续性；三篇近7天补漏，均已读zh概述。
 
 [2026-10-31 日报](reports/2026/10/31.md)：GAR高斯读出、CoAWM连续时间动作、RoboAtom技能监督与WorldProbe长时一致性。四篇均为7天补漏，zh AI概述已读取。
@@ -18,12 +20,15 @@
 - [2610.36791 · RynnWorld-Latent](papers/2610.36791-RynnWorld-Latent/README.md)
 - [2610.37091 · GAWM](papers/2610.37091-GAWM/README.md)
 - [2610.37381 · PDRVLA](papers/2610.37381-PDRVLA/README.md)
+- [2610.37666 · ThinkWorld](papers/2610.37666-ThinkWorld/README.md)
+- [2610.38000 · SPT](papers/2610.38000-SPT/README.md)
 - [2610.39280 · Cross-Controller](papers/2610.39280-Cross-Controller/README.md)
 - [2610.39721 · WorldProbe](papers/2610.39721-WorldProbe/README.md)
 - [2610.40207 · RoboAtom](papers/2610.40207-RoboAtom/README.md)
 - [2610.40210 · AcrossDEX](papers/2610.40210-AcrossDEX/README.md)
 - [2610.40271 · GAR](papers/2610.40271-GAR/README.md)
 - [2610.40401 · CoAWM](papers/2610.40401-CoAWM/README.md)
+- [2610.40430 · DEED](papers/2610.40430-DEED/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
 

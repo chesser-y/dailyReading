@@ -99,7 +99,43 @@
     "alphaxiv": "https://www.alphaxiv.org/abs/2610.37381",
     "version": "v1",
     "first_archived": "2026-10-30",
-    "directory": "papers/2610.37381-PDRVLA"
+    "directory": "papers/2610.37381-PDRVLA",
+    "latest_observed_version": "v2"
+  },
+  {
+    "id": "2610.37666",
+    "short": "ThinkWorld",
+    "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+    "date": "2026-10-28",
+    "tags": [
+      "VLA",
+      "motion-token",
+      "future-feature",
+      "offline-RL",
+      "human-video"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.37666",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.37666",
+    "version": "v1",
+    "first_archived": "2026-11-02",
+    "directory": "papers/2610.37666-ThinkWorld"
+  },
+  {
+    "id": "2610.38000",
+    "short": "SPT",
+    "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+    "date": "2026-10-28",
+    "tags": [
+      "VLA",
+      "preference-transfer",
+      "self-labeling",
+      "multitask-training"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.38000",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.38000",
+    "version": "v1",
+    "first_archived": "2026-11-02",
+    "directory": "papers/2610.38000-SPT"
   },
   {
     "id": "2610.39280",
@@ -202,5 +238,22 @@
     "version": "v1",
     "first_archived": "2026-10-31",
     "directory": "papers/2610.40401-CoAWM"
+  },
+  {
+    "id": "2610.40430",
+    "short": "DEED",
+    "title": "Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design",
+    "date": "2026-10-30",
+    "tags": [
+      "data-augmentation",
+      "instruction-grounding",
+      "VLA",
+      "execution-design"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40430",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40430",
+    "version": "v1",
+    "first_archived": "2026-11-02",
+    "directory": "papers/2610.40430-DEED"
   }
 ]

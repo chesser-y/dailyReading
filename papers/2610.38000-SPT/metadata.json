@@ -1,0 +1,53 @@
+{
+  "id": "2610.38000",
+  "short": "SPT",
+  "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+  "date": "2026-10-28",
+  "submitted_at": "2026-10-28T05:51:38+08:00",
+  "tags": [
+    "VLA",
+    "preference-transfer",
+    "self-labeling",
+    "multitask-training"
+  ],
+  "read": "选读原文III问题、IV方法及V实验/消融、VI结论局限；核查表II正文与摘要数值差异；已读alphaXiv zh AI概述正文。未核查实现或复现实验。",
+  "abstract": "SPT用同一个视觉语言主干联合学习偏好条件动作预测与示范偏好识别，再冻结识别器，为没有偏好标签的目标示范打标签，并微调可训练策略副本。它缓解任务适应提高成功率却削弱偏好控制的问题；仍需目标示范包含所要求的行为，且偏好词汇表来自源任务。部署仅运行带偏好提示的动作策略。",
+  "intro": "统一理解与行动任务能否直接服务数据标注，而不仅作为泛泛的辅助损失？SPT把语言识别能力固定下来，为新任务的动作监督恢复行为条件，有明确的同初始化与乱标签对照。",
+  "method": "阶段A：源任务带偏好示范 → 共享Qwen3-VL-4B主干 → 动作MLP预测与LM head单token偏好识别联合训练。阶段B：冻结识别器副本读取目标示范片段/末端状态 → 缓存偏好标签 → 将标签追加到指令 → 微调策略副本。部署：当前图像＋任务/偏好指令 → 动作块，不调用识别器。",
+  "design": "仿真策略用三视角224×224图像，无本体状态输入，残差MLP以L1损失预测50步14维关节动作。识别器另接三帧头部视图和每帧9维末端状态token。源联合损失中识别权重0.5，训练10000步；目标100条示范适应1500步，batch64；冻结标签器，目标阶段只用动作损失，不持续自改标签。",
+  "evidence": "RoboTwin2.0五种二元偏好，每轴一个留出任务。三训练种子，每种子每命令50次，先平均两命令再种子：正文表II偏好遵循59.4→83.8%，任务成功88.0→89.2%；摘要84.8%与正文不一致，本笔记采用正文。UR5e两个任务迁移、每命令10次共40次：偏好21/40→37/40，任务36/40→38/40。",
+  "limits": "目标示范必须已有相应行为；固定词表以二元偏好为主，不是开放词汇偏好学习。双偏好四种组合均出现在训练中，不能称未见组合泛化。识别器与零样本VLM的对比输入和初始化不同，不能纯归因于偏好训练。部分维度任务成功率下降，须同时报告行为控制与完成率。",
+  "inference": "本项目推断：让统一模型在源示范上既预测动作又回答轨迹属性问题，再冻结标签器为目标动作加条件；用同阶段A初始化、同目标示范和步数，对比裸指令、正确伪标签、打乱标签，评估任务成功、偏好遵循和联合成功。",
+  "alpha": "已核实zh AI概述正文。概述提醒摘要84.8%与正文83.8%不一致，并指出任务成功、偏好遵循和两者同时满足是不同指标；本项目回查表II及V-C确认，采用83.8%。这里保存独立提炼。",
+  "availability": "原文可访问；本次原文与定向检索未取得作者官方代码、权重、标注示范发布入口。所用StarVLA/Qwen基础组件的公开性不代表SPT训练产物已发布；训练总费用未核实。",
+  "extra_sources": [],
+  "directory": "papers/2610.38000-SPT",
+  "version": "v1",
+  "first_archived": "2026-11-02",
+  "arxiv": "https://arxiv.org/abs/2610.38000",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.38000",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已核查并读取zh AI概述中文正文；独立提炼，非全文转载",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-02T09:43:33+08:00",
+  "alphaxiv_checked_at": "2026-11-02T09:43:40+08:00",
+  "source_html_sha256": "31c163759b82fad9fe509cb890569bfceb115b4cc35debc0455fec1e56b1ab97",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 2,
+      "source": "https://arxiv.org/html/2610.38000v1/method.png",
+      "caption": "Figure 2：源阶段共享主干联合学习，目标阶段冻结标签器副本并适应策略副本。图示不能理解为微调时一边更新标签器一边反复重打标签。",
+      "source_image_sha256": "25686341f7316425b8296e87df723767a8c29e06664c3288279c72c8024e1bf3",
+      "asset_sha256": "c04ad8bdafea4c2e989570e4d2c293f149580c370ebe1df21a8604e5d28715cc",
+      "version": "v1",
+      "page": null,
+      "box_pt": null,
+      "captured_at": "2026-11-02T09:47:13+08:00"
+    }
+  ]
+}

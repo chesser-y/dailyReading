@@ -1,0 +1,18 @@
+{
+  "id": "lerobot/Cosmos3-Nano",
+  "source": "https://huggingface.co/lerobot/Cosmos3-Nano",
+  "history": "https://huggingface.co/lerobot/Cosmos3-Nano/commits/main",
+  "checked_at": "2026-11-02T09:49:53+08:00",
+  "weight_conversion_uploaded_at": "2026-10-29T22:31:28+08:00",
+  "weight_conversion_commit": "f56938d",
+  "latest_docs_change_at": "2026-11-02T02:55:18+08:00",
+  "latest_docs_commit": "584b19243bb610e0cd85cc3aad14d20615a5b565",
+  "change": "canonical Cosmos3 repository name documentation only; not a new model-weight release",
+  "scope": "已读官方模型卡和提交历史；未下载权重或核查实现",
+  "notes": "联合动作/未来video-latent的LeRobot基模转换，不含任务微调或闭环成功率；DROID和LIBERO入口使用不同配方。",
+  "latest_docs_diff_source": "https://huggingface.co/lerobot/Cosmos3-Nano/commit/584b19243bb610e0cd85cc3aad14d20615a5b565",
+  "diff_checked_at": "2026-11-02T09:55:34+08:00",
+  "changed_files": [
+    "README.md"
+  ]
+}

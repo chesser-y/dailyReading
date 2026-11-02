@@ -1,0 +1,62 @@
+{
+  "id": "2610.40430",
+  "short": "DEED",
+  "title": "Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design",
+  "date": "2026-10-30",
+  "submitted_at": "2026-10-30T00:51:45+08:00",
+  "tags": [
+    "data-augmentation",
+    "instruction-grounding",
+    "VLA",
+    "execution-design"
+  ],
+  "read": "选读原文1至3节问题、数据/执行方法和全部主要实验；已读alphaXiv zh AI概述正文。未核查作者实现或独立复现，官方榜单值按论文报告注明。",
+  "abstract": "DEED围绕Xiaomi-Robotics-1适配MetaFine五项任务：在相同初始场景生成不同指令的物理轨迹，对同一轨迹改变相机/光照重渲染，再以分层采样训练；部署分别选执行前缀、去噪预算和夹爪映射。它展示数据设计与执行转换能显著影响系统结果，未提出新策略主干，也未单独隔离每个训练组件的贡献。",
+  "intro": "细粒度操作可能同时受场景—指令捷径、视觉覆盖和控制接口影响。该工作提供低成本、可控的对照思路：保持状态/动作标签对齐，改变观察形成方式，并固定权重考察执行设置。",
+  "method": "同一初始物理场景＋不同指令 → 专家生成成功轨迹；逐帧恢复物理状态 → 相机/光照重渲染、状态和动作保持不变 → 分层采样适配Xiaomi-Robotics-1 → 双视角RGB＋状态＋指令预测30步末端动作 → 坐标变换、IK、任务夹爪映射 → 执行H步再观测。",
+  "design": "先抽增强类别、指令、基础轨迹，再抽渲染副本和窗口，防止副本多的轨迹被过度加权。指令族仅在全部变体成功时保留，可能排除困难初始场景。T5有2800条不同成功轨迹与7840份记录，其中2000条新动作来自500个四指令场景；记录数不能当作独立物理轨迹数。H、去噪步数与夹爪阈值按任务选择，T3保留连续夹爪值。",
+  "evidence": "原文报告MetaFine官方Overall85.55%，已发布π0基线43.01%；该指标先平均每任务的感知AUSC/理解/行为，再跨五任务平均，不是统一episode成功率，也不是匹配训练消融。固定策略T1：H=10/25/5的池化SR90.19/80.93/81.30%，每H60场景540回合；更短前缀并不总更好。",
+  "limits": "只覆盖模拟MetaFine五任务，不能推为真机通用细操作能力。执行扫描共享scene seed，但环境复用导致后续初始状态可能不同，H还改变按块索引噪声调度，因此不是完全配对因果检验。整体榜单差距混合数据、适配与执行配置，不能把42.54个百分点归到某一组件。",
+  "inference": "本项目推断：先审计自己的指令是否与场景seed绑定；为一组相同初始状态保留完整多指令族，重渲染时验证动作标签不变，再固定权重扫描执行前缀。记录端到端闭环指标，且把不同去噪/夹爪配置列为评测条件。",
+  "alpha": "已核实zh AI概述正文。概述把85.55%的复合Overall与局部SR分开，解释分层采样及状态—动作一致重渲染，并提醒扫描中的初始状态/噪声变化限制因果解释。这里为本项目中文提炼。",
+  "availability": "原文链接官方MetaFine评测仓库/数据、排行榜和Xiaomi基模仓库；这些为基准和上游资源。本次未取得DEED专属适配代码、训练后权重或扩展数据发布链接，不将上游开源等同本方案已复现。",
+  "extra_sources": [
+    [
+      "MetaFine基准仓库",
+      "https://github.com/Hiangx-robotics/MetaFine-Challenge_CoRL"
+    ],
+    [
+      "原文所列官方数据",
+      "https://huggingface.co/datasets/hiangx/MetaFine_CoRL26"
+    ]
+  ],
+  "directory": "papers/2610.40430-DEED",
+  "version": "v1",
+  "first_archived": "2026-11-02",
+  "arxiv": "https://arxiv.org/abs/2610.40430",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40430",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已核查并读取zh AI概述中文正文；独立提炼，非全文转载",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-02T09:43:40+08:00",
+  "alphaxiv_checked_at": "2026-11-02T09:43:45+08:00",
+  "source_html_sha256": "ff818f02fae14ce1bcda9206c3bfac9db4fb38e1593f115bb0591bd0854f7e75",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 1,
+      "source": "https://arxiv.org/html/2610.40430v1/pipeline_graph.png",
+      "caption": "Figure 1：指令配对、同轨迹视觉重渲染、适配模型，以及任务相关的IK/夹爪映射和闭环执行。",
+      "source_image_sha256": "0b5f800140cb8d0883985b5cff25632b0a86c0053a8903bc3e97fe3e82b6d326",
+      "asset_sha256": "5ae6a5ebbe260db7a4627a71d9d5c787a1d413f02b4f9863388413e40f946535",
+      "version": "v1",
+      "page": null,
+      "box_pt": null,
+      "captured_at": "2026-11-02T09:47:14+08:00"
+    }
+  ]
+}
