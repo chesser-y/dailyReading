@@ -1,0 +1,59 @@
+{
+  "id": "2610.40748",
+  "short": "WorldBridge",
+  "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+  "date": "2026-10-30",
+  "submitted_at": "2026-10-30T00:00:06+08:00",
+  "tags": [
+    "WAM",
+    "video-action",
+    "task-generalization",
+    "cross-embodiment"
+  ],
+  "read": "选读原文2.1架构、记忆与注意力/动作forcing，2.2数据处理相关部分、2.3.3训练配方、2.4效率，以及3.1任务泛化表2和3.3真机/延迟结果；已读alphaXiv zh AI概述中文正文及作者项目页。未通读全部附录、核查实现或复现。",
+  "abstract": "WorldBridge以视频与动作两个专家联合flow matching，利用分阶段注意力结构让未来视觉潜变量向动作传递信息；共享46维语义槽位及有效性掩码承接不同机器人和人体数据。RoboTwin2.0固定任务划分中，加入无动作标签的留出任务视频明显提高成功率，再加入少量配对动作进一步改善。证据支持视频覆盖与动作落地互补，但不证明视频单独足够或某个逆动力学机制是唯一解释。",
+  "intro": "世界模型能预测某个任务的视觉未来，却未必知道怎样把它转为机器人控制。该工作将“知道未来”和“能执行动作”的差距具体化为视频监督与少量动作监督的配比问题，值得借鉴其受控任务泛化实验。",
+  "method": "语言＋当前/历史图像＋可用状态 → T5与视频VAE编码 → 视频/动作MoT专家联合去噪未来潜变量和动作块 → 输出连续动作。预训练视频不读动作、动作可读视频；后训练形成历史→当前→未来→动作的信息路径。部署仍计算未来潜变量分支，但不必解码未来RGB。",
+  "design": "两种时间尺度各取4帧记忆。共享46维槽位包括双臂关节14、末端位姿14、夹爪2、灵巧手12、腰部4；缺失维度通过有效性掩码处理，不能视作零动作标签。自我中心人体腕部转换到固定的当前相机坐标。action forcing在一个动作块内采用不同噪声等级训练、推理共享时间步；论文列出的预训练配方关闭此项，不应说所有阶段都启用。",
+  "evidence": "RoboTwin2.0固定ID/OOD任务划分，ID视频/动作均550条每任务保持不变：OOD视频0/动作0时成功25.07%；550段视频/无动作55.90%；550段视频/每任务1条动作70.70%；20条动作90.03%。具体任务数和每条件rollout数在本次阅读范围未披露。留出是相对该任务划分，不等于证明任务从未出现在所有预训练数据。",
+  "limits": "完整方法混合预训练、数据对齐、记忆和注意力设计，不宜把总收益只归于视频预测。每个真机平台另作微调，不是同一策略零样本跨所有机器人。效率测量排除若干输入处理与通信，不能等同控制频率；训练总费用未核实。代码、权重和本工作整理数据的下载入口未取得。",
+  "inference": "本项目推断：固定动作示范预算与初始化，比较无额外视频、加入同任务无动作视频、再加入少量配对动作；同时记录未来动态区域误差、动作误差与闭环成功。加入打乱视频—任务对应的对照，判断收益来自覆盖、语义匹配还是增加训练量。",
+  "alpha": "已读取zh AI概述中文正文。其问题框架是视频预测与动作执行的落差，重点解释分阶段注意力、语义动作槽位和视频/动作监督互补。这里为独立中文提炼；有关泛化、速度与开放状态仍以论文和作者页面核查为准。",
+  "availability": "作者项目页可访问，检查到论文与展示资源，但未取得官方代码、权重或本工作数据的可下载发布入口。使用公开上游数据不等于新训练混合已发布；未核查实现，训练总成本未核实。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://worldbridge-jd.github.io/"
+    ]
+  ],
+  "directory": "papers/2610.40748-WorldBridge",
+  "version": "v1",
+  "first_archived": "2026-11-03",
+  "arxiv": "https://arxiv.org/abs/2610.40748",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40748",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取zh AI概述中文正文；独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-03T10:53:59+08:00",
+  "alphaxiv_checked_at": "2026-11-03T10:53:59+08:00",
+  "source_html_sha256": "1ec09a21284b03cc94ef60a5e320725650021e85405d7f39102f8c38c03b97bc",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 3,
+      "source": "https://arxiv.org/html/2610.40748v1/model.png",
+      "caption": "Figure 3：视频/动作专家、分阶段注意力及46维动作槽位。预训练与后训练的可见性不同；图中联合预测不等于部署时必须生成未来RGB。",
+      "source_image_sha256": "c67e6e3cb635aac1020ce97761bd4432c4b895ece150fb27184562f9dcbb60f6",
+      "asset_sha256": "c6a841df98e6a5079a007586da677b0278adb7e60b6d675822902e62fd12fca8",
+      "version": "v1",
+      "page": null,
+      "box_pt": null,
+      "captured_at": "2026-11-03T10:56:25+08:00",
+      "visual_check": "内容、边界与清晰度已目视核查"
+    }
+  ]
+}

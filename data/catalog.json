@@ -152,7 +152,8 @@
     "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.39280",
     "version": "v1",
     "first_archived": "2026-11-01",
-    "directory": "papers/2610.39280-Cross-Controller"
+    "directory": "papers/2610.39280-Cross-Controller",
+    "latest_observed_version": "v2"
   },
   {
     "id": "2610.39721",
@@ -255,5 +256,56 @@
     "version": "v1",
     "first_archived": "2026-11-02",
     "directory": "papers/2610.40430-DEED"
+  },
+  {
+    "id": "2610.40748",
+    "short": "WorldBridge",
+    "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+    "date": "2026-10-30",
+    "tags": [
+      "WAM",
+      "video-action",
+      "task-generalization",
+      "cross-embodiment"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.40748",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.40748",
+    "version": "v1",
+    "first_archived": "2026-11-03",
+    "directory": "papers/2610.40748-WorldBridge"
+  },
+  {
+    "id": "2610.41009",
+    "short": "STAR",
+    "title": "STAR: Steering Action Representations during Inference",
+    "date": "2026-10-30",
+    "tags": [
+      "VLA",
+      "inference-time-adaptation",
+      "proprioception",
+      "representation"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.41009",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.41009",
+    "version": "v1",
+    "first_archived": "2026-11-03",
+    "directory": "papers/2610.41009-STAR"
+  },
+  {
+    "id": "2610.42096",
+    "short": "CausalWAM",
+    "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
+    "date": "2026-10-31",
+    "tags": [
+      "WAM",
+      "causal-representation",
+      "sparse-routing",
+      "post-training"
+    ],
+    "arxiv": "https://arxiv.org/abs/2610.42096",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.42096",
+    "version": "v1",
+    "first_archived": "2026-11-03",
+    "directory": "papers/2610.42096-CausalWAM"
   }
 ]

@@ -59,5 +59,24 @@
   ],
   "source_html_sha256": "436f925578b44656b494804d106279e26b79c6d2a695c690bd62b5a1a59d6629",
   "alphaxiv_checked_at": "2026-11-01T07:07:50+08:00",
-  "date_timezone": "Asia/Shanghai"
+  "date_timezone": "Asia/Shanghai",
+  "latest_observed_version": "v2",
+  "version_checks": [
+    {
+      "observed_at": "2026-11-03T10:58:40+08:00",
+      "version": "v2",
+      "submitted_at": "2026-10-31T07:28:30+08:00",
+      "update_type": "acknowledgements_revision_backfill",
+      "compared_sources": {
+        "v1": "https://arxiv.org/html/2610.39280v1",
+        "v2": "https://arxiv.org/html/2610.39280v2"
+      },
+      "source_html_sha256": {
+        "v1": "436f925578b44656b494804d106279e26b79c6d2a695c690bd62b5a1a59d6629",
+        "v2": "d18ad4668136bb0e90a05732d1a9277ce838c7fe172a0b28237a6c925e7476a1"
+      },
+      "scope": "可访问HTML提取文本差异；不覆盖PDF版面或图像二进制",
+      "result": "新增VIII Acknowledgements及对应目录/版本页眉；所查方法、结果正文未变，保留v1报告/图像。"
+    }
+  ]
 }

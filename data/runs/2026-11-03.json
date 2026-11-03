@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-03",
+  "search_window_start": "2026-11-02T09:49:53+08:00",
+  "search_cutoff": "2026-11-03T10:58:40+08:00",
+  "overlap_window_start": "2026-10-27T10:58:40+08:00",
+  "selected": [
+    "2610.40748",
+    "2610.41009",
+    "2610.42096"
+  ],
+  "update_type": "first publication backfill; new to archive, submitted earlier",
+  "dedup_against": [
+    "2610.34356",
+    "2610.36011",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381",
+    "2610.37666",
+    "2610.38000",
+    "2610.39280",
+    "2610.39721",
+    "2610.40207",
+    "2610.40210",
+    "2610.40271",
+    "2610.40401",
+    "2610.40430"
+  ],
+  "zh_overview_status": {
+    "2610.40748": "已读取zh AI概述中文正文；独立提炼",
+    "2610.41009": "zh入口显示暂无概述；摘要为英文，中文版AI概述未取得",
+    "2610.42096": "已读取zh AI概述中文正文；独立提炼"
+  },
+  "history_rechecks": {
+    "2610.34356": "v1 only",
+    "2610.36011": "v1 only",
+    "2610.36068": "v1 only",
+    "2610.36791": "v1 only",
+    "2610.37091": "v1 only",
+    "2610.37381": "v2 already known",
+    "2610.37666": "v1 only",
+    "2610.38000": "v1 only",
+    "2610.39280": "v2 newly observed, acknowledgements only in extracted HTML",
+    "2610.39721": "v1 only",
+    "2610.40207": "v1 only",
+    "2610.40210": "v1 only",
+    "2610.40271": "v1 only",
+    "2610.40401": "v1 only",
+    "2610.40430": "v1 only"
+  },
+  "revision_check": {
+    "observed_at": "2026-11-03T10:58:40+08:00",
+    "version": "v2",
+    "submitted_at": "2026-10-31T07:28:30+08:00",
+    "update_type": "acknowledgements_revision_backfill",
+    "compared_sources": {
+      "v1": "https://arxiv.org/html/2610.39280v1",
+      "v2": "https://arxiv.org/html/2610.39280v2"
+    },
+    "source_html_sha256": {
+      "v1": "436f925578b44656b494804d106279e26b79c6d2a695c690bd62b5a1a59d6629",
+      "v2": "d18ad4668136bb0e90a05732d1a9277ce838c7fe172a0b28237a6c925e7476a1"
+    },
+    "scope": "可访问HTML提取文本差异；不覆盖PDF版面或图像二进制",
+    "result": "新增VIII Acknowledgements及对应目录/版本页眉；所查方法、结果正文未变，保留v1报告/图像。"
+  },
+  "source_gaps": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接",
+      "last_checked_at": "2026-11-03T10:58:40+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    },
+    {
+      "id": "2610.39280",
+      "url": "https://github.com/JonathanYang0127/icl_cross_controller",
+      "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
+      "checked_at": "2026-11-01T07:10:01+08:00",
+      "last_checked_at": "2026-11-03T10:58:40+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.41009",
+      "source": "https://www.alphaxiv.org/zh/abs/2610.41009",
+      "status": "暂无AI概述；摘要英文，中文版未取得",
+      "last_checked_at": "2026-11-03T10:54:00+08:00"
+    }
+  ],
+  "discovery_methods": [
+    "English keyword combinations: vision language action, robot foundation model, robot world model, unified multimodal action prediction, flow matching robot policy, action tokenization, cross embodiment generalization, inference adaptation",
+    "arXiv cs.RO new/recent: new list labeled Monday 2026-11-02, 110 entries",
+    "arXiv version histories, author project and official GitHub README",
+    "alphaXiv zh actual body checked; STAR absence distinguished from interface language"
+  ],
+  "omitted_candidates": [
+    "2610.41625 RTPolicy",
+    "2610.42021 Nexus-VLA",
+    "2610.41643 Direct Action-Manifold Modeling",
+    "2610.41663 ResMerge",
+    "2610.41857 simulator failure attribution"
+  ],
+  "publication": "Commit/push independently verified after validation; no advance claim of success."
+}

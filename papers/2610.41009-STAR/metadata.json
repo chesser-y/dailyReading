@@ -1,0 +1,63 @@
+{
+  "id": "2610.41009",
+  "short": "STAR",
+  "title": "STAR: Steering Action Representations during Inference",
+  "date": "2026-10-30",
+  "submitted_at": "2026-10-30T05:42:17+08:00",
+  "tags": [
+    "VLA",
+    "inference-time-adaptation",
+    "proprioception",
+    "representation"
+  ],
+  "read": "选读原文第3节机制、第4节主实验/协议和4.5真机结果、图1诊断；已读官方仓库README，未检查实现或运行代码。已检查alphaXiv zh页面，但AI概述缺失，不能声称已读中文版。",
+  "abstract": "STAR不更新策略权重，而是在主干靠后层对残差更新沿网络深度做指数平滑，用过去本体状态产生的运动连续性与突变信号调节混合强度。它尝试缓解深层表征偏离任务物体的问题。多个原生VLA设置的平均成绩提高，但若干分布变化子集下降；不是沿时间平滑输出动作，也不保证任意模型都改善。",
+  "intro": "统一模型的语义能力未必持续保留到最后的动作表示。STAR提供推理时可插入的层内干预，用机器人自身运动信号调节深度残差，适合作为冻结模型的低成本对照。",
+  "method": "图像＋任务及原生策略输入 → 冻结VLA主干 → 最后三分之一层对残差增量沿深度做EMA → 原生动作头输出动作。过去本体状态 → 平移方向连续性/尺度、平移突变和旋转变化 → 滚动归一化及有界sigmoid → 当前混合系数β；不需要额外VLM前向。",
+  "design": "深度递推为m_k=β_t m_(k−1)+(1−β_t)Δh_k，再将平滑增量加入上一层隐藏状态；它不累积过去时刻的动作。ρ=2/3之前层不干预。连续平稳运动倾向增强混合，突变/转向时更保守；采用仅依赖过去的滚动中位数/IQR统计与有界调度。物体遮挡前后的隐藏范数差仅作物体感知诊断，不是因果能力证明。",
+  "evidence": "LIBERO-PRO π0.5五个10任务划分、每任务50回合，共2500回合：论文表2和正文平均48.2→50.1%；task子集6.8→18.8%，language/swap/environment下降。官方README写50.4%，与原文不一致；本笔记采用50.1%，原因未核实。真机同一微调检查点的梨入碗17/40→19/40，仅多2次成功。",
+  "limits": "training-free仅指STAR插入时不训练，基策略仍需训练/适配。真机小样本不足以声称稳定显著提升；不同主干的任务和协议不完全相同，不横向排名。层区间与本体评分是启发式，不代表无需配置。alphaXiv zh未取得中文AI概述。",
+  "inference": "本项目推断：先在固定模型、rollout seed和预算下比较原生、常数β、过去本体自适应β；分接近/接触/撤回阶段报告成功和动作突变，检验动态调度是否优于普通残差扰动。不要将深度EMA替换为时间动作平均后仍称复现STAR。",
+  "alpha": "中文版AI概述未取得：zh页面实际显示“暂无概述”，摘要仍为英文。没有把英文摘要或本项目解读冒充alphaXiv中文原文；本篇中文介绍来自已选读论文。",
+  "availability": "官方STAR仓库公开，README明确只提供OpenPI/π0.5的LIBERO-PRO路径；OpenVLA、GR00T、SimplerEnv和真机代码不在此发布范围。检查点使用既有pi05_libero入口，未核实STAR独立权重或新数据下载。仅读README，未核查实现。",
+  "extra_sources": [
+    [
+      "官方仓库",
+      "https://github.com/PKU-VaLuE-Lab/STAR"
+    ],
+    [
+      "仓库README",
+      "https://github.com/PKU-VaLuE-Lab/STAR/blob/main/README.md"
+    ]
+  ],
+  "directory": "papers/2610.41009-STAR",
+  "version": "v1",
+  "first_archived": "2026-11-03",
+  "arxiv": "https://arxiv.org/abs/2610.41009",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2610.41009",
+  "alphaxiv_language": null,
+  "alpha_summary_source_language": null,
+  "alphaxiv_status": "zh入口显示暂无概述；摘要为英文，中文版AI概述未取得",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-03T10:53:59+08:00",
+  "alphaxiv_checked_at": "2026-11-03T10:54:00+08:00",
+  "source_html_sha256": "efd7f9b9709da1f773d27de5e699487f09e61ba39f3bb41de05192e446e333d6",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 1,
+      "source": "https://arxiv.org/html/2610.41009v1/motivation.png",
+      "caption": "Figure 1：隐藏状态与物体感知诊断、例子及成功率。物体遮挡是诊断工具，不是策略每次部署的必需输入；π0.5结果采用图/表中的50.1%，保留与仓库50.4%的差异。",
+      "source_image_sha256": "2b75f82b09acd26b4ab0baa285094501598a2aba9becc3a6b2412373935b2abe",
+      "asset_sha256": "2d3e68c585e18993b1265b593029aadce4307624ec5ee16eb0bb2c958354065f",
+      "version": "v1",
+      "page": null,
+      "box_pt": null,
+      "captured_at": "2026-11-03T10:56:25+08:00",
+      "visual_check": "内容、边界与清晰度已目视核查"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-02",
-  "last_successful_search_cutoff": "2026-11-02T09:49:53+08:00",
+  "last_report": "2026-11-03",
+  "last_successful_search_cutoff": "2026-11-03T10:58:40+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.34356",
@@ -18,16 +18,19 @@
     "2610.40210",
     "2610.40271",
     "2610.40401",
-    "2610.40430"
+    "2610.40430",
+    "2610.40748",
+    "2610.41009",
+    "2610.42096"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-02四份日报及版本检查记录，按arXiv ID去重",
-  "notes": "本期3篇近7天首发补漏；PDRVLA v2为引文格式修订补查，未作为新研究重复报告。Cosmos转换发布来源补查完成；检索和发布独立核验。",
+  "history_scope": "本仓库2026-10-30至2026-11-03五份日报及版本记录，按arXiv ID去重",
+  "notes": "本期3篇近7天首次归档；Cross-Controller v2仅新增致谢，不作新研究重复报告。STAR zh AI概述缺失，待补查。检索与Git发布状态独立核验。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
       "source": "https://github.com/Untitled-W/WorldProbe",
       "status": "404，需后续核对发布链接",
-      "last_checked_at": "2026-11-02T09:49:53+08:00",
+      "last_checked_at": "2026-11-03T10:58:40+08:00",
       "last_result": "GitHub connector repository query: 404"
     },
     {
@@ -40,11 +43,17 @@
       "url": "https://github.com/JonathanYang0127/icl_cross_controller",
       "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
       "checked_at": "2026-11-01T07:10:01+08:00",
-      "last_checked_at": "2026-11-02T09:49:53+08:00",
+      "last_checked_at": "2026-11-03T10:58:40+08:00",
       "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.41009",
+      "source": "https://www.alphaxiv.org/zh/abs/2610.41009",
+      "status": "暂无AI概述；摘要英文，中文版未取得",
+      "last_checked_at": "2026-11-03T10:54:00+08:00"
     }
   ],
-  "source_coverage": "多组英文检索、arXiv列表、12篇历史及3篇原文/zh概述；发布渠道非穷尽。Cosmos模型卡/提交历史已取得，未下载权重。",
+  "source_coverage": "多组英文检索、11-02 arXiv新列表、15篇历史版本、3篇原文与zh页面；2篇中文AI概述、1篇缺失。官方发布入口检查非穷尽。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
@@ -53,6 +62,7 @@
     }
   ],
   "observed_versions": {
-    "2610.37381": "v2"
+    "2610.37381": "v2",
+    "2610.39280": "v2"
   }
 }

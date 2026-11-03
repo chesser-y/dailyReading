@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-03 日报](reports/2026/11/03.md)：WorldBridge视频/动作监督互补、CausalWAM动作相关状态、STAR推理表征；补查Cross-Controller v2。STAR中文版概述暂缺。
+
 [2026-11-02 日报](reports/2026/11/02.md)：ThinkWorld世界一致性训练、SPT偏好自标注、DEED数据与执行设计；另补查PDRVLA v2与Cosmos3转换记录。
 
 [2026-11-01 日报](reports/2026/11/01.md)：E0.5未来几何目标、Cross-Controller交互上下文与AcrossDEX动作块连续性；三篇近7天补漏，均已读zh概述。
@@ -29,6 +31,9 @@
 - [2610.40271 · GAR](papers/2610.40271-GAR/README.md)
 - [2610.40401 · CoAWM](papers/2610.40401-CoAWM/README.md)
 - [2610.40430 · DEED](papers/2610.40430-DEED/README.md)
+- [2610.40748 · WorldBridge](papers/2610.40748-WorldBridge/README.md)
+- [2610.41009 · STAR](papers/2610.41009-STAR/README.md)
+- [2610.42096 · CausalWAM](papers/2610.42096-CausalWAM/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
 

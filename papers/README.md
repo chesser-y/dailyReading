@@ -19,3 +19,6 @@
 - [2610.40271 · GAR](2610.40271-GAR/README.md) — Gaussian Distillation of Flow Policies
 - [2610.40401 · CoAWM](2610.40401-CoAWM/README.md) — Continuous-Action World Models: Learning Cross-Embodiment Spatiotemporal Dynamics Priors
 - [2610.40430 · DEED](2610.40430-DEED/README.md) — Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design
+- [2610.40748 · WorldBridge](2610.40748-WorldBridge/README.md) — WorldBridge: Bridging Video and Action for Task Generalization in World Action Models
+- [2610.41009 · STAR](2610.41009-STAR/README.md) — STAR: Steering Action Representations during Inference
+- [2610.42096 · CausalWAM](2610.42096-CausalWAM/README.md) — CausalWAM: Learning the Causes of Actions in World Action Models
