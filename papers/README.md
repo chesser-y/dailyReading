@@ -22,3 +22,6 @@
 - [2610.40748 · WorldBridge](2610.40748-WorldBridge/README.md) — WorldBridge: Bridging Video and Action for Task Generalization in World Action Models
 - [2610.41009 · STAR](2610.41009-STAR/README.md) — STAR: Steering Action Representations during Inference
 - [2610.42096 · CausalWAM](2610.42096-CausalWAM/README.md) — CausalWAM: Learning the Causes of Actions in World Action Models
+- [2611.01215 · JADE](2611.01215-JADE/README.md) — Vision-Language Models Are Joint Denoisers in Robotic Action Generation
+- [2611.02600 · W2A](2611.02600-W2A/README.md) — W2A: Distilling World Priors into Action Models for Real-Time Robotic Control
+- [2611.02777 · REPAIR](2611.02777-REPAIR/README.md) — Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies

@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-04",
+  "search_window_start": "2026-11-03T10:58:40+08:00",
+  "search_cutoff": "2026-11-04T10:17:55+08:00",
+  "overlap_window_start": "2026-10-28T10:17:55+08:00",
+  "selected": [
+    "2611.01215",
+    "2611.02600",
+    "2611.02777"
+  ],
+  "release_updates": [
+    "lerobot/Cosmos3-Nano-Policy-LIBERO_10"
+  ],
+  "dedup_against": [
+    "2610.34356",
+    "2610.36011",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381",
+    "2610.37666",
+    "2610.38000",
+    "2610.39280",
+    "2610.39721",
+    "2610.40207",
+    "2610.40210",
+    "2610.40271",
+    "2610.40401",
+    "2610.40430",
+    "2610.40748",
+    "2610.41009",
+    "2610.42096"
+  ],
+  "update_type": "three first-publication backfills plus one new weight release",
+  "zh_overview_status": "3 actual Chinese AI概述 bodies read; STAR remains absent",
+  "history_rechecks": {
+    "2610.34356": "v2 newly observed, result consistency correction",
+    "2610.36011": "v1 only",
+    "2610.36068": "v1 only",
+    "2610.36791": "v1 only",
+    "2610.37091": "v1 only",
+    "2610.37381": "v2 already known",
+    "2610.37666": "v1 only",
+    "2610.38000": "v1 only",
+    "2610.39280": "v2 already known",
+    "2610.39721": "v1 only",
+    "2610.40207": "v1 only",
+    "2610.40210": "v1 only",
+    "2610.40271": "v1 only",
+    "2610.40401": "v1 only",
+    "2610.40430": "v1 only",
+    "2610.40748": "v1 only",
+    "2610.41009": "v1 only",
+    "2610.42096": "v1 only"
+  },
+  "revision_check": {
+    "observed_at": "2026-11-04T10:17:55+08:00",
+    "version": "v2",
+    "submitted_at": "2026-11-01T16:18:05+08:00",
+    "update_type": "reported_result_consistency_correction_backfill",
+    "compared_sources": {
+      "v1": "https://arxiv.org/html/2610.34356v1",
+      "v2": "https://arxiv.org/html/2610.34356v2"
+    },
+    "source_html_sha256": {
+      "v1": "434eadada532ac543d71905c833bcd0763621da98f9e6fa20b889c5f4b51edec",
+      "v2": "22153851fa696f35e19f1f9de6ee15d906331fac0ab258dc0a8cc8e804dfb013"
+    },
+    "scope": "可访问HTML文本比较与关键结果回查；未比较PDF版式/图像二进制或代码",
+    "result": "引言与结论RoboTwin Native平均88.3%改88.6%，与已有摘要/表对应；另有作者排序、引用格式和页眉变化。未据此主张新训练或新实验证据。"
+  },
+  "release_record": "data/source-checks/2026-11-04-cosmos-libero10.json",
+  "source_gaps": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接",
+      "last_checked_at": "2026-11-04T10:17:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    },
+    {
+      "id": "2610.39280",
+      "url": "https://github.com/JonathanYang0127/icl_cross_controller",
+      "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
+      "checked_at": "2026-11-01T07:10:01+08:00",
+      "last_checked_at": "2026-11-04T10:17:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.41009",
+      "source": "https://www.alphaxiv.org/zh/abs/2610.41009",
+      "status": "zh页面仍显示暂无AI概述；摘要英文",
+      "last_checked_at": "2026-11-04T07:14:31+08:00"
+    },
+    {
+      "id": "2611.01215",
+      "source": "https://github.com/gxccc123/JADE",
+      "status": "仓库/README查询404，发布待核实",
+      "last_checked_at": "2026-11-04T10:17:55+08:00"
+    },
+    {
+      "id": "2611.02600",
+      "source": "arXiv PDF v1",
+      "status": "下载内容缺少有效尾部，解析Unexpected EOF；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.02777",
+      "source": "arXiv PDF v1",
+      "status": "下载超时；已用HTML及官方原图"
+    }
+  ],
+  "discovery_methods": [
+    "English combinations: vision language action, robot foundation model, world action model, unified multimodal action prediction, flow matching robot policy, latent action, post training",
+    "arXiv cs.RO new list dated 2026-11-03: 129 new submissions, 218 total entries; recent and historical version pages",
+    "official author project pages, GitHub repository checks, Hugging Face model card/files/commit history",
+    "alphaXiv zh body language and missing-overview check"
+  ],
+  "omitted_candidates": [
+    "2611.01729 ODE Policy",
+    "2611.03585 WISE",
+    "2611.01844 OpenNWM",
+    "2611.02930 PointPilot",
+    "2611.03103 VLALagBench",
+    "2611.00524 Reflex"
+  ],
+  "publication": "Validated commit and push are verified independently after archive creation; no advance success claim."
+}

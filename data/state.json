@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-03",
-  "last_successful_search_cutoff": "2026-11-03T10:58:40+08:00",
+  "last_report": "2026-11-04",
+  "last_successful_search_cutoff": "2026-11-04T10:17:55+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.34356",
@@ -21,16 +21,19 @@
     "2610.40430",
     "2610.40748",
     "2610.41009",
-    "2610.42096"
+    "2610.42096",
+    "2611.01215",
+    "2611.02600",
+    "2611.02777"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-03五份日报及版本记录，按arXiv ID去重",
-  "notes": "本期3篇近7天首次归档；Cross-Controller v2仅新增致谢，不作新研究重复报告。STAR zh AI概述缺失，待补查。检索与Git发布状态独立核验。",
+  "history_scope": "本仓库2026-10-30至2026-11-04六份日报及版本记录，按arXiv ID去重",
+  "notes": "3篇近7天首次归档；另核实Cosmos LIBERO-10新权重、RynnVLA-Latent结果一致性修订。检索及发布状态分别核验。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
       "source": "https://github.com/Untitled-W/WorldProbe",
       "status": "404，需后续核对发布链接",
-      "last_checked_at": "2026-11-03T10:58:40+08:00",
+      "last_checked_at": "2026-11-04T10:17:55+08:00",
       "last_result": "GitHub connector repository query: 404"
     },
     {
@@ -43,26 +46,48 @@
       "url": "https://github.com/JonathanYang0127/icl_cross_controller",
       "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
       "checked_at": "2026-11-01T07:10:01+08:00",
-      "last_checked_at": "2026-11-03T10:58:40+08:00",
+      "last_checked_at": "2026-11-04T10:17:55+08:00",
       "last_result": "GitHub connector repository query: 404"
     },
     {
       "id": "2610.41009",
       "source": "https://www.alphaxiv.org/zh/abs/2610.41009",
-      "status": "暂无AI概述；摘要英文，中文版未取得",
-      "last_checked_at": "2026-11-03T10:54:00+08:00"
+      "status": "zh页面仍显示暂无AI概述；摘要英文",
+      "last_checked_at": "2026-11-04T07:14:31+08:00"
+    },
+    {
+      "id": "2611.01215",
+      "source": "https://github.com/gxccc123/JADE",
+      "status": "仓库/README查询404，发布待核实",
+      "last_checked_at": "2026-11-04T10:17:55+08:00"
+    },
+    {
+      "id": "2611.02600",
+      "source": "arXiv PDF v1",
+      "status": "下载内容缺少有效尾部，解析Unexpected EOF；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.02777",
+      "source": "arXiv PDF v1",
+      "status": "下载超时；已用HTML及官方原图"
     }
   ],
-  "source_coverage": "多组英文检索、11-02 arXiv新列表、15篇历史版本、3篇原文与zh页面；2篇中文AI概述、1篇缺失。官方发布入口检查非穷尽。",
+  "source_coverage": "多组英文关键词、11-03 cs.RO列表218项、18篇历史版本、3篇原文及中文AI概述，作者项目及官方模型卡/历史；发布渠道非穷尽。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
       "checked_at": "2026-11-02T09:49:53+08:00",
       "record": "data/source-checks/2026-11-02-cosmos3-nano.json"
+    },
+    {
+      "id": "lerobot/Cosmos3-Nano-Policy-LIBERO_10",
+      "checked_at": "2026-11-04T10:17:55+08:00",
+      "record": "data/source-checks/2026-11-04-cosmos-libero10.json"
     }
   ],
   "observed_versions": {
     "2610.37381": "v2",
-    "2610.39280": "v2"
+    "2610.39280": "v2",
+    "2610.34356": "v2"
   }
 }

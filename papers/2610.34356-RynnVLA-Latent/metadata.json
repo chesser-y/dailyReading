@@ -60,5 +60,24 @@
   "alphaxiv_preferred_language": "zh",
   "alphaxiv_zh": "https://www.alphaxiv.org/zh/abs/2610.34356",
   "alphaxiv_zh_status": "入口曾访问，中文AI概述正文尚未核实；现有提炼源自英文版",
-  "alpha_summary_source_language": "en"
+  "alpha_summary_source_language": "en",
+  "latest_observed_version": "v2",
+  "version_checks": [
+    {
+      "observed_at": "2026-11-04T10:17:55+08:00",
+      "version": "v2",
+      "submitted_at": "2026-11-01T16:18:05+08:00",
+      "update_type": "reported_result_consistency_correction_backfill",
+      "compared_sources": {
+        "v1": "https://arxiv.org/html/2610.34356v1",
+        "v2": "https://arxiv.org/html/2610.34356v2"
+      },
+      "source_html_sha256": {
+        "v1": "434eadada532ac543d71905c833bcd0763621da98f9e6fa20b889c5f4b51edec",
+        "v2": "22153851fa696f35e19f1f9de6ee15d906331fac0ab258dc0a8cc8e804dfb013"
+      },
+      "scope": "可访问HTML文本比较与关键结果回查；未比较PDF版式/图像二进制或代码",
+      "result": "引言与结论RoboTwin Native平均88.3%改88.6%，与已有摘要/表对应；另有作者排序、引用格式和页眉变化。未据此主张新训练或新实验证据。"
+    }
+  ]
 }

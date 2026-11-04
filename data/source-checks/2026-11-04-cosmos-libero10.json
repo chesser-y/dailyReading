@@ -1,0 +1,18 @@
+{
+  "id": "lerobot/Cosmos3-Nano-Policy-LIBERO_10",
+  "source": "https://huggingface.co/lerobot/Cosmos3-Nano-Policy-LIBERO_10",
+  "history": "https://huggingface.co/lerobot/Cosmos3-Nano-Policy-LIBERO_10/commits/main",
+  "checked_at": "2026-11-04T10:17:55+08:00",
+  "uploaded_at": "2026-11-04T00:31:59+08:00",
+  "commit": "c1a938a57dcd8bae71243c7a3b9bd8a0f382abcd",
+  "update_type": "new_finetuned_weights_release",
+  "verified_files": [
+    "model.safetensors",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+    "policy_preprocessor_step_4_normalizer_processor.safetensors"
+  ],
+  "scope": "官方模型卡、文件清单和提交历史已读；未下载模型或核查实现/复现",
+  "reported_result": "LIBERO-10 488/500 (97.6%), 10 tasks x 50 trials, MuJoCo2.3.7, fixed states/seeds0-49, 30 UniPC steps,16-action chunk executed fully",
+  "difference_from_prior": "此前归档lerobot/Cosmos3-Nano为基模转换；本次为LIBERO-10适配EMA2000步权重，不是同一发布重复。",
+  "card_sha256": "9fcaf51741dc9a7e0687f9e1e312fd0fd4cc5f04f9aa213c0bfc7a3ba47feab5"
+}

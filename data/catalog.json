@@ -14,7 +14,8 @@
     "alphaxiv": "https://www.alphaxiv.org/abs/2610.34356",
     "version": "v1",
     "first_archived": "2026-10-30",
-    "directory": "papers/2610.34356-RynnVLA-Latent"
+    "directory": "papers/2610.34356-RynnVLA-Latent",
+    "latest_observed_version": "v2"
   },
   {
     "id": "2610.36011",
@@ -307,5 +308,56 @@
     "version": "v1",
     "first_archived": "2026-11-03",
     "directory": "papers/2610.42096-CausalWAM"
+  },
+  {
+    "id": "2611.01215",
+    "short": "JADE",
+    "title": "Vision-Language Models Are Joint Denoisers in Robotic Action Generation",
+    "date": "2026-11-01",
+    "tags": [
+      "VLA",
+      "joint-denoising",
+      "action-representation",
+      "adaptive-sampling"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.01215",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.01215",
+    "version": "v1",
+    "first_archived": "2026-11-04",
+    "directory": "papers/2611.01215-JADE"
+  },
+  {
+    "id": "2611.02600",
+    "short": "W2A",
+    "title": "W2A: Distilling World Priors into Action Models for Real-Time Robotic Control",
+    "date": "2026-11-02",
+    "tags": [
+      "WAM",
+      "video-distillation",
+      "PCA",
+      "efficient-policy"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.02600",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.02600",
+    "version": "v1",
+    "first_archived": "2026-11-04",
+    "directory": "papers/2611.02600-W2A"
+  },
+  {
+    "id": "2611.02777",
+    "short": "REPAIR",
+    "title": "Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies",
+    "date": "2026-11-02",
+    "tags": [
+      "VLA",
+      "post-training",
+      "RL-distillation",
+      "on-policy-repair"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.02777",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.02777",
+    "version": "v1",
+    "first_archived": "2026-11-04",
+    "directory": "papers/2611.02777-REPAIR"
   }
 ]

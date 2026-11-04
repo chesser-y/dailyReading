@@ -1,0 +1,59 @@
+{
+  "id": "2611.02600",
+  "short": "W2A",
+  "title": "W2A: Distilling World Priors into Action Models for Real-Time Robotic Control",
+  "date": "2026-11-02",
+  "submitted_at": "2026-11-02T14:25:24+08:00",
+  "tags": [
+    "WAM",
+    "video-distillation",
+    "PCA",
+    "efficient-policy"
+  ],
+  "read": "选读原文第4节方法、5.1–5.4实验/消融、第7节局限及附录A.3教师替换对照和部分实现设置；已读alphaXiv zh AI概述中文正文、作者项目页。PDF下载缺失有效尾部、无法解析，使用完整可访问HTML与官方原图；未核查实现或复现。",
+  "abstract": "W2A先用机器人视频LoRA适配Cosmos-Predict2，再沿通道对其中间去噪特征作PCA压缩；用Q-Former把动作DiT隐藏状态组织为教师时空布局，并以余弦蒸馏辅助flow训练。部署移除视频教师及蒸馏读出，只保留视觉/语言条件动作策略。LIBERO消融显示压缩视频教师优于无蒸馏及未来图像特征，但不证明PCA必然选出因果控制变量。",
+  "intro": "视频未来信息是否必须在每次推理时重新生成？这篇把世界模型从在线控制组件改为训练教师，可以在保持现有动作头的情况下检验未来表征监督的收益与成本。",
+  "method": "训练I：机器人视频 → Cosmos-Predict2 LoRA适配 → 选定层/去噪阶段的特征 → PCA压缩。训练II：图像/语言＋带噪动作 → 动作DiT → Q-Former按时间分组读出 → 对齐压缩教师，同时学习原生动作flow。部署：当前观测/语言 → 动作DiT去噪 → 动作块前缀执行及重规划，无视频DiT。",
+  "design": "默认教师通道2048压到482，约保留99%解释方差；只压通道，保留时间和空间布局。Q-Former按视频VAE时间压缩比例对动作token分组，产生匹配空间格点的读出；余弦蒸馏按动作flow时间与教师提取时间的距离作高斯加权。部署可复用未执行动作后缀，加噪至中间时间再warmstart；仍是迭代动作去噪，不是一遍前向。",
+  "evidence": "LIBERO四套各10任务、三随机种子，四套平均95.9%，无蒸馏84.4%、无PCA88.6%；保持学生/Q-Former/损失权重，改用未来帧ResNet教师87.8%。这些支持该教师及对应结构的效用。π0.5表中96.9%但用外部动作预训练；W2A称scratch仅指无额外机器人动作数据，仍有视频预训练，不能叫完全从零。",
+  "limits": "压缩保留方差不是因果识别，热图不能独立证明动力学已被理解。未见物体、任务或大幅初始配置变化会失败；移除在线世界模型可能限制显著分布变化和更长时序适应。单GPU计时不是机器人频率；公开代码按钮是占位链接，发布产物未确认。",
+  "inference": "本项目推断：在同一动作学生、预算和初始化上比较无教师、当前图像教师、未来图像教师及视频中间特征，再做打乱时空对应的对照；同时测闭环成功与背景/物体动力学变化，避免把任意辅助损失或图像覆盖误判为世界知识迁移。",
+  "alpha": "已读zh AI概述中文正文。概述沿教师适配、PCA、动作特征蒸馏与部署删除视频分支组织；提醒scratch的有限含义和21倍仅为指定延迟对比。核心数字已回查原文；这里是独立提炼。",
+  "availability": "作者项目页可访问，但Code及arXiv按钮实际为#，未取得W2A官方实现、训练后权重、PCA基或扩展数据下载。上游Cosmos代码公开不等于W2A已发布；未核查实现或复现，训练总费用未核实。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://misaka0502.github.io/W2A/"
+    ]
+  ],
+  "directory": "papers/2611.02600-W2A",
+  "version": "v1",
+  "first_archived": "2026-11-04",
+  "arxiv": "https://arxiv.org/abs/2611.02600",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.02600",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼，非全文转载",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-04T07:31:07+08:00",
+  "alphaxiv_checked_at": "2026-11-04T07:31:07+08:00",
+  "source_html_sha256": "7fbf09ace2c423e850ed424d4c11edefe7179eb3bee376757e29ac645c6bb7c9",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 2,
+      "source": "https://arxiv.org/html/2611.02600v1/framework.png",
+      "caption": "Figure 2：上部两阶段教师适配与蒸馏，下部部署仅保留动作DiT及视觉/语言输入；Q-Former是训练读出，不输出机器人指令。",
+      "page": null,
+      "box_pt": null,
+      "version": "v1",
+      "captured_at": "2026-11-04T08:16:09+08:00",
+      "source_image_sha256": "3f8f679d5d0a27864aba26e8ee047e1a32b8475a34f5099c69bbf557a81276f1",
+      "asset_sha256": "516fcd38e76cd34ce5e11fff3a9721a6993b825391f11550e9680450dc08a693",
+      "visual_check": "已检查图号、内容、清晰度和边界"
+    }
+  ]
+}

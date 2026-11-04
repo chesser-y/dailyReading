@@ -1,0 +1,59 @@
+{
+  "id": "2611.02777",
+  "short": "REPAIR",
+  "title": "Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies",
+  "date": "2026-11-02",
+  "submitted_at": "2026-11-02T16:53:49+08:00",
+  "tags": [
+    "VLA",
+    "post-training",
+    "RL-distillation",
+    "on-policy-repair"
+  ],
+  "read": "选读原文第3节问题分析、4节完整方法、5节预算/主结果、6节消融与结论，以及附录B.1–B.2冻结范围和专家设置；已读alphaXiv zh AI概述中文正文及作者项目页。PDF超时，图像取自官方HTML；未核查实现或复现。",
+  "abstract": "REPAIR将短暂精度关键阶段的RL专家蒸馏进单一VLA。关键状态重新采样多个专家动作，用critic组内相对价值加权flow损失；先在专家辅助观测上离线训练，再让学生自行执行并对学生访问状态提供监督，专家不接管。部署删除专家与critic。六任务各30次的全成功是有限观测结果；平滑度改善只在成功回合统计，不构成通用保证。",
+  "intro": "强化学习专家能修复插入等局部失败，但部署保留切换且轨迹可能抖动。该工作把“模仿哪些动作”和“在哪些状态学习”分开控制，尤其适合研究动作头如何吸收局部纠错经验。",
+  "method": "人工示范SFT初始化VLA → 冻结VLA训练关键阶段专家actor/critic → 关键观测采8个专家动作块并按组内标准化Q经softmax加权 → 加权flow训练动作专家；非关键观测模仿存储动作。先用专家辅助观测，再用学生独立执行观测；最终图像/本体/指令 → 单一VLA → 动作。",
+  "design": "训练依赖实验者给定阶段标注；蒸馏更新VLA动作专家，主干、RL-token编码器及专家actor冻结。critic离线冻结、在线修复时更新，候选取双target critic较小值，温度0.1；回放关键/非关键状态各半。学生回合中的非关键标签为其存储预测，属于自蒸馏；不是在线让专家接管后再模仿轨迹。",
+  "evidence": "六个真机任务、每方法30次/任务，REPAIR与RLT均各任务30/30；双臂插销jerk为6.5±1.6对10.3±0.9 m/s³，只在成功回合统计。固定专家状态及8候选，均匀/价值加权成功76.7/90.0%，jerk7.28/6.7。相同20条蒸馏轨迹，20专家对10专家＋10学生：双插销90/100%、清桌80/100%。",
+  "limits": "专家训练、人工干预和阶段标注仍有成本；critic在学生偏离状态上的排序准确性需直接验证。六任务30次试验不保证真实成功概率100%。jerk对失败回合不定义，跨方法成功子集不同须谨慎；没有证明所有动作更平滑，也不能把本研究视为通用无监督纠错。",
+  "inference": "本项目推断：固定离线状态、候选及优化步数，先比较记录动作、重采单候选、8候选均匀与价值加权，再固定总交互轨迹数比较专家状态和学生状态。分开报告成功率、成功回合jerk及失败类别，并检验critic排序而非仅看Q均值。",
+  "alpha": "已读zh AI概述中文正文。其组织重点是从控制补丁到监督分布、动作候选质量与学生状态覆盖两类缺口；特别区分成功率、成功回合jerk和视频播放时长。数字与冻结范围已回查原文，独立提炼并非全文复制。",
+  "availability": "原文链接作者演示页，页面提供视频及方法简介，但未取得官方代码、权重或真实轨迹下载入口。使用RLinf实现不代表本工作配置已发布；未核查实现或运行实验，总训练费用未核实。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://repair-vla.github.io/"
+    ]
+  ],
+  "directory": "papers/2611.02777-REPAIR",
+  "version": "v1",
+  "first_archived": "2026-11-04",
+  "arxiv": "https://arxiv.org/abs/2611.02777",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.02777",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼，非全文转载",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "pdf_sha256": null,
+  "retrieved_at": "2026-11-04T07:31:07+08:00",
+  "alphaxiv_checked_at": "2026-11-04T07:31:07+08:00",
+  "source_html_sha256": "e331d1229870446ede05058073af46be03346d8a8087ad204f58ca1d99d1cddf",
+  "figures": [
+    {
+      "kind": "arxiv_html_figure",
+      "file": "assets/method.png",
+      "figure_number": 4,
+      "source": "https://arxiv.org/html/2611.02777v1/REPAIR_Refined_Framework.png",
+      "caption": "Figure 4：SFT、阶段专家训练、离线至学生状态蒸馏。右侧分布是机制示意，不是量化证明；部署仅保留VLA。",
+      "page": null,
+      "box_pt": null,
+      "version": "v1",
+      "captured_at": "2026-11-04T08:16:09+08:00",
+      "source_image_sha256": "4eeb06a6a9b9b9dc3117484084769b88fcf74af6fc2e0b320518d351a8815194",
+      "asset_sha256": "ea211181ae23cc94b46d57b4b4ea5bfd7636846f282a2d3e6145d7677c75cc59",
+      "visual_check": "已检查图号、内容、清晰度和边界"
+    }
+  ]
+}
