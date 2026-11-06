@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-06",
+  "search_window_start": "2026-11-04T10:17:55+08:00",
+  "search_cutoff": "2026-11-06T11:04:55+08:00",
+  "overlap_window_start": "2026-10-30T11:04:55+08:00",
+  "selected": [
+    "2611.05249",
+    "2611.05571",
+    "2611.05847",
+    "2611.06905"
+  ],
+  "dedup_against": [
+    "2610.34356",
+    "2610.36011",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381",
+    "2610.37666",
+    "2610.38000",
+    "2610.39280",
+    "2610.39721",
+    "2610.40207",
+    "2610.40210",
+    "2610.40271",
+    "2610.40401",
+    "2610.40430",
+    "2610.40748",
+    "2610.41009",
+    "2610.42096",
+    "2611.01215",
+    "2611.02600",
+    "2611.02777"
+  ],
+  "update_type": "four first-publication archives including 7-day overlap backfills",
+  "missing_daily_runs": [
+    "2026-11-05: no successful repository record; covered by this window"
+  ],
+  "zh_overview_status": "4 new actual Chinese bodies plus STAR backfill",
+  "history_rechecks": {
+    "2610.34356": "v2 already known",
+    "2610.36011": "v1 only",
+    "2610.36068": "v1 only",
+    "2610.36791": "v1 only",
+    "2610.37091": "v1 only",
+    "2610.37381": "v3 author-list change, no method/result text change",
+    "2610.37666": "v1 only",
+    "2610.38000": "v1 only",
+    "2610.39280": "v2 already known",
+    "2610.39721": "v1 only",
+    "2610.40207": "v1 only",
+    "2610.40210": "v1 only",
+    "2610.40271": "v1 only",
+    "2610.40401": "v1 only",
+    "2610.40430": "v1 only",
+    "2610.40748": "v1 only",
+    "2610.41009": "v1 only",
+    "2610.42096": "v1 only",
+    "2611.01215": "v1 only",
+    "2611.02600": "v1 only",
+    "2611.02777": "v1 only"
+  },
+  "revision_check": {
+    "observed_at": "2026-11-06T11:04:55+08:00",
+    "version": "v3",
+    "submitted_at": "2026-11-04T14:04:43+08:00",
+    "update_type": "author_list_revision",
+    "source_html_sha256": {
+      "v2": "936607d7dd167124d856dccfa06443c2ba7c31c53f4e6a7651819817c37fc0e1",
+      "v3": "730b31ba512eb891c0816372e31e1b05509a7ac7a1b67ed06e6118b5c1b02d73"
+    },
+    "compared_sources": {
+      "v2": "https://arxiv.org/html/2610.37381v2",
+      "v3": "https://arxiv.org/html/2610.37381v3"
+    },
+    "scope": "合并空白后的HTML文本逐句比较；未比较PDF版面、图像二进制或代码",
+    "result": "新增作者Xiaodong He及版本标识；所查方法和结果正文未变，不当新研究报告。"
+  },
+  "source_gaps": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接",
+      "last_checked_at": "2026-11-06T11:04:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    },
+    {
+      "id": "2610.39280",
+      "url": "https://github.com/JonathanYang0127/icl_cross_controller",
+      "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
+      "checked_at": "2026-11-01T07:10:01+08:00",
+      "last_checked_at": "2026-11-06T11:04:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2611.01215",
+      "source": "https://github.com/gxccc123/JADE",
+      "status": "仓库/README查询404，发布待核实",
+      "last_checked_at": "2026-11-06T11:04:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2611.02600",
+      "source": "arXiv PDF v1",
+      "status": "下载内容缺少有效尾部，解析Unexpected EOF；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.02777",
+      "source": "arXiv PDF v1",
+      "status": "下载超时；已用HTML及官方原图"
+    }
+  ],
+  "discovery_methods": [
+    "English combinations covering vision language action, robot foundation model, world action model, unified multimodal action prediction, latent action, flow matching, generalist RL",
+    "arXiv cs.RO new dated11-05 and complete recent484-entry listing including11-04; historical version pages",
+    "author projects and GitHub README checks; actual zh AI概述 language/body verification"
+  ],
+  "omitted_candidates": [
+    "2611.06627 Interactive Cosmos simulation",
+    "2611.05023 HiLo-WAM",
+    "2611.04870 PrimeSim",
+    "2611.04527 Future Representation Distillation",
+    "2611.06654 Compounding Physical RSI",
+    "2611.06653 action-interface mismatch"
+  ],
+  "publication": "Commit/push verified independently after validation; no advance success claim."
+}

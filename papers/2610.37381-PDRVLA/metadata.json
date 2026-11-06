@@ -48,7 +48,7 @@
   "alphaxiv_zh": "https://www.alphaxiv.org/zh/abs/2610.37381",
   "alphaxiv_zh_status": "入口曾访问，中文AI概述正文尚未核实；现有提炼源自英文版",
   "alpha_summary_source_language": "en",
-  "latest_observed_version": "v2",
+  "latest_observed_version": "v3",
   "version_checks": [
     {
       "observed_at": "2026-11-02T09:49:53+08:00",
@@ -65,6 +65,22 @@
       },
       "scope": "可访问HTML提取文本，排除引文/参考文献及版本页眉；未做PDF版面或图像二进制对比",
       "result": "处理后的提取正文相同；未见所查方法、实验数值及结论实质更新。保留v1笔记和截图依据。"
+    },
+    {
+      "observed_at": "2026-11-06T11:04:55+08:00",
+      "version": "v3",
+      "submitted_at": "2026-11-04T14:04:43+08:00",
+      "update_type": "author_list_revision",
+      "source_html_sha256": {
+        "v2": "936607d7dd167124d856dccfa06443c2ba7c31c53f4e6a7651819817c37fc0e1",
+        "v3": "730b31ba512eb891c0816372e31e1b05509a7ac7a1b67ed06e6118b5c1b02d73"
+      },
+      "compared_sources": {
+        "v2": "https://arxiv.org/html/2610.37381v2",
+        "v3": "https://arxiv.org/html/2610.37381v3"
+      },
+      "scope": "合并空白后的HTML文本逐句比较；未比较PDF版面、图像二进制或代码",
+      "result": "新增作者Xiaodong He及版本标识；所查方法和结果正文未变，不当新研究报告。"
     }
   ]
 }

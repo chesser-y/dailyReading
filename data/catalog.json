@@ -101,7 +101,7 @@
     "version": "v1",
     "first_archived": "2026-10-30",
     "directory": "papers/2610.37381-PDRVLA",
-    "latest_observed_version": "v2"
+    "latest_observed_version": "v3"
   },
   {
     "id": "2610.37666",
@@ -359,5 +359,73 @@
     "version": "v1",
     "first_archived": "2026-11-04",
     "directory": "papers/2611.02777-REPAIR"
+  },
+  {
+    "id": "2611.05249",
+    "short": "Gradient-Routing",
+    "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+    "date": "2026-11-04",
+    "tags": [
+      "VLA",
+      "gradient-routing",
+      "action-token-supervision",
+      "closed-loop-evaluation"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.05249",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05249",
+    "version": "v1",
+    "first_archived": "2026-11-06",
+    "directory": "papers/2611.05249-Gradient-Routing"
+  },
+  {
+    "id": "2611.05571",
+    "short": "ELA",
+    "title": "ELA: End-to-End Latent Action Policy Learning from Video Demonstrations",
+    "date": "2026-11-04",
+    "tags": [
+      "latent-action",
+      "video-learning",
+      "representation-alignment",
+      "cross-embodiment"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.05571",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05571",
+    "version": "v1",
+    "first_archived": "2026-11-06",
+    "directory": "papers/2611.05571-ELA"
+  },
+  {
+    "id": "2611.05847",
+    "short": "T2G",
+    "title": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+    "date": "2026-11-04",
+    "tags": [
+      "world-model",
+      "JEPA",
+      "planning-cost",
+      "temporal-metric"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.05847",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05847",
+    "version": "v1",
+    "first_archived": "2026-11-06",
+    "directory": "papers/2611.05847-T2G"
+  },
+  {
+    "id": "2611.06905",
+    "short": "Generalist-RL",
+    "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+    "date": "2026-11-05",
+    "tags": [
+      "VLA",
+      "multi-task-RL",
+      "critic-guidance",
+      "generalization"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.06905",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.06905",
+    "version": "v1",
+    "first_archived": "2026-11-06",
+    "directory": "papers/2611.06905-Generalist-RL"
   }
 ]

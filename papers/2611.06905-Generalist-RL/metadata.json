@@ -1,0 +1,71 @@
+{
+  "id": "2611.06905",
+  "short": "Generalist-RL",
+  "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+  "tags": [
+    "VLA",
+    "multi-task-RL",
+    "critic-guidance",
+    "generalization"
+  ],
+  "read": "选读原文第3节问题/FSFT/BoN/OGPO与协议，第4.1–4.4主结果和关键消融，以及附录C.1/C.6、D.4–D.5；已读alphaXiv zh AI概述中文正文、项目页及官方仓库README，查看PDF第5页图2。未通读57页全部图表、核查实现或复现。",
+  "abstract": "研究把π0.5从单任务适应扩展到共享多任务在线改进，比较成功轨迹FSFT、冻结策略的critic择优BoN和critic引导策略提取OGPO。MolmoSpaces上训练任务由1增至144时，价值方法对相关留出场景/物体更易迁移；LIBERO留出任务未同样泛化。贡献是系统实验配方而非全新RL算法，证据完全来自模拟。",
+  "intro": "动作模型后训练改善的是单个任务，还是可继承到其他任务的能力？这篇控制物体/场景多样性和价值学习方式，适合区分任务记忆、共享动作评分与策略提取的作用。",
+  "method": "多训练任务由当前策略收集回合 → 共享回放 → FSFT更新成功动作，或TD训练Q/V让BoN从冻结策略32个候选择优，或OGPO联合critic与生成策略提取 → 重复10轮 → 分别评估训练任务、留出场景、留出物体。",
+  "design": "基策略分别用π0.5 droid/libero检查点。critic接均值池化VLM前缀、本体状态和展开动作块，采用残差MLP与Q/V头集成取最小值。每任务每轮20回合、共10轮；任务集嵌套且初始成功约30%。任务数增大也增加总交互，不能据此隔离固定总预算下的纯多样性。",
+  "evidence": "MolmoSpaces抓取抬升任务；三训练种子，最终每任务32回合，95%分层bootstrap。留出训练物体各8场景；未见物体固定6类×8场景。价值方法相对基策略最多提高新场景58、新物体39个百分点，是扫描训练规模所得最大增益，非平均效应。LIBERO最多64训练任务、25留出任务未出现同样泛化。",
+  "limits": "无真实硬件结果；需要基础策略已有非零成功及相关任务分布。按任务保持预算并不保持总交互和总算力。BoN推理采32候选有额外成本；多任务与16个单任务相比少2.9倍梯度步，不等于墙钟或机器人尝试快2.9倍。OGPO仓库实现尚未发布。",
+  "inference": "本项目推断：保持总交互预算，分别扩展物体与场景，比较成功轨迹回放和共享critic；将训练、同物新景、新物任务分开报告，另画成功率—在线回合—推理候选数曲线，避免用最大增益代替普遍迁移。",
+  "alpha": "已读zh AI概述中文正文。其组织为共享价值学习、迁移的任务范围与多样性方向；强调58/39是最大百分点增益、2.9倍仅指梯度步，以及模拟和LIBERO负结果。本段独立提炼。",
+  "availability": "官方仓库README称当前提供FSFT和BoN最小实现，OGPO仍待发布；不能说全部实验已可复现。未确认作者训练后策略/critic权重下载，README给出环境与启动路径但未核查实现。原文单任务约2–5小时、最大任务集约200小时，节点4×GH200；这些不是总项目费用。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://lasgroup.github.io/generalist-improvement"
+    ],
+    [
+      "官方仓库",
+      "https://github.com/lasgroup/generalist-improvement"
+    ],
+    [
+      "README",
+      "https://github.com/lasgroup/generalist-improvement/blob/main/README.md"
+    ]
+  ],
+  "submitted_at": "2026-11-05T02:52:28+08:00",
+  "date": "2026-11-05",
+  "directory": "papers/2611.06905-Generalist-RL",
+  "version": "v1",
+  "first_archived": "2026-11-06",
+  "arxiv": "https://arxiv.org/abs/2611.06905",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.06905",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼",
+  "update_type": "first_publication",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-06T11:00:41+08:00",
+  "alphaxiv_checked_at": "2026-11-06T11:00:41+08:00",
+  "source_html_sha256": "4a113f91b8b70a1fb43c9bf5ab3dea174571b4cb82ab31da1988af921ce98f5c",
+  "pdf_sha256": "59496f36251bd9f056655a7d6a3a7dfa67b05e4c494152ef3cc61286937a5bf8",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.06905v1",
+      "version": "v1",
+      "figure_number": 2,
+      "page": 5,
+      "box_pt": [
+        105,
+        78,
+        506,
+        254
+      ],
+      "captured_at": "2026-11-06T11:03:40+08:00",
+      "caption": "Figure 2：多任务收集、共享更新与留出评测；BoN保留策略权重，OGPO更新策略，不能把二者看作同一部署过程。",
+      "asset_sha256": "780e890d83316f691c7fbca2dde160e1abf5e82cdc7c5e2bf6791c8a03d30f4c",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}

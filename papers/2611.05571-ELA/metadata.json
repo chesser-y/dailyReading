@@ -1,0 +1,63 @@
+{
+  "id": "2611.05571",
+  "short": "ELA",
+  "title": "ELA: End-to-End Latent Action Policy Learning from Video Demonstrations",
+  "tags": [
+    "latent-action",
+    "video-learning",
+    "representation-alignment",
+    "cross-embodiment"
+  ],
+  "read": "选读原文第3节方法、第4节仿真/真机/表示分析和局限，附录B真机协议、C部分实现中的夹爪解码与训练日程；已读alphaXiv zh AI概述中文正文、作者项目页，查看PDF第5页图3。未核查实现或复现。",
+  "abstract": "ELA同时考虑潜在动作能否被策略预测、能否被解码为真实控制。帧对IDM与FDM从视频学习变化，少量动作标签约束解码；训练通过冻结DINOv3参考和交替更新连接潜在表示与策略，避免朴素全损失反传的塌缩。部署为潜在动作策略加轻量解码器，夹爪单独监督；不是任意无标签视频直接生成完整机器人控制。",
+  "intro": "视频学出的动作表示能重建未来，却可能难预测、难解码。ELA把这两项要求放进训练设计，并提供两类动作MSE探针，适合检验统一模型的中间动作空间究竟服务了什么。",
+  "method": "训练：起始/未来RGB帧 → IDM潜在动作 → FDM重建未来；少量标签让解码器恢复原生动作。当前观察 → 潜在动作策略 → 潜变量 → 4M参数动作解码器 → 连续动作块；部署不用IDM/FDM，夹爪由有标签策略头单独预测。",
+  "design": "采用iFSQ瓶颈限制图像记忆；先5k步只训练未来重建与动作重建，再交替LAM更新和策略更新。LAM更新冻结策略，以对齐、动作和FDM目标塑造潜变量；策略更新冻结LAM。两者对齐同一冻结DINOv3参考，不是每次梯度贯穿全部模块。目标任务微调时IDM和解码器冻结。",
+  "evidence": "LIBERO-10每任务50演示，其中仅5条带动作标签，三随机种子；ELA将DP31→54%、UWM19→59%。先在全部任务数据预训练，再单任务微调，不是仅5条轨迹完成所有训练。真机五任务每项10机器人标签＋40人类视频、20次评估：ELA-DP平均70%，DP48%，open-oven反而30%对35%。",
+  "limits": "4M仅新增动作解码器，不是整套模型大小。夹爪仍需标签；未验证互联网规模或高度灵巧精细操作。对齐消融83→45%来自任务子集，不能混写为五任务总平均。缺少完全匹配冻结潜变量流程的逐项对照，不能把全部收益唯一归给端到端训练。",
+  "inference": "本项目推断：对同一潜在动作，同时测IDM真值潜变量经解码的动作误差、策略预测潜变量经解码的动作误差；比较冻结表示与交替对齐，用同标签预算和闭环试验判断瓶颈在信息保留还是可预测性。",
+  "alpha": "已读zh AI概述中文正文。其解释围绕可建模性/可解码性、交替冻结和夹爪例外，并区分真机五任务均值与对齐子集。这里为独立提炼，关键设置及数字已回查原文。",
+  "availability": "作者项目页可访问；本次未取得官方代码、训练后权重或该真人/机器人演示下载入口。页面模板仓库和比较方法的权重链接不当作ELA资源。未核查实现，训练总费用未核实。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://end2end-latent-action.github.io/"
+    ]
+  ],
+  "submitted_at": "2026-11-04T04:03:16+08:00",
+  "date": "2026-11-04",
+  "directory": "papers/2611.05571-ELA",
+  "version": "v1",
+  "first_archived": "2026-11-06",
+  "arxiv": "https://arxiv.org/abs/2611.05571",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05571",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-06T11:00:41+08:00",
+  "alphaxiv_checked_at": "2026-11-06T11:00:41+08:00",
+  "source_html_sha256": "edb8d94282aae3f5199c121518bfd016e0cc367758100022bbc3d378f6ab7fbd",
+  "pdf_sha256": "db57082e5f819d1ba7af3e6903e8a5f78de3e9e169e054713d0f2e5ae226706f",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.05571v1",
+      "version": "v1",
+      "figure_number": 3,
+      "page": 5,
+      "box_pt": [
+        105,
+        69,
+        505,
+        256
+      ],
+      "captured_at": "2026-11-06T11:03:40+08:00",
+      "caption": "Figure 3：上为LAM更新，冻结策略但允许通过固定策略运算塑造潜变量；下为策略更新，冻结LAM。火焰/雪花表示当前更新范围，不是部署模块。",
+      "asset_sha256": "646139ce91a167aed484991dd07da1b2af2a599bd2158c5845ad7f6297734f04",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "2610.41009",
+  "url": "https://www.alphaxiv.org/zh/abs/2610.41009",
+  "checked_at": "2026-11-06T10:59:33+08:00",
+  "language": "zh",
+  "status": "Chinese AI overview body read; earlier absence resolved",
+  "source_html_sha256": "553bd249d6bd9d17d15462f050b3394421a7a815b7671c3253aa9f75968c5d2c",
+  "scope": "仅补齐概述语言记录与独立提炼；未重跑实验/核查实现"
+}

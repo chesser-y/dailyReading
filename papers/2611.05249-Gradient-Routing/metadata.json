@@ -1,0 +1,63 @@
+{
+  "id": "2611.05249",
+  "short": "Gradient-Routing",
+  "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+  "tags": [
+    "VLA",
+    "gradient-routing",
+    "action-token-supervision",
+    "closed-loop-evaluation"
+  ],
+  "read": "选读原文第3节完整受控设计、第4节驾驶/操作结果与第5节讨论，部分实现及评估协议；已读alphaXiv zh AI概述中文正文及作者项目页，已检查PDF第4页图2。未通读全部附录，未核查实现或复现。",
+  "abstract": "该研究用动作token监督开/关与动作专家梯度回传/截断的2×2对照，检验VLM如何获得控制相关表示。无动作token时回传明显改善轨迹误差；有token时开环差异较小，但部分闭环驾驶与操作仍受益。结果支持按监督和评测选择路由，不能推出耦合总更好，或截断一定保留通用能力。",
+  "intro": "独立动作专家是否应该训练统一视觉语言主干？以往配方同时改变token监督、预热和梯度路由，很难定位原因。这篇把两种动作学习信号分开操纵，与统一多模态主干的动作预测能力直接相关。",
+  "method": "视觉/语言及历史 → VLM逐层K/V → flow动作专家 → 连续动作。训练交叉切换：同目标轨迹的离散动作CE是否监督，以及flow损失是否经K/V回传VLM。截断只改反向、保留前向条件；评估不解码未来动作token，由专家输出控制。",
+  "design": "语义/VQA监督始终保留；关闭动作CE只屏蔽未来动作值的CE，token仍teacher-forced，专家K/V排除未来动作token状态。驾驶比较300k总步并行训练，以及100k单模块预热＋200k联合；总步匹配不代表各模块更新次数相同。操作复做π0.5和MolmoAct2并行2×2，各家内部固定数据、初始化与优化。",
+  "evidence": "PolaRiS三个任务、每条件每任务50次相同初始状态rollout，指标为等权归一化任务进度而非成功率。π0.5重实现：FAST开时截断19.5%→回传30.7%，FAST关10.3→32.9%；MolmoAct2分别22.0→24.3%、14.5→36.5%。每条件仅一次训练，评估重采样区间不衡量训练种子方差。",
+  "limits": "全部为模拟驾驶与操作。耦合对不同碰撞指标不一致，不能只看进度就宣称更安全；固定模型的理由匹配诊断也不等于全面语义保留。跨训练历史的模块预算和预热数据并不相同；结果不构成默认总应回传的证明。参数量与总费用未独立核实。",
+  "inference": "本项目推断：在自己的统一模型上复做动作token监督×flow梯度路由2×2，保留相同语义混合、初始化和执行预算；同时测闭环成功、动作误差及原视觉语言任务保留，不用开环相近就判断动作学习信号可互相替代。",
+  "alpha": "已读取zh AI概述中文正文。其主线是两条动作学习信号的交互，以及开环与闭环结论不同；明确任务进度不是完成率、单训练实例限制了统计结论。本段独立提炼，机制与数字回查原文。",
+  "availability": "作者项目页可访问，本次页面链接未给出本研究训练代码/权重/数据下载入口；AlpaSim或上游模型公开不等于该2×2实验产物已发布。未核查实现或运行实验。",
+  "extra_sources": [
+    [
+      "作者项目页",
+      "https://mot-vla-gradient-routing.github.io/"
+    ]
+  ],
+  "submitted_at": "2026-11-04T01:35:27+08:00",
+  "date": "2026-11-04",
+  "directory": "papers/2611.05249-Gradient-Routing",
+  "version": "v1",
+  "first_archived": "2026-11-06",
+  "arxiv": "https://arxiv.org/abs/2611.05249",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05249",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-06T11:03:39+08:00",
+  "alphaxiv_checked_at": "2026-11-06T11:03:39+08:00",
+  "source_html_sha256": "6b7b36dc765732cac18f0bf74877e6ad827454f10c6cb80e896de536c8b7a309",
+  "pdf_sha256": "177344b81981b3676e8bfd044cef098598ee47c3d4216d15aa05097d9ea4035b",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.05249v1",
+      "version": "v1",
+      "figure_number": 2,
+      "page": 4,
+      "box_pt": [
+        108,
+        81,
+        503,
+        234
+      ],
+      "captured_at": "2026-11-06T11:05:40+08:00",
+      "caption": "Figure 2：动作token监督、专家到VLM梯度路由的四条件，以及三种300k总步训练历史。总步数相同不保证模块梯度暴露相同。",
+      "asset_sha256": "1d9b2f97d478ca400b918e9740ff952735f1e81d0ea5b420d2dbb1e9afdc7b46",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}

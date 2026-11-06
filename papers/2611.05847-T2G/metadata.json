@@ -1,0 +1,67 @@
+{
+  "id": "2611.05847",
+  "short": "T2G",
+  "title": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+  "tags": [
+    "world-model",
+    "JEPA",
+    "planning-cost",
+    "temporal-metric"
+  ],
+  "read": "选读原文第2节分析/训练/规划、第3节全部主实验及实现/评估设置；已读alphaXiv zh AI概述中文正文、官方仓库README，查看PDF第4页图3。未逐项验证数学推导、核查实现或复现。",
+  "abstract": "T2G冻结JEPA编码器与预测器，仅从离线轨迹时间顺序学习小型目标距离。近/远状态的margin排序让较近未来得到更低代价，再以该距离替换平坦世界模型规划目标。模拟结果显示目标代价及聚合窗口很重要；它不改善动力学预测，也不提供校准的剩余步数。",
+  "intro": "世界模型能预测潜状态，不保证欧氏潜距离反映离目标还有多远。该工作提供低成本的度量学习对照，帮助把预测器质量与规划评分质量区分。",
+  "method": "离线轨迹取锚点/较近未来/更远未来 → 同一冻结JEPA编码器 → 小MLP与正尺度距离 → margin排序训练。规划：当前与目标图像编码 → 冻结预测器滚动候选动作 → T2G给末尾若干状态打分 → AdamW优化动作、执行前缀并重规划。",
+  "design": "只训练度量与尺度，新增约0.18M参数；不使用奖励或策略标签。last-n取末尾状态平均，dense取所有预测状态。比较中Cube还把初始规划时域由4改2，其他三个环境保持基线设置，不能把四环境全部差异都归给度量。",
+  "evidence": "四模拟环境各50个相同起点—目标任务、种子42/43/44：flat→last-n成功率AntMaze18.0→58.7%、Cube32.0→63.3%、FourRoom40.7→78.7%、Push-T40.0→51.3%。四环境均值32.7→63.0%；dense在Cube仅4.0%，窗口并非次要细节。",
+  "limits": "全部模拟；相对时间排序不是剩余步数回归或真实可达性保证。导航上三级H-JEPA仍更强；Cube比较混有时域变化。录制执行轨迹上的近远排序诊断不是独立闭环成功证据，原图横轴单位标注与文字须区分。",
+  "inference": "本项目推断：先固定世界模型和动作候选，在同一规划时域下比较欧氏、dense T2G、last-n T2G；同时测时间排序与闭环成功，确认是评分改进而非多了规划预算。",
+  "alpha": "已读zh AI概述中文正文。重点区分预测动力学与目标评分、相对时间代价与步数估计，并指出Cube时域混杂与dense失败。数字和协议已回查原文，此处独立提炼。",
+  "availability": "官方T2G-JEPA仓库可访问，已读README；其称包含四环境seed42度量权重，并提供上游数据/JEPA检查点入口，未下载或核验二进制。README提示默认配置混有dense和terminal，复现需显式选择last-n。未核查实现、未复现。",
+  "extra_sources": [
+    [
+      "官方仓库",
+      "https://github.com/yrluestc/T2G-JEPA"
+    ],
+    [
+      "README",
+      "https://github.com/yrluestc/T2G-JEPA/blob/main/README.md"
+    ]
+  ],
+  "submitted_at": "2026-11-04T10:36:31+08:00",
+  "date": "2026-11-04",
+  "directory": "papers/2611.05847-T2G",
+  "version": "v1",
+  "first_archived": "2026-11-06",
+  "arxiv": "https://arxiv.org/abs/2611.05847",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.05847",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文；独立提炼",
+  "update_type": "first_publication",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-06T11:00:41+08:00",
+  "alphaxiv_checked_at": "2026-11-06T11:00:41+08:00",
+  "source_html_sha256": "eec30496a1b45e4f4322877039c0bd3ac92e05c5a0188658466a7574f64882ca",
+  "pdf_sha256": "d9ae157cab9bbb8e03df49a302164a745a6052c08d4e36a3586eef3ac184e21a",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.05847v1",
+      "version": "v1",
+      "figure_number": 3,
+      "page": 4,
+      "box_pt": [
+        69,
+        60,
+        544,
+        240
+      ],
+      "captured_at": "2026-11-06T11:03:40+08:00",
+      "caption": "Figure 3：从同一轨迹采样锚点、近未来和远未来，仅训练时间度量。图中示例距离不是校准剩余时间。",
+      "asset_sha256": "1f8ebaef7038586d21b776a5ac4a65a8fb92b40f978de6e8e7a008b3bb208167",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}
