@@ -22,10 +22,13 @@
 - [2610.40748 · WorldBridge](2610.40748-WorldBridge/README.md) — WorldBridge: Bridging Video and Action for Task Generalization in World Action Models
 - [2610.41009 · STAR](2610.41009-STAR/README.md) — STAR: Steering Action Representations during Inference
 - [2610.42096 · CausalWAM](2610.42096-CausalWAM/README.md) — CausalWAM: Learning the Causes of Actions in World Action Models
-- [2611.01215 · JADE](2611.01215-JADE/README.md) — Vision-Language Models Are Joint Denoisers in Robotic Action Generation
+- [2611.01215 · JADE（v2已撤回）](2611.01215-JADE/README.md) — Vision-Language Models Are Joint Denoisers in Robotic Action Generation
 - [2611.02600 · W2A](2611.02600-W2A/README.md) — W2A: Distilling World Priors into Action Models for Real-Time Robotic Control
 - [2611.02777 · REPAIR](2611.02777-REPAIR/README.md) — Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies
 - [2611.05249 · Gradient-Routing](2611.05249-Gradient-Routing/README.md) — Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs
 - [2611.05571 · ELA](2611.05571-ELA/README.md) — ELA: End-to-End Latent Action Policy Learning from Video Demonstrations
 - [2611.05847 · T2G](2611.05847-T2G/README.md) — Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models
 - [2611.06905 · Generalist-RL](2611.06905-Generalist-RL/README.md) — Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement
+- [2611.07229 · Spatial-UMI-Dream](2611.07229-Spatial-UMI-Dream/README.md) — Spatial-UMI-Dream: Scaling World Action Models with Metric Geometry for UMI Manipulation
+- [2611.07850 · RoboImagine](2611.07850-RoboImagine/README.md) — Learning Robotic World Models with Semantic and Visual Feedback
+- [2611.08156 · La-JEPA](2611.08156-La-JEPA/README.md) — La-JEPA: Compact Robot Policies with Latent World Modeling

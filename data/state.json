@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-06",
-  "last_successful_search_cutoff": "2026-11-06T11:04:55+08:00",
+  "last_report": "2026-11-07",
+  "last_successful_search_cutoff": "2026-11-07T18:50:25+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.34356",
@@ -28,10 +28,13 @@
     "2611.05249",
     "2611.05571",
     "2611.05847",
-    "2611.06905"
+    "2611.06905",
+    "2611.07229",
+    "2611.07850",
+    "2611.08156"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-06七份日报及版本记录；11-05无成功报告，按arXiv ID去重",
-  "notes": "本期覆盖11-04成功边界之后两天；4篇首次归档（含7天补漏），STAR中文概述缺失已解决，PDRVLA v3仅作者名单更新。检索与Git发布分别核验。",
+  "history_scope": "本仓库2026-10-30至2026-11-07八份日报及版本记录；本期对照七份日报、25个历史arXiv ID",
+  "notes": "3篇v1首次归档（11月6日arXiv公告及7天补漏）；JADE v2撤回。论文检索完成；Hugging Face资源文件清单有待补查。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -57,8 +60,8 @@
       "id": "2611.01215",
       "source": "https://github.com/gxccc123/JADE",
       "status": "仓库/README查询404，发布待核实",
-      "last_checked_at": "2026-11-06T11:04:55+08:00",
-      "last_result": "GitHub connector repository query: 404"
+      "last_checked_at": "2026-11-07T18:50:25+08:00",
+      "last_result": "官方GitHub仓库查询404；arXiv v2撤回另有核查记录"
     },
     {
       "id": "2611.02600",
@@ -69,9 +72,33 @@
       "id": "2611.02777",
       "source": "arXiv PDF v1",
       "status": "下载超时；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.07850",
+      "source": "https://huggingface.co/api/models/easylearning/RoboImagine",
+      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
+      "last_checked_at": "2026-11-07T18:50:25+08:00",
+      "recheck_from": "2026-10-31T18:50:25+08:00",
+      "recheck_through": "2026-11-07T18:50:25+08:00"
+    },
+    {
+      "id": "2611.07229",
+      "source": "https://huggingface.co/api/models/Yewandou/spatial-umi-dream",
+      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
+      "last_checked_at": "2026-11-07T18:50:25+08:00",
+      "recheck_from": "2026-10-31T18:50:25+08:00",
+      "recheck_through": "2026-11-07T18:50:25+08:00"
+    },
+    {
+      "id": "2611.07229",
+      "source": "https://huggingface.co/api/datasets/zeyuan0611/RoboTwin-UMI-data",
+      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
+      "last_checked_at": "2026-11-07T18:50:25+08:00",
+      "recheck_from": "2026-10-31T18:50:25+08:00",
+      "recheck_through": "2026-11-07T18:50:25+08:00"
     }
   ],
-  "source_coverage": "多组英文关键词、完整recent列表484项与11-05 new列表102项、21篇历史版本；4篇原文/实际zh概述、官方项目和2仓库README，发布渠道非穷尽。",
+  "source_coverage": "多组英文组合、arXiv cs.RO当期115条公告与近期列表、25个历史版本页、3篇原文与zh概述、作者项目和官方GitHub。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
@@ -92,6 +119,7 @@
   "observed_versions": {
     "2610.37381": "v3",
     "2610.39280": "v2",
-    "2610.34356": "v2"
+    "2610.34356": "v2",
+    "2611.01215": "v2"
   }
 }

@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-07 日报](reports/2026/11/07.md)：公制深度WAM、训练时潜在预测、语义与视觉反馈，以及JADE撤回核查。
+
 [2026-11-06 日报](reports/2026/11/06.md)：动作专家梯度路由、ELA潜在动作、Generalist-RL多任务后训练与T2G目标评分；覆盖上次成功运行后两天，补齐STAR中文概述。
 
 [2026-11-04 日报](reports/2026/11/04.md)：JADE联合去噪、W2A视频先验蒸馏、REPAIR专家回灌；Cosmos3 LIBERO-10新权重与RynnVLA-Latent v2核查。
@@ -38,13 +40,16 @@
 - [2610.40748 · WorldBridge](papers/2610.40748-WorldBridge/README.md)
 - [2610.41009 · STAR](papers/2610.41009-STAR/README.md)
 - [2610.42096 · CausalWAM](papers/2610.42096-CausalWAM/README.md)
-- [2611.01215 · JADE](papers/2611.01215-JADE/README.md)
+- [2611.01215 · JADE（v2已撤回）](papers/2611.01215-JADE/README.md)
 - [2611.02600 · W2A](papers/2611.02600-W2A/README.md)
 - [2611.02777 · REPAIR](papers/2611.02777-REPAIR/README.md)
 - [2611.05249 · Gradient-Routing](papers/2611.05249-Gradient-Routing/README.md)
 - [2611.05571 · ELA](papers/2611.05571-ELA/README.md)
 - [2611.05847 · T2G](papers/2611.05847-T2G/README.md)
 - [2611.06905 · Generalist-RL](papers/2611.06905-Generalist-RL/README.md)
+- [2611.07229 · Spatial-UMI-Dream](papers/2611.07229-Spatial-UMI-Dream/README.md)
+- [2611.07850 · RoboImagine](papers/2611.07850-RoboImagine/README.md)
+- [2611.08156 · La-JEPA](papers/2611.08156-La-JEPA/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
 

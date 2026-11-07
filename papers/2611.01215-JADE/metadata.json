@@ -59,5 +59,21 @@
       "asset_sha256": "234f2a1c56a81c4f88cd85601b39db1558261c08c4cd7b1c327f4b117d831f08",
       "visual_check": "已检查图号、内容、清晰度和边界"
     }
+  ],
+  "latest_observed_version": "v2",
+  "publication_status": "withdrawn",
+  "version_checks": [
+    {
+      "update_type": "withdrawal",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "source": "https://arxiv.org/abs/2611.01215v2",
+      "checked_source": "https://arxiv.org/abs/2611.01215",
+      "checked_at": "2026-11-07T18:43:32+08:00",
+      "published_at": "2026-11-05T13:41:38+08:00",
+      "source_sha256": "2127dd8a96949be29d110ead63dfa88fd13f6567c03c881150494d3687dc7c96",
+      "comment": "formatting error",
+      "record": "versions/2026-11-07-v2-withdrawal.md"
+    }
   ]
 }

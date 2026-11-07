@@ -2,6 +2,8 @@
 
 Vision-Language Models Are Joint Denoisers in Robotic Action Generation
 
+> **arXiv最新状态：v2已撤回。** 下文保留v1的阅读记录与图像。[核查与时间](versions/2026-11-07-v2-withdrawal.md)。
+
 [arXiv原文](https://arxiv.org/abs/2611.01215) · [v1 HTML](https://arxiv.org/html/2611.01215v1) · [alphaXiv zh中文概述](https://www.alphaxiv.org/zh/abs/2611.01215) · [原文所列代码（本次404）](https://github.com/gxccc123/JADE)
 
 v1首次提交：2026-11-01T03:29:39+08:00（Asia/Shanghai）。2026-11-04首次收录，在11-03列表及近7天重叠窗口发现；不是今日首发。方向：VLA、joint-denoising、action-representation、adaptive-sampling。

@@ -324,7 +324,9 @@
     "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.01215",
     "version": "v1",
     "first_archived": "2026-11-04",
-    "directory": "papers/2611.01215-JADE"
+    "directory": "papers/2611.01215-JADE",
+    "latest_observed_version": "v2",
+    "publication_status": "withdrawn"
   },
   {
     "id": "2611.02600",
@@ -427,5 +429,56 @@
     "version": "v1",
     "first_archived": "2026-11-06",
     "directory": "papers/2611.06905-Generalist-RL"
+  },
+  {
+    "id": "2611.07229",
+    "short": "Spatial-UMI-Dream",
+    "title": "Spatial-UMI-Dream: Scaling World Action Models with Metric Geometry for UMI Manipulation",
+    "date": "2026-11-05",
+    "tags": [
+      "WAM",
+      "metric-depth",
+      "UMI",
+      "cross-embodiment"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.07229",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.07229",
+    "version": "v1",
+    "first_archived": "2026-11-07",
+    "directory": "papers/2611.07229-Spatial-UMI-Dream"
+  },
+  {
+    "id": "2611.07850",
+    "short": "RoboImagine",
+    "title": "Learning Robotic World Models with Semantic and Visual Feedback",
+    "date": "2026-11-05",
+    "tags": [
+      "robot-world-model",
+      "action-conditioned-video",
+      "post-training",
+      "semantic-feedback"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.07850",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.07850",
+    "version": "v1",
+    "first_archived": "2026-11-07",
+    "directory": "papers/2611.07850-RoboImagine"
+  },
+  {
+    "id": "2611.08156",
+    "short": "La-JEPA",
+    "title": "La-JEPA: Compact Robot Policies with Latent World Modeling",
+    "date": "2026-11-05",
+    "tags": [
+      "latent-world-model",
+      "flow-matching",
+      "VLA",
+      "efficient-inference"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.08156",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08156",
+    "version": "v1",
+    "first_archived": "2026-11-07",
+    "directory": "papers/2611.08156-La-JEPA"
   }
 ]
