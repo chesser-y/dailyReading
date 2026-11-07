@@ -1,0 +1,43 @@
+{
+  "project": "ToyBlocks: A controlled world for robot learning and evaluation",
+  "kind": "code_dataset_and_models_announcement",
+  "announcement_date": "2026-11-06",
+  "announcement_date_timezone": "publisher date without timestamp",
+  "announcement": "https://allenai.org/blog/toyblocks",
+  "project_site": "https://allenai.github.io/ToyBlocks/",
+  "repository": "https://github.com/allenai/ToyBlocks",
+  "data": "https://huggingface.co/datasets/allenai/toyblocks-data",
+  "arxiv_id": null,
+  "alphaxiv_status": "未查到对应论文及中文AI概述",
+  "reading": "官方发布、项目文档、GitHub README，未运行实现",
+  "announced_demos": 85336,
+  "announced_skills_per_demo": [
+    6,
+    12
+  ],
+  "dataset_sample_inventory": {
+    "url": "https://storage.googleapis.com/storage/v1/b/toyblocks-data/o?maxResults=12",
+    "items": [
+      {
+        "name": "FINAL_DATASETS/Easy/Test/Easy_Test_1k/data/chunk-000/file-000.parquet",
+        "size": "63762216",
+        "timeCreated": "2026-11-05T05:47:57.784Z",
+        "updated": "2026-11-05T05:47:57.784Z"
+      },
+      {
+        "name": "FINAL_DATASETS/Easy/Test/Easy_Test_1k/data/chunk-000/file-001.parquet",
+        "size": "68906555",
+        "timeCreated": "2026-11-05T05:47:57.963Z",
+        "updated": "2026-11-05T05:47:57.963Z"
+      },
+      {
+        "name": "FINAL_DATASETS/Easy/Test/Easy_Test_1k/data/chunk-000/file-002.parquet",
+        "size": "71381866",
+        "timeCreated": "2026-11-05T05:47:59.325Z",
+        "updated": "2026-11-05T05:47:59.325Z"
+      }
+    ],
+    "checked_at": "2026-11-08T07:02:33+08:00"
+  },
+  "models": "Molmo 2与ManiFlow由发布公告列出，模型文件未独立核实"
+}

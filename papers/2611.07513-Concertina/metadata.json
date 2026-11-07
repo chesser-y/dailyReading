@@ -1,0 +1,67 @@
+{
+  "id": "2611.07513",
+  "short": "Concertina",
+  "title": "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model",
+  "tags": [
+    "unified-multimodal",
+    "continuous-action",
+    "masked-diffusion",
+    "VLA"
+  ],
+  "read": "选读原文第3、4节、表2、5、6和附录A及B.1，核对PDF图1。已读alphaXiv中文AI概述及官方GitHub README和目录。未运行实现或基准。",
+  "abstract": "将每个控制步的连续动作向量投影为一个隐藏token，在同一个扩散VLM中结合图像、语言和状态做掩码重建。逐位置接口负责物理坐标转换，共享Transformer负责时间关联。",
+  "intro": "离散动作符号的预测误差难以对应到物理位移，独立动作专家则让动作生成主要在另一套层中发生。Concertina把连续动作重建接到已有多模态去噪主干上。",
+  "method": "多视角图像、语言、状态与掩码动作槽 → BARD-VL共享Transformer做块内并行重建、块间因果生成 → 逐位置输出连续物理动作，执行后用新观测重规划。",
+  "design": "每个时间步只占一个连续token，异构本体用维度有效性掩码。训练把图文前缀、腐化动作与教师强制的干净动作打包，待重建位置只能读同块腐化动作与更早的干净块。监督直接施加在归一化动作坐标。推理缓存前缀和已定稿的块，轻量风险头可对高误差槽重掩码。",
+  "evidence": "表2普通LIBERO四套件、每任务50回合、总2,000回合，平均成功98.15%。LIBERO-Plus覆盖10,030个扰动任务，成功8,615次（85.9%）。CALVIN ABC–D的1,000条五任务指令链中，平均完成4.142项。动作接口审计用有限差分扰动定位跨时响应，逐位置接口本身不跨时混合，中后层共享主干出现非局部响应。4.46B模型中活跃动作投影约0.21%。",
+  "limits": "实验主要覆盖模拟操作。动作接口占比衡量参数归属，无法直接换算推理耗时。不同模型的数据、主干和训练日程各有差异，主表小分差不等同于共享架构的单变量收益。",
+  "alpha": "中文概述沿每步动作token、块级掩码及动作接口审计展开。它把8.35B的目标冲突实验与4.46B的因子实验分开。原文核查进一步区分了跨时响应、模拟成功率和算力。",
+  "inference": "要验证动作推理是否真正进入共享主干，可在同一数据和参数预算下固定投影，对每层作动作位置扰动，再比较跨时响应、相对位姿误差和闭环成功率。响应本身不足以说明行为有效。",
+  "availability": "[官方GitHub](https://github.com/lose4578/Concertina)公开训练、评测和配置目录。README列出[权重合集](https://huggingface.co/collections/Traly/concertina)、预训练和任务检查点及数据转换入口。Hub文件未独立核实，确切公开日期未核实。数据主体是既有来源，代码仓库包含处理说明。",
+  "extra_sources": [
+    [
+      "官方代码",
+      "https://github.com/lose4578/Concertina"
+    ],
+    [
+      "作者权重入口",
+      "https://huggingface.co/collections/Traly/concertina"
+    ]
+  ],
+  "submitted_at": "2026-11-05T14:20:37+08:00",
+  "date": "2026-11-05",
+  "directory": "papers/2611.07513-Concertina",
+  "version": "v1",
+  "first_archived": "2026-11-08",
+  "arxiv": "https://arxiv.org/abs/2611.07513",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.07513",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文，独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-08T06:59:28+08:00",
+  "alphaxiv_checked_at": "2026-11-08T06:59:28+08:00",
+  "source_html_sha256": "50d661f38c283c4734d38fde7506f791984e6e45a965a9619902beb9f0b2a208",
+  "pdf_sha256": "d192d28c236b686d13564d5f7c73dfc48ed0e4c062e0a03395fccd7679078b2e",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.07513v1",
+      "version": "v1",
+      "figure_number": 1,
+      "page": 3,
+      "box_pt": [
+        118,
+        75,
+        492,
+        296
+      ],
+      "captured_at": "2026-11-08T07:02:05+08:00",
+      "caption": "图1展示共享掩码扩散主干、逐位置动作读写、打包训练可见性及跨块缓存。",
+      "asset_sha256": "53130aba6b1ee10775d485f79d0e4018998732ae17ff6b33b729de59bb98be91",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}
