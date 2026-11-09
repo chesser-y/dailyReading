@@ -55,5 +55,25 @@
       "captured_at": "2026-11-03T10:56:25+08:00",
       "visual_check": "内容、边界与清晰度已目视核查"
     }
+  ],
+  "latest_observed_version": "v2",
+  "version_checks": [
+    {
+      "update_type": "paper_revision",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "submitted_at": "2026-11-06T17:46:04+08:00",
+      "checked_at": "2026-11-09T10:53:30+08:00",
+      "summary": "v2更新RoboDojo结果、微调步数及指标标签",
+      "record": "versions/2026-11-09-v2-check.md",
+      "sources": {
+        "v1": "https://arxiv.org/html/2610.40748v1",
+        "v2": "https://arxiv.org/html/2610.40748v2"
+      },
+      "source_hashes": {
+        "v1": "1ec09a21284b03cc94ef60a5e320725650021e85405d7f39102f8c38c03b97bc",
+        "v2": "9aed8c98131ebc79fdbf0b2af2eeb12740842184326d3bbba3bc98a0822a59a2"
+      }
+    }
   ]
 }

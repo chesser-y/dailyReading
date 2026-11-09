@@ -46,6 +46,9 @@ RoboTwin-UMI：20任务，每任务50条干净Aloha-AgileX示范，评测每任�
 
 [模型仓库](https://github.com/Yewandou7/spatial_umi_dream)与[RoboTwin-UMI](https://github.com/ZeYuan06/RoboTwin-UMI)可访问。两仓库创建时间分别为11-06 04:30:29、11:19:03（北京时间），不是精确的首次公开时刻。README列出[预训练与基准微调权重](https://huggingface.co/Yewandou/spatial-umi-dream)及[仿真训练示范](https://huggingface.co/datasets/zeyuan0611/RoboTwin-UMI-data)；HF文件清单请求超时，未独立确认文件与发布日期。未核实605小时预训练语料或真机数据发布。
 
+
+**2026-11-09 资源补查。** 官方 Hub 清单已确认预训练、仿真微调权重及 RoboTwin-UMI 示范。 [文件清单核验](../../data/source-checks/2026-11-09-hub.json)。
+
 ## 自写摘要与阅读卡片
 
 以下为自写内容排版，非第三方网页截图。

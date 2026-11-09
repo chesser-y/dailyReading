@@ -46,6 +46,9 @@ RoboTwin 2.0用50项双臂任务、每项50条干净示范、每条件100回合/
 
 [官方SLA代码目录](https://github.com/OpenHelix-Team/Spatial-Forcing/tree/master/SLA)可访问，SLA release提交为北京时间11-06 05:45:18。README列出[基础权重](https://huggingface.co/haofuly/SLA_base)、[基准权重](https://huggingface.co/haofuly/SLA_benchmark_ckpts)和[真机示范](https://huggingface.co/datasets/haofuly/SLA_real_world_demo)，Hub文件未独立核实。作者标明持续预训练语料组成可查，处理后的全量预训练数据未发布。
 
+
+**2026-11-09 资源补查。** 官方 Hub 已取得基础和基准检查点及真机示范的文件清单。 [文件清单核验](../../data/source-checks/2026-11-09-hub.json)。
+
 ## 自写摘要与阅读卡片
 
 以下两张卡片由本项目根据自写内容排版。

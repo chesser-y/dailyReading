@@ -46,6 +46,9 @@ v1首次提交于2026-11-05T14:20:37+08:00（Asia/Shanghai）。本次在7天重
 
 [官方GitHub](https://github.com/lose4578/Concertina)公开训练、评测和配置目录。README列出[权重合集](https://huggingface.co/collections/Traly/concertina)、预训练和任务检查点及数据转换入口。Hub文件未独立核实，确切公开日期未核实。数据主体是既有来源，代码仓库包含处理说明。
 
+
+**2026-11-09 资源补查。** 已取得 90k 预训练权重清单，其他任务权重仍待逐项核对。 [文件清单核验](../../data/source-checks/2026-11-09-hub.json)。
+
 ## 自写摘要与阅读卡片
 
 以下两张卡片由本项目根据自写内容排版。

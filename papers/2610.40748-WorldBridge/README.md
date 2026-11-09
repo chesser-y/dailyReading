@@ -2,6 +2,8 @@
 
 WorldBridge: Bridging Video and Action for Task Generalization in World Action Models
 
+> **v2 版本核查。** v2更新RoboDojo结果、微调步数及指标标签。下文保留 v1 阅读依据。[版本比较](versions/2026-11-09-v2-check.md)。
+
 [arXiv原文](https://arxiv.org/abs/2610.40748) · [v1 HTML](https://arxiv.org/html/2610.40748v1) · [alphaXiv zh中文概述](https://www.alphaxiv.org/zh/abs/2610.40748) · [作者项目页](https://worldbridge-jd.github.io/)
 
 首次提交：2026-10-30T00:00:06+08:00（Asia/Shanghai），v1；2026-11-03首次归档。本期在11-02 arXiv新列表与近7天重叠窗口中发现，不称今日首发或新修订。方向：WAM、video-action、task-generalization、cross-embodiment。

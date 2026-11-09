@@ -59,5 +59,25 @@
       "captured_at": "2026-11-03T10:56:25+08:00",
       "visual_check": "内容、边界与清晰度已目视核查"
     }
+  ],
+  "latest_observed_version": "v2",
+  "version_checks": [
+    {
+      "update_type": "paper_revision",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "submitted_at": "2026-11-06T15:52:06+08:00",
+      "checked_at": "2026-11-09T10:53:30+08:00",
+      "summary": "HTML正文比较仅见版本标记和日期变化",
+      "record": "versions/2026-11-09-v2-check.md",
+      "sources": {
+        "v1": "https://arxiv.org/html/2610.41009v1",
+        "v2": "https://arxiv.org/html/2610.41009v2"
+      },
+      "source_hashes": {
+        "v1": "efd7f9b9709da1f773d27de5e699487f09e61ba39f3bb41de05192e446e333d6",
+        "v2": "22d732c97a7e59d2bd5495374ee07130e9d9da366103e1f75af45bbe74c2dbcd"
+      }
+    }
   ]
 }

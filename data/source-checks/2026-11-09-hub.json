@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-09",
+  "check_type": "public Hub metadata, commit history and author completion marker",
+  "coverage": "File inventories and author checks. Full assets were not downloaded or executed.",
+  "rechecked": [
+    {
+      "name": "spatial-model",
+      "url": "https://huggingface.co/api/models/Yewandou/spatial-umi-dream",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "code": 200,
+      "sha": "9032a967bd8c058987cc91ce83a0b8e584d0227e",
+      "last_modified": "2026-11-06T04:36:12.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 14,
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "pretrain/config.json",
+        "pretrain/model-00001-of-00003.safetensors",
+        "pretrain/model-00002-of-00003.safetensors",
+        "pretrain/model-00003-of-00003.safetensors",
+        "pretrain/model.safetensors.index.json",
+        "robotwin-umi/checkpoint-10000/config.json",
+        "robotwin-umi/checkpoint-10000/experiment_cfg/conf.yaml",
+        "robotwin-umi/checkpoint-10000/experiment_cfg/metadata.json",
+        "robotwin-umi/checkpoint-10000/model-00001-of-00003.safetensors",
+        "robotwin-umi/checkpoint-10000/model-00002-of-00003.safetensors",
+        "robotwin-umi/checkpoint-10000/model-00003-of-00003.safetensors",
+        "robotwin-umi/checkpoint-10000/model.safetensors.index.json"
+      ]
+    },
+    {
+      "name": "spatial-data",
+      "url": "https://huggingface.co/api/datasets/zeyuan0611/RoboTwin-UMI-data",
+      "checked_at": "2026-11-09T10:48:59+08:00",
+      "code": 200,
+      "sha": "3802d5180d5c131acb5e08ee26fd96ed474545f8",
+      "last_modified": "2026-11-06T04:05:20.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 6181,
+      "examples": [
+        ".gitattributes",
+        "adjust_bottle_easy/data/chunk-000/file-000.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-001.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-002.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-003.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-004.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-005.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-006.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-007.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-008.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-009.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-010.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-011.parquet",
+        "adjust_bottle_easy/data/chunk-000/file-012.parquet"
+      ]
+    },
+    {
+      "name": "roboimagine",
+      "url": "https://huggingface.co/api/models/easylearning/RoboImagine",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "code": 200,
+      "sha": "cb4f5e2bdfbbbff2ad6caffa058d50fa21ec3ec7",
+      "last_modified": "2026-10-27T05:36:34.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 52,
+      "examples": [
+        "bridge--main--model.safetensors",
+        "bridge--sft--model.safetensors",
+        "robocasa--main--model.safetensors",
+        "robocasa--sft--model.safetensors",
+        "rt1--main--model.safetensors",
+        "rt1--sft--model.safetensors"
+      ]
+    },
+    {
+      "name": "hands-complete",
+      "url": "https://huggingface.co/datasets/Cyan666/HandsOn-Datasets/resolve/main/newton_wuji2/RELEASE_COMPLETE.json",
+      "code": 200,
+      "sha": null,
+      "created_at": null,
+      "updated_at": null,
+      "private": null,
+      "gated": null,
+      "file_count": 0,
+      "examples": [],
+      "completion": {
+        "status": "complete",
+        "verified_hub_revision": "285948c8d355bc0cd05064a40f5f0a78ce8f4b98",
+        "tasks": 50,
+        "episodes": 10000,
+        "shards": 200,
+        "source_files": 104758,
+        "source_bytes": 191065403988,
+        "frames": 7077577,
+        "selection_sha256": "a9b2aa504d09fc8a26669a73cc18264d98b8f3e528cff42637c2cc113552d704",
+        "verification": "Per-task shortest-200 membership independently recomputed; all remote archive sizes and LFS SHA256s checked at one immutable Hub revision; every archived source file MD5 matched the transfer inventory.",
+        "renderer_and_example_files": [
+          {
+            "path": "newton_wuji2/renderer/replay-runtime.tar",
+            "sha256": "2a7908dcb2c5984ad4c253141545e48ebf49f137a6c17a1f3d9071e3a3dad33b",
+            "bytes": 2228346880
+          },
+          {
+            "path": "newton_wuji2/renderer/replay-runtime.json",
+            "sha256": "ee6862d83418e21fca744280d6b1736dcf41bd0b9efbef10eedecd2279e17a49",
+            "bytes": 1241921
+          },
+          {
+            "path": "newton_wuji2/examples/task03/main.mp4",
+            "sha256": "ae61ad43cd102e36bfcea05029b1b3767975da8053d23740e4d1d81dbba9b9f9",
+            "bytes": 463483
+          },
+          {
+            "path": "newton_wuji2/examples/task03/wrist_left.mp4",
+            "sha256": "8a52659830da1e5eb1a28c4016957b1e373658374e8dd9c982e6701a0c8bf635",
+            "bytes": 167939
+          },
+          {
+            "path": "newton_wuji2/examples/task03/wrist_right.mp4",
+            "sha256": "bbf1587da77d0d3c9dfb425b9487f70ce02a8f55a6657f733fa268fb3b08a199",
+            "bytes": 842599
+          },
+          {
+            "path": "newton_wuji2/examples/task03/three_views.mp4",
+            "sha256": "2e67d2cb4e5f4e5b249976d777d318bbb6ff84e0e6fd04688241c2bf21c20123",
+            "bytes": 1586070
+          }
+        ]
+      },
+      "checked_at": "2026-11-09T10:51:11+08:00"
+    },
+    {
+      "name": "hands-weights",
+      "url": "https://huggingface.co/api/models/Cyan666/HandsOn-Checkpoints",
+      "code": 200,
+      "sha": "7e2131dbaf6bd2bff72b266f04f38ea7d4dda000",
+      "created_at": "2026-11-03T04:55:14.000Z",
+      "updated_at": "2026-11-03T05:58:20.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 94,
+      "examples": [
+        ".gitattributes",
+        "CHECKPOINTS.json",
+        "README.md",
+        "SHA256SUMS",
+        "UPLOAD_VERIFIED.json",
+        "dm05/checkpoint-86000/state/.metadata",
+        "dm05/checkpoint-86000/state/__0_0.distcp",
+        "dm05/checkpoint-86000/state/__0_1.distcp",
+        "dm05/checkpoint-86000/state/__0_2.distcp",
+        "dm05/checkpoint-86000/state/__0_3.distcp"
+      ],
+      "checked_at": "2026-11-09T10:51:10+08:00"
+    },
+    {
+      "name": "neo-model",
+      "url": "https://huggingface.co/api/models/weepiess2383/NEO-VLA",
+      "code": 200,
+      "sha": "eea9597874cc93068a31982e4a9f8e498dbf5fe3",
+      "created_at": "2026-11-01T14:43:33.000Z",
+      "updated_at": "2026-11-08T14:04:11.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 31,
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "stage1/embodiments.json",
+        "stage1/meta.json",
+        "stage1/state.pt",
+        "stage2/embodiments.json",
+        "stage2/meta.json",
+        "stage2/state.pt",
+        "stage2_backbone/__init__.py",
+        "stage2_backbone/added_tokens.json"
+      ],
+      "checked_at": "2026-11-09T10:51:10+08:00"
+    },
+    {
+      "name": "neo-data",
+      "url": "https://huggingface.co/api/datasets/weepiess2383/NEO-VLA-Action-Pretrain",
+      "code": 200,
+      "sha": "bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02",
+      "created_at": "2026-11-01T09:25:17.000Z",
+      "updated_at": "2026-11-08T07:03:36.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 18343,
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "SOURCES.md",
+        "VIDEO_SOURCES.md",
+        "manifests/action_pretrain.json",
+        "metadata/action_pretrain/embodiments.json",
+        "processed/action_pretrain/arrow/AIRBOT_MMK2_beauty_sponge_and_cake_to_place.arrow",
+        "processed/action_pretrain/arrow/AIRBOT_MMK2_bowl_storage_pepper.arrow",
+        "processed/action_pretrain/arrow/AIRBOT_MMK2_boxs_storage.arrow",
+        "processed/action_pretrain/arrow/AIRBOT_MMK2_building_block_storage.arrow"
+      ],
+      "checked_at": "2026-11-09T10:51:11+08:00"
+    },
+    {
+      "name": "concertina-base",
+      "url": "https://huggingface.co/api/models/Traly/concertina-pretrain-90k",
+      "code": 200,
+      "sha": "d172fb0862208878053b3ba1cadb7bf45228f87e",
+      "created_at": "2026-10-30T18:05:55.000Z",
+      "updated_at": "2026-11-03T04:43:48.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 17,
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "backbone/chat_template.json",
+        "backbone/config.json",
+        "backbone/generation_config.json",
+        "backbone/merges.txt",
+        "backbone/preprocessor_config.json",
+        "backbone/tokenizer.json",
+        "backbone/tokenizer_config.json",
+        "backbone/video_preprocessor_config.json"
+      ],
+      "checked_at": "2026-11-09T10:51:10+08:00"
+    },
+    {
+      "name": "sla-base",
+      "url": "https://huggingface.co/api/models/haofuly/SLA_base",
+      "code": 200,
+      "sha": "5bbdf3012ab643554aa2eb83ddeae9ace3dce476",
+      "created_at": "2026-11-05T18:07:25.000Z",
+      "updated_at": "2026-11-08T03:20:27.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 201,
+      "examples": [
+        ".gitattributes",
+        "_CHECKPOINT_METADATA",
+        "assets/SLA_base/norm_stats.json",
+        "params/_METADATA",
+        "params/_sharding",
+        "params/array_metadatas/process_0",
+        "params/array_metadatas/process_1",
+        "params/array_metadatas/process_10",
+        "params/array_metadatas/process_11",
+        "params/array_metadatas/process_12"
+      ],
+      "checked_at": "2026-11-09T10:51:10+08:00"
+    },
+    {
+      "name": "sla-benchmark",
+      "url": "https://huggingface.co/api/models/haofuly/SLA_benchmark_ckpts",
+      "code": 200,
+      "sha": "dcafbdb9c9af67c94eead433606fc4d4be572166",
+      "created_at": "2026-11-05T19:56:55.000Z",
+      "updated_at": "2026-11-07T12:38:59.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 125,
+      "examples": [
+        ".gitattributes",
+        "SLA_libero_plus_ckpt/_CHECKPOINT_METADATA",
+        "SLA_libero_plus_ckpt/assets/omnisf_11.1_jax/norm_stats.json",
+        "SLA_libero_plus_ckpt/params/_METADATA",
+        "SLA_libero_plus_ckpt/params/_sharding",
+        "SLA_libero_plus_ckpt/params/array_metadatas/process_0",
+        "SLA_libero_plus_ckpt/params/d/8e0bd6316b583216d2f0e8591e8c6942",
+        "SLA_libero_plus_ckpt/params/manifest.ocdbt",
+        "SLA_libero_plus_ckpt/params/ocdbt.process_0/d/51e5f00835cf9691225ad8190502d800",
+        "SLA_libero_plus_ckpt/params/ocdbt.process_0/d/5e105026343bb08908edfbfad4e8a4ae"
+      ],
+      "checked_at": "2026-11-09T10:51:11+08:00"
+    },
+    {
+      "name": "sla-demo",
+      "url": "https://huggingface.co/api/datasets/haofuly/SLA_real_world_demo",
+      "code": 200,
+      "sha": "3ce998554c756fda2a54fec2b58292e8338efc1f",
+      "created_at": "2026-11-05T18:46:46.000Z",
+      "updated_at": "2026-11-05T18:47:44.000Z",
+      "private": false,
+      "gated": false,
+      "file_count": 409,
+      "examples": [
+        ".gitattributes",
+        "handover_vege1/data/chunk-000/episode_000000.parquet",
+        "handover_vege1/data/chunk-000/episode_000001.parquet",
+        "handover_vege1/data/chunk-000/episode_000002.parquet",
+        "handover_vege1/data/chunk-000/episode_000003.parquet",
+        "handover_vege1/data/chunk-000/episode_000004.parquet",
+        "handover_vege1/data/chunk-000/episode_000005.parquet",
+        "handover_vege1/data/chunk-000/episode_000006.parquet",
+        "handover_vege1/data/chunk-000/episode_000007.parquet",
+        "handover_vege1/data/chunk-000/episode_000008.parquet"
+      ],
+      "checked_at": "2026-11-09T10:51:11+08:00"
+    },
+    {
+      "name": "Molmo2-4B-tb",
+      "url": "https://huggingface.co/api/models/allenai/Molmo2-4B-tb",
+      "code": 200,
+      "sha": "e5c3ef6018c5f6b011a2b3d0b774fddb5aa1f842",
+      "updated_at": "2026-11-06T17:42:53.000Z",
+      "examples": [
+        "model.pt"
+      ],
+      "checked_at": "2026-11-09T10:57:37+08:00"
+    },
+    {
+      "name": "maniflow-tb",
+      "url": "https://huggingface.co/api/models/allenai/maniflow-tb",
+      "code": 200,
+      "sha": "1e8385fdb1a28096989309d8c36f51f247ddf0d3",
+      "updated_at": "2026-11-06T17:43:22.000Z",
+      "examples": [
+        "checkpoints/steps_200000_model.safetensors"
+      ],
+      "checked_at": "2026-11-09T10:57:37+08:00"
+    }
+  ],
+  "commits": [
+    {
+      "name": "neo-model",
+      "url": "https://huggingface.co/api/models/weepiess2383/NEO-VLA/commits/main",
+      "commits": [
+        {
+          "id": "eea9597874cc93068a31982e4a9f8e498dbf5fe3",
+          "title": "Move stage_mid_train row after stage2_backbone",
+          "date": "2026-11-08T14:04:11.000Z"
+        },
+        {
+          "id": "5c9ff120f20d7f49ba45a97894d39b1ac4aaadd8",
+          "title": "Add stage_mid_train to checkpoint table",
+          "date": "2026-11-08T14:03:16.000Z"
+        },
+        {
+          "id": "322e888c0a6c97daad92ef151504c420dc9843f5",
+          "title": "Add license metadata (#1)",
+          "date": "2026-11-06T05:49:24.000Z"
+        },
+        {
+          "id": "0d174d93eac83e99c5cd0ed754e0679af94c2267",
+          "title": "NEO-VLA checkpoints",
+          "date": "2026-11-05T16:33:31.000Z"
+        }
+      ],
+      "checked_at": "2026-11-09T10:53:01+08:00"
+    },
+    {
+      "name": "neo-data",
+      "url": "https://huggingface.co/api/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commits/main",
+      "commits": [
+        {
+          "id": "bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02",
+          "title": "Use upstream camera sources and remove mirrored video archives",
+          "date": "2026-11-08T07:03:36.000Z"
+        },
+        {
+          "id": "9da92a0f1ab4659b05bd9e3129b056d26c8a1853",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T06:32:59.000Z"
+        },
+        {
+          "id": "ec44f0a2c1782ae2c75a323051dcd60e7a992ae3",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T06:14:47.000Z"
+        },
+        {
+          "id": "6f7e9a1c77efe8778f30f349d7131358eacfaae2",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T06:07:11.000Z"
+        },
+        {
+          "id": "6872286e8dfe324f1663bf2fae5cb1524efebeae",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T06:00:56.000Z"
+        },
+        {
+          "id": "4a62803af867802c96b31db8636d04fc15a86063",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T05:56:46.000Z"
+        },
+        {
+          "id": "f00dc44966b40e96603b4b142a3b46e67c00119c",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T05:32:40.000Z"
+        },
+        {
+          "id": "1de543a7d051b53324eda34d83c967731c7c5471",
+          "title": "Upload NEO-VLA action pretraining video assets",
+          "date": "2026-11-08T05:26:02.000Z"
+        }
+      ],
+      "checked_at": "2026-11-09T10:53:01+08:00"
+    },
+    {
+      "name": "sla-base",
+      "url": "https://huggingface.co/api/models/haofuly/SLA_base/commits/main",
+      "commits": [
+        {
+          "id": "5bbdf3012ab643554aa2eb83ddeae9ace3dce476",
+          "title": "Upload folder using huggingface_hub",
+          "date": "2026-11-08T03:20:27.000Z"
+        },
+        {
+          "id": "5de40c85f08b6b16efeac72e9bd620e438e41aab",
+          "title": "Delete assets",
+          "date": "2026-11-08T03:14:01.000Z"
+        },
+        {
+          "id": "01fefef4de033a8ebea43e914f86816e8dc67b0a",
+          "title": "Upload folder using huggingface_hub",
+          "date": "2026-11-05T18:10:58.000Z"
+        },
+        {
+          "id": "66e1057bf2597bcabae4cebbcf94b7894ac1f4ff",
+          "title": "initial commit",
+          "date": "2026-11-05T18:07:25.000Z"
+        }
+      ],
+      "checked_at": "2026-11-09T10:53:01+08:00"
+    },
+    {
+      "name": "hands-data",
+      "url": "https://huggingface.co/api/datasets/Cyan666/HandsOn-Datasets/commits/main",
+      "commits": [
+        {
+          "id": "7e19e2675464ebff9742923b20267e5af5ad645e",
+          "title": "Add Wuji1 PhysX collision comparison videos",
+          "date": "2026-11-08T10:12:09.000Z"
+        },
+        {
+          "id": "731a1548fb40af8a3b575c7d3ce98e11c2941ee1",
+          "title": "Release verified Newton Wuji2 shortest-200 dataset: 50 tasks, 10,000 trajectories",
+          "date": "2026-11-08T10:06:07.000Z"
+        },
+        {
+          "id": "285948c8d355bc0cd05064a40f5f0a78ce8f4b98",
+          "title": "Add Newton Wuji2 task 47 shard 3/4",
+          "date": "2026-11-08T10:02:43.000Z"
+        },
+        {
+          "id": "d681bd2061a61c2011886ab6b34b4eca1c21b205",
+          "title": "Add Newton Wuji2 task 47 shard 4/4",
+          "date": "2026-11-08T10:02:43.000Z"
+        },
+        {
+          "id": "c9864a14aa03d669daec0907696a86ee61b2c65e",
+          "title": "Add Newton Wuji2 task 47 shard 2/4",
+          "date": "2026-11-08T09:59:48.000Z"
+        },
+        {
+          "id": "59ae50418617bd84f28e5e5968ef169121d95e6a",
+          "title": "Add Newton Wuji2 task 47 shard 1/4",
+          "date": "2026-11-08T09:59:42.000Z"
+        },
+        {
+          "id": "2f22217f48416ea7daa579cc0cb64fa3cea98b54",
+          "title": "Add Newton Wuji2 task 46 shard 4/4",
+          "date": "2026-11-08T09:58:52.000Z"
+        },
+        {
+          "id": "0d9fbfedd4af317638171a7dccc3ba29e7dcd132",
+          "title": "Add Newton Wuji2 task 46 shard 3/4",
+          "date": "2026-11-08T09:58:03.000Z"
+        }
+      ],
+      "checked_at": "2026-11-09T10:53:01+08:00"
+    }
+  ]
+}

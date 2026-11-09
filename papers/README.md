@@ -4,6 +4,7 @@
 
 按arXiv号升序。标题先列编号与简称，正文保留完整英文题目。
 
+- [2610.26765 · HandsOn](2610.26765-HandsOn/README.md) — HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation
 - [2610.34356 · RynnVLA-Latent](2610.34356-RynnVLA-Latent/README.md) — RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions
 - [2610.36011 · E0.5](2610.36011-E0.5/README.md) — E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling
 - [2610.36068 · Rollback](2610.36068-Rollback/README.md) — Rollback: Experience Backtracking in World Models for Policy Improvement
@@ -26,10 +27,12 @@
 - [2611.02600 · W2A](2611.02600-W2A/README.md) — W2A: Distilling World Priors into Action Models for Real-Time Robotic Control
 - [2611.02777 · REPAIR](2611.02777-REPAIR/README.md) — Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies
 - [2611.03585 · WISE](2611.03585-WISE/README.md) — Seeing Through the Illusion: Test-Time Scaling for World Action Models
+- [2611.04711 · Cycle-WAM](2611.04711-Cycle-WAM/README.md) — Cycle WAM: Coupling Action and Video through Cycle Consistency
 - [2611.05249 · Gradient-Routing](2611.05249-Gradient-Routing/README.md) — Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs
 - [2611.05571 · ELA](2611.05571-ELA/README.md) — ELA: End-to-End Latent Action Policy Learning from Video Demonstrations
 - [2611.05847 · T2G](2611.05847-T2G/README.md) — Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models
 - [2611.06905 · Generalist-RL](2611.06905-Generalist-RL/README.md) — Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement
+- [2611.06918 · NEO-VLA](2611.06918-NEO-VLA/README.md) — From Pixels to Actions - Towards Native Vision-Language-Action Policies
 - [2611.07229 · Spatial-UMI-Dream](2611.07229-Spatial-UMI-Dream/README.md) — Spatial-UMI-Dream: Scaling World Action Models with Metric Geometry for UMI Manipulation
 - [2611.07513 · Concertina](2611.07513-Concertina/README.md) — Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model
 - [2611.07850 · RoboImagine](2611.07850-RoboImagine/README.md) — Learning Robotic World Models with Semantic and Visual Feedback

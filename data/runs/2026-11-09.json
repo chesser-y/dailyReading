@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-09",
+  "search_window_start": "2026-11-08T07:02:33+08:00",
+  "search_cutoff": "2026-11-09T10:57:37+08:00",
+  "overlap_window_start": "2026-11-02T10:57:37+08:00",
+  "selected": [
+    "2610.26765",
+    "2611.04711",
+    "2611.06918"
+  ],
+  "dedup_against": [
+    "2610.34356",
+    "2610.36011",
+    "2610.36068",
+    "2610.36791",
+    "2610.37091",
+    "2610.37381",
+    "2610.37666",
+    "2610.38000",
+    "2610.39280",
+    "2610.39721",
+    "2610.40207",
+    "2610.40210",
+    "2610.40271",
+    "2610.40401",
+    "2610.40430",
+    "2610.40748",
+    "2610.41009",
+    "2610.42096",
+    "2611.01215",
+    "2611.02600",
+    "2611.02777",
+    "2611.03585",
+    "2611.05249",
+    "2611.05571",
+    "2611.05847",
+    "2611.06905",
+    "2611.07229",
+    "2611.07513",
+    "2611.07850",
+    "2611.08156",
+    "2611.08373"
+  ],
+  "update_type": "HandsOn data release; two first-archive overlaps; NEO-VLA data-source update; two previous-paper revisions",
+  "history_rechecks": {
+    "2610.34356": "v2",
+    "2610.36011": "v1",
+    "2610.36068": "v1",
+    "2610.36791": "v1",
+    "2610.37091": "v1",
+    "2610.37381": "v3",
+    "2610.37666": "v1",
+    "2610.38000": "v1",
+    "2610.39280": "v2",
+    "2610.39721": "v1",
+    "2610.40207": "v1",
+    "2610.40210": "v1",
+    "2610.40271": "v1",
+    "2610.40401": "v1",
+    "2610.40430": "v1",
+    "2610.40748": "v2",
+    "2610.41009": "v2",
+    "2610.42096": "v1",
+    "2611.01215": "v2",
+    "2611.02600": "v1",
+    "2611.02777": "v1",
+    "2611.03585": "v1",
+    "2611.05249": "v1",
+    "2611.05571": "v1",
+    "2611.05847": "v1",
+    "2611.06905": "v1",
+    "2611.07229": "v1",
+    "2611.07513": "v1",
+    "2611.07850": "v1",
+    "2611.08156": "v1",
+    "2611.08373": "v1"
+  },
+  "version_checks": {
+    "2610.40748": {
+      "update_type": "paper_revision",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "submitted_at": "2026-11-06T17:46:04+08:00",
+      "checked_at": "2026-11-09T10:53:30+08:00",
+      "summary": "v2更新RoboDojo结果、微调步数及指标标签",
+      "record": "versions/2026-11-09-v2-check.md",
+      "sources": {
+        "v1": "https://arxiv.org/html/2610.40748v1",
+        "v2": "https://arxiv.org/html/2610.40748v2"
+      },
+      "source_hashes": {
+        "v1": "1ec09a21284b03cc94ef60a5e320725650021e85405d7f39102f8c38c03b97bc",
+        "v2": "9aed8c98131ebc79fdbf0b2af2eeb12740842184326d3bbba3bc98a0822a59a2"
+      }
+    },
+    "2610.41009": {
+      "update_type": "paper_revision",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "submitted_at": "2026-11-06T15:52:06+08:00",
+      "checked_at": "2026-11-09T10:53:30+08:00",
+      "summary": "HTML正文比较仅见版本标记和日期变化",
+      "record": "versions/2026-11-09-v2-check.md",
+      "sources": {
+        "v1": "https://arxiv.org/html/2610.41009v1",
+        "v2": "https://arxiv.org/html/2610.41009v2"
+      },
+      "source_hashes": {
+        "v1": "efd7f9b9709da1f773d27de5e699487f09e61ba39f3bb41de05192e446e333d6",
+        "v2": "22d732c97a7e59d2bd5495374ee07130e9d9da366103e1f75af45bbe74c2dbcd"
+      }
+    }
+  },
+  "source_fetches": [
+    {
+      "id": "2611.06918",
+      "kind": "html",
+      "url": "https://arxiv.org/html/2611.06918v1",
+      "checked_at": "2026-11-09T10:48:55+08:00",
+      "status": "ok",
+      "bytes": 315294,
+      "chinese_overview": false
+    },
+    {
+      "id": "2611.06918",
+      "kind": "abs",
+      "url": "https://arxiv.org/abs/2611.06918",
+      "checked_at": "2026-11-09T10:48:55+08:00",
+      "status": "ok",
+      "bytes": 43811,
+      "chinese_overview": false
+    },
+    {
+      "id": "2611.06918",
+      "kind": "zh",
+      "url": "https://www.alphaxiv.org/zh/abs/2611.06918",
+      "checked_at": "2026-11-09T10:48:55+08:00",
+      "status": "ok",
+      "bytes": 278523,
+      "chinese_overview": true
+    },
+    {
+      "id": "2610.26765",
+      "kind": "html",
+      "url": "https://arxiv.org/html/2610.26765v1",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "status": "ok",
+      "bytes": 999718,
+      "chinese_overview": false
+    },
+    {
+      "id": "2610.26765",
+      "kind": "abs",
+      "url": "https://arxiv.org/abs/2610.26765",
+      "checked_at": "2026-11-09T10:48:55+08:00",
+      "status": "ok",
+      "bytes": 44969,
+      "chinese_overview": false
+    },
+    {
+      "id": "2610.26765",
+      "kind": "zh",
+      "url": "https://www.alphaxiv.org/zh/abs/2610.26765",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "status": "ok",
+      "bytes": 245037,
+      "chinese_overview": true
+    },
+    {
+      "id": "2611.04711",
+      "kind": "html",
+      "url": "https://arxiv.org/html/2611.04711v1",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "status": "ok",
+      "bytes": 233133,
+      "chinese_overview": false
+    },
+    {
+      "id": "2611.04711",
+      "kind": "abs",
+      "url": "https://arxiv.org/abs/2611.04711",
+      "checked_at": "2026-11-09T10:48:56+08:00",
+      "status": "ok",
+      "bytes": 42288,
+      "chinese_overview": false
+    },
+    {
+      "id": "2611.04711",
+      "kind": "zh",
+      "url": "https://www.alphaxiv.org/zh/abs/2611.04711",
+      "checked_at": "2026-11-09T10:48:57+08:00",
+      "status": "ok",
+      "bytes": 226537,
+      "chinese_overview": true
+    }
+  ],
+  "resource_record": "data/source-checks/2026-11-09-hub.json",
+  "source_gaps": [
+    {
+      "id": "2610.39721",
+      "source": "https://github.com/Untitled-W/WorldProbe",
+      "status": "404，需后续核对发布链接",
+      "last_checked_at": "2026-11-06T11:04:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2610.40207",
+      "source": "arXiv PDF v1",
+      "status": "下载未完成，已用原文HTML及官方原图完成笔记"
+    },
+    {
+      "id": "2610.39280",
+      "url": "https://github.com/JonathanYang0127/icl_cross_controller",
+      "reason": "项目页列出此仓库，GitHub连接器查询README返回404；待核实代码/数据/权重发布。",
+      "checked_at": "2026-11-01T07:10:01+08:00",
+      "last_checked_at": "2026-11-06T11:04:55+08:00",
+      "last_result": "GitHub connector repository query: 404"
+    },
+    {
+      "id": "2611.01215",
+      "source": "https://github.com/gxccc123/JADE",
+      "status": "仓库/README查询404，发布待核实",
+      "last_checked_at": "2026-11-07T18:50:25+08:00",
+      "last_result": "官方GitHub仓库查询404；arXiv v2撤回另有核查记录"
+    },
+    {
+      "id": "2611.02600",
+      "source": "arXiv PDF v1",
+      "status": "下载内容缺少有效尾部，解析Unexpected EOF；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.02777",
+      "source": "arXiv PDF v1",
+      "status": "下载超时；已用HTML及官方原图"
+    },
+    {
+      "id": "2611.07513",
+      "source": "https://huggingface.co/collections/Traly/concertina",
+      "status": "90k预训练权重清单已核实，其余任务权重和首次公开时间待核查",
+      "last_checked_at": "2026-11-09T10:57:37+08:00",
+      "recheck_from": "2026-11-01T07:02:33+08:00",
+      "recheck_through": "2026-11-09T10:57:37+08:00",
+      "partial_record": "data/source-checks/2026-11-09-hub.json"
+    }
+  ],
+  "discovery_methods": [
+    "英文组合覆盖机器人基础模型、视觉语言动作、动作条件视频、灵巧操作及代码权重数据",
+    "arXiv cs.RO新列表及近期列表、31历史版本页",
+    "官方GitHub与Hub元数据、中文概述正文核验"
+  ],
+  "publication": "Git push and public rendering verified separately."
+}

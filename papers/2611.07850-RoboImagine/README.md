@@ -45,6 +45,9 @@ v1首次提交：2026-11-05T19:30:01+08:00（Asia/Shanghai）；2026-11-07首次
 
 [官方仓库](https://github.com/Alexander-wu/RoboImagine)可访问。README列出[模型入口](https://huggingface.co/easylearning/RoboImagine)及三个数据域对应的模型和SFT检查点、少量示例；官方模型文件清单请求超时，未核实权重可下载及发布日期。RT-1、BridgeV2和RoboCasa是原有数据源，示例不能当作全量训练数据发布。
 
+
+**2026-11-09 资源补查。** 官方 Hub 清单已确认 RT-1、Bridge 和 RoboCasa 各自的主模型与 SFT 权重。 [文件清单核验](../../data/source-checks/2026-11-09-hub.json)。
+
 ## 自写摘要与阅读卡片
 
 以下为自写内容排版，非第三方网页截图。

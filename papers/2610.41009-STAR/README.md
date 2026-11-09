@@ -2,6 +2,8 @@
 
 STAR: Steering Action Representations during Inference
 
+> **v2 版本核查。** HTML正文比较仅见版本标记和日期变化。下文保留 v1 阅读依据。[版本比较](versions/2026-11-09-v2-check.md)。
+
 [arXiv原文](https://arxiv.org/abs/2610.41009) · [v1 HTML](https://arxiv.org/html/2610.41009v1) · [alphaXiv zh入口（概述缺失）](https://www.alphaxiv.org/zh/abs/2610.41009) · [官方仓库](https://github.com/PKU-VaLuE-Lab/STAR) · [仓库README](https://github.com/PKU-VaLuE-Lab/STAR/blob/main/README.md)
 
 首次提交：2026-10-30T05:42:17+08:00（Asia/Shanghai），v1；2026-11-03首次归档。本期在11-02 arXiv新列表与近7天重叠窗口中发现，不称今日首发或新修订。方向：VLA、inference-time-adaptation、proprioception、representation。

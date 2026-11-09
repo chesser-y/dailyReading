@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-09 日报](reports/2026/11/09.md)涵盖 HandsOn 数据发布、NEO-VLA 跨层视觉、Cycle WAM 对照与 WorldBridge v2。
+
 [2026-11-08 日报](reports/2026/11/08.md)涵盖WISE候选选择、Concertina共享动作重建、SLA空间监督与ToyBlocks发布。
 
 [2026-11-07 日报](reports/2026/11/07.md)：公制深度WAM、训练时潜在预测、语义与视觉反馈，以及JADE撤回核查。
@@ -24,6 +26,7 @@
 
 [2026-10-30 首期日报](reports/2026/10/30.md)：潜在动作预训练、紧凑世界模型与反事实策略改进。
 
+- [2610.26765 · HandsOn](papers/2610.26765-HandsOn/README.md)
 - [2610.34356 · RynnVLA-Latent](papers/2610.34356-RynnVLA-Latent/README.md)
 - [2610.36011 · E0.5](papers/2610.36011-E0.5/README.md)
 - [2610.36068 · Rollback](papers/2610.36068-Rollback/README.md)
@@ -46,10 +49,12 @@
 - [2611.02600 · W2A](papers/2611.02600-W2A/README.md)
 - [2611.02777 · REPAIR](papers/2611.02777-REPAIR/README.md)
 - [2611.03585 · WISE](papers/2611.03585-WISE/README.md)
+- [2611.04711 · Cycle-WAM](papers/2611.04711-Cycle-WAM/README.md)
 - [2611.05249 · Gradient-Routing](papers/2611.05249-Gradient-Routing/README.md)
 - [2611.05571 · ELA](papers/2611.05571-ELA/README.md)
 - [2611.05847 · T2G](papers/2611.05847-T2G/README.md)
 - [2611.06905 · Generalist-RL](papers/2611.06905-Generalist-RL/README.md)
+- [2611.06918 · NEO-VLA](papers/2611.06918-NEO-VLA/README.md)
 - [2611.07229 · Spatial-UMI-Dream](papers/2611.07229-Spatial-UMI-Dream/README.md)
 - [2611.07513 · Concertina](papers/2611.07513-Concertina/README.md)
 - [2611.07850 · RoboImagine](papers/2611.07850-RoboImagine/README.md)

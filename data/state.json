@@ -1,9 +1,10 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-08",
-  "last_successful_search_cutoff": "2026-11-08T07:02:33+08:00",
+  "last_report": "2026-11-09",
+  "last_successful_search_cutoff": "2026-11-09T10:57:37+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
+    "2610.26765",
     "2610.34356",
     "2610.36011",
     "2610.36068",
@@ -26,18 +27,20 @@
     "2611.02600",
     "2611.02777",
     "2611.03585",
+    "2611.04711",
     "2611.05249",
     "2611.05571",
     "2611.05847",
     "2611.06905",
+    "2611.06918",
     "2611.07229",
     "2611.07513",
     "2611.07850",
     "2611.08156",
     "2611.08373"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-08九份日报及版本记录，本期对照八份日报与28个arXiv ID",
-  "notes": "三篇v1首次归档与ToyBlocks项目发布均为重叠补漏。28个历史版本页未见新增版本。官方Hub文件清单部分待补查。",
+  "history_scope": "本仓库2026-10-30至2026-11-09十份日报，本期对照九份日报与31个arXiv ID",
+  "notes": "HandsOn新增原始轨迹，NEO-VLA与Cycle WAM首次归档，WorldBridge和STAR版本核查；历史Hub待查多项完成。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -77,58 +80,16 @@
       "status": "下载超时；已用HTML及官方原图"
     },
     {
-      "id": "2611.07850",
-      "source": "https://huggingface.co/api/models/easylearning/RoboImagine",
-      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
-      "last_checked_at": "2026-11-08T06:58:54+08:00",
-      "recheck_from": "2026-10-31T18:50:25+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00",
-      "last_result": "Hub文件清单TLS握手超时，网页工具也未取到文件页"
-    },
-    {
-      "id": "2611.07229",
-      "source": "https://huggingface.co/api/models/Yewandou/spatial-umi-dream",
-      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
-      "last_checked_at": "2026-11-08T06:58:54+08:00",
-      "recheck_from": "2026-10-31T18:50:25+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00",
-      "last_result": "Hub文件清单TLS握手超时，网页工具也未取到文件页"
-    },
-    {
-      "id": "2611.07229",
-      "source": "https://huggingface.co/api/datasets/zeyuan0611/RoboTwin-UMI-data",
-      "status": "官方文件清单TLS握手超时；作者README描述与文件核验分列",
-      "last_checked_at": "2026-11-08T06:58:54+08:00",
-      "recheck_from": "2026-10-31T18:50:25+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00",
-      "last_result": "Hub文件清单TLS握手超时，网页工具也未取到文件页"
-    },
-    {
       "id": "2611.07513",
       "source": "https://huggingface.co/collections/Traly/concertina",
-      "status": "预训练与任务权重待核实实际文件及公开日期",
-      "last_checked_at": "2026-11-08T07:02:33+08:00",
+      "status": "90k预训练权重清单已核实，其余任务权重和首次公开时间待核查",
+      "last_checked_at": "2026-11-09T10:57:37+08:00",
       "recheck_from": "2026-11-01T07:02:33+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00"
-    },
-    {
-      "id": "2611.08373",
-      "source": "https://github.com/OpenHelix-Team/Spatial-Forcing/tree/master/SLA",
-      "status": "README所列Hub权重与真机示范待核实实际文件及公开日期",
-      "last_checked_at": "2026-11-08T07:02:33+08:00",
-      "recheck_from": "2026-11-01T07:02:33+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00"
-    },
-    {
-      "id": "allenai/ToyBlocks",
-      "source": "https://huggingface.co/allenai",
-      "status": "公告所列两种策略权重待核实实际文件及公开日期",
-      "last_checked_at": "2026-11-08T07:02:33+08:00",
-      "recheck_from": "2026-11-01T07:02:33+08:00",
-      "recheck_through": "2026-11-08T07:02:33+08:00"
+      "recheck_through": "2026-11-09T10:57:37+08:00",
+      "partial_record": "data/source-checks/2026-11-09-hub.json"
     }
   ],
-  "source_coverage": "多组英文关键词、arXiv cs.RO新列表和近期列表、cs.CV和cs.AI新列表、28个历史版本页、3篇原文及实际中文概述、作者GitHub和ToyBlocks数据桶样本清单。",
+  "source_coverage": "多组英文关键词、arXiv cs.RO新列表和近期列表、31个历史版本页、3篇原文及实际中文概述、GitHub及官方Hub清单和提交记录。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
@@ -144,12 +105,34 @@
       "id": "2610.41009",
       "checked_at": "2026-11-06T10:59:33+08:00",
       "record": "data/source-checks/2026-11-06-star-zh.json"
+    },
+    {
+      "id": "2611.07229",
+      "checked_at": "2026-11-09T10:57:37+08:00",
+      "record": "data/source-checks/2026-11-09-hub.json"
+    },
+    {
+      "id": "2611.07850",
+      "checked_at": "2026-11-09T10:57:37+08:00",
+      "record": "data/source-checks/2026-11-09-hub.json"
+    },
+    {
+      "id": "2611.08373",
+      "checked_at": "2026-11-09T10:57:37+08:00",
+      "record": "data/source-checks/2026-11-09-hub.json"
+    },
+    {
+      "id": "allenai/ToyBlocks",
+      "checked_at": "2026-11-09T10:57:37+08:00",
+      "record": "data/source-checks/2026-11-09-hub.json"
     }
   ],
   "observed_versions": {
     "2610.37381": "v3",
     "2610.39280": "v2",
     "2610.34356": "v2",
-    "2611.01215": "v2"
+    "2611.01215": "v2",
+    "2610.40748": "v2",
+    "2610.41009": "v2"
   }
 }

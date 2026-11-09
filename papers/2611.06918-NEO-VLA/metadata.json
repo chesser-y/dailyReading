@@ -1,0 +1,74 @@
+{
+  "id": "2611.06918",
+  "short": "NEO-VLA",
+  "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+  "tags": [
+    "VLA",
+    "native-visual-tokens",
+    "layer-routing",
+    "flow-matching"
+  ],
+  "read": "选读原文第3节和第5节主干、层连接、图文共训、推理计时，核对PDF图2。已读alphaXiv中文AI概述。核对官方VLAKit目录和Hub清单及提交，未运行实现。",
+  "abstract": "浅层卷积将像素分块投影进视觉语言主干，视觉和文本在同一主干演化。连续 flow 动作专家读取不同深度的缓存。固定专家层数的对照显示，覆盖较早主干层的读出有助于模拟闭环控制。",
+  "intro": "操作策略需要能区分局部边缘、几何和腕部相机里的变化。NEO-VLA 检验图文共享主干内哪些层提供动作可用的信息。",
+  "method": "前后时刻的多视角像素、相机参数、结构化指令、状态 → 浅卷积 patch 投影和 40 层 NEO-2B 图文主干 → 动作专家读指定层的 K/V 和带噪动作 → flow 速度场，积分成双臂及本体的连续动作块。",
+  "design": "视觉按时间、高度、宽度使用分轴旋转位置，图像块内双向注意。相机内参与旋转分别映射，缺失本体维度掩码。层映射可让 28 层动作专家从全部深度均匀取层，或只连接后 28 层。两组保留同一个完整 40 层主干。",
+  "evidence": "LIBERO 四套件每套 500 回合，等步数对照中 skip-28 与 end-28 的冻结主干成功率为 90.9% 对 86.7%，全量微调为 95.3% 对 92.5%。在 Qwen3-VL 同一对照中，直接读视觉塔中间层使冻结设置从 79.5% 到 64.9%，全量微调近乎持平。NEO 附着点的替换实验发现早层更影响平移误差，腕部图像与指令的敏感深度不同。",
+  "limits": "图文主干仍需一次完整前缀计算，另有独立动作专家。主干家族比较还包含初始化和训练差异，固定 NEO 主干的层映射更能检验读出位置。层敏感度受相机、坐标系和任务影响。",
+  "alpha": "中文版沿像素投影、跨层 K/V、腕部相机干预和动作输出解释方法。回查固定主干的层映射结果及 Qwen3-VL 接视觉塔的对照，区分架构内因果证据与主干间比较。",
+  "inference": "可固定 28 层动作专家，先比较早层覆盖和末层覆盖，再把腕图与指令分别遮挡，记录动作误差及接触失败。这样更容易发现到底哪条输入在什么层影响动作。",
+  "availability": "[官方 VLAKit](https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit)含训练、配置和实现目录。已核实[权重库](https://huggingface.co/weepiess2383/NEO-VLA)和[动作预训练数据入口](https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain)的公开清单。11-08 15:03 的数据提交移除镜像视频并改用上游相机来源。22:04 的权重库提交调整 README 检查点表排序，未认定为新权重上传。",
+  "extra_sources": [
+    [
+      "官方 VLAKit",
+      "https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit"
+    ],
+    [
+      "权重库",
+      "https://huggingface.co/weepiess2383/NEO-VLA"
+    ],
+    [
+      "数据更新提交",
+      "https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commit/bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02"
+    ]
+  ],
+  "submitted_at": "2026-11-05T02:59:58+08:00",
+  "date": "2026-11-05",
+  "directory": "papers/2611.06918-NEO-VLA",
+  "version": "v1",
+  "first_archived": "2026-11-09",
+  "arxiv": "https://arxiv.org/abs/2611.06918",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.06918",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文，独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "resource_update_type": "dataset_source_change",
+  "resource_update_at": "2026-11-08T15:03:36+08:00",
+  "resource_update_source": "https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commit/bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02",
+  "retrieved_at": "2026-11-09T10:48:55+08:00",
+  "alphaxiv_checked_at": "2026-11-09T10:48:55+08:00",
+  "source_html_sha256": "3171925dce4b17da83eba89da1078a21a81927153e72c8e8cfc46fbd7b35223b",
+  "pdf_sha256": "656f5ec1e85ccf28a40b545ba07396e829b2533bfcb364276c4f3b15db069433",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.06918v1",
+      "version": "v1",
+      "figure_number": 2,
+      "page": 4,
+      "box_pt": [
+        99,
+        60,
+        519,
+        245
+      ],
+      "captured_at": "2026-11-09T10:52:20+08:00",
+      "caption": "图2展示像素和多模态条件进入主干，分层 K/V 向 flow 动作专家提供条件。",
+      "asset_sha256": "476da97c330a85f80c146cf652e80150e9a3d788475b93eb211c76f1c2751663",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}
