@@ -1,0 +1,244 @@
+{
+  "date": "2026-11-10",
+  "scope": "作者项目及公开文件清单。未下载权重、训练或运行策略。",
+  "project_checks": [
+    {
+      "name": "amp",
+      "url": "https://apple-aiml-research.github.io/ml-amp/",
+      "code": 200,
+      "links": [
+        "https://arxiv.org/abs/2611.09892",
+        "https://github.com/apple-aiml-research/ml-amp"
+      ],
+      "checked_at": "2026-11-10T10:53:33+08:00"
+    },
+    {
+      "name": "oopsie",
+      "url": "https://robin-lab.cs.utexas.edu/oopsierecover/",
+      "code": 200,
+      "links": [
+        "https://arxiv.org/abs/2503.10966",
+        "https://arxiv.org/abs/2603.13616"
+      ],
+      "checked_at": "2026-11-10T10:53:35+08:00"
+    },
+    {
+      "name": "mr-project",
+      "url": "https://meituan-robotics.github.io/Meituan-Robotics-0/",
+      "code": 200,
+      "links": [
+        "https://arxiv.org/abs/2611.08577",
+        "https://github.com/Meituan-Robotics/Meituan-Robotics-0",
+        "https://huggingface.co/collections/MeituanRobotics/meituan-robotics-0-6aec7de4477b26c5c73b5e2d",
+        "https://huggingface.co/datasets/MeituanRobotics/RoboDesk",
+        "https://arxiv.org/abs/2611.08577"
+      ],
+      "checked_at": "2026-11-10T10:53:35+08:00"
+    },
+    {
+      "name": "mr-dataset",
+      "url": "https://huggingface.co/api/datasets/MeituanRobotics/RoboDesk",
+      "code": 200,
+      "error": "Unterminated string starting at: line 1 column 3499971 (char 3499970)",
+      "checked_at": "2026-11-10T10:53:37+08:00"
+    },
+    {
+      "name": "mr-models",
+      "url": "https://huggingface.co/api/models?author=MeituanRobotics&limit=10",
+      "code": 200,
+      "resource": [
+        {
+          "id": "MeituanRobotics/Meituan-Robotics-0",
+          "lastModified": null,
+          "private": false
+        },
+        {
+          "id": "MeituanRobotics/Meituan-Robotics-0-RoboTwin",
+          "lastModified": null,
+          "private": false
+        },
+        {
+          "id": "MeituanRobotics/Meituan-Robotics-0-RoboDojo",
+          "lastModified": null,
+          "private": false
+        },
+        {
+          "id": "MeituanRobotics/Meituan-Robotics-0-RoboCasa365",
+          "lastModified": null,
+          "private": false
+        }
+      ],
+      "checked_at": "2026-11-10T10:53:33+08:00"
+    }
+  ],
+  "mr_model_and_dataset_tree": [
+    {
+      "name": "base",
+      "url": "https://huggingface.co/api/models/MeituanRobotics/Meituan-Robotics-0",
+      "code": 200,
+      "sha": "f798a385626c8c2ad946398dc2d2e405fd799f8a",
+      "updated_at": "2026-11-09T17:18:46.000Z",
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "SHA256SUMS",
+        "base_vlm/Qwen3.5-4B-Action/added_custom_token_id_map.json",
+        "base_vlm/Qwen3.5-4B-Action/chat_template.jinja",
+        "base_vlm/Qwen3.5-4B-Action/config.json",
+        "base_vlm/Qwen3.5-4B-Action/generation_config.json",
+        "base_vlm/Qwen3.5-4B-Action/processor_config.json",
+        "base_vlm/Qwen3.5-4B-Action/tokenizer.json",
+        "base_vlm/Qwen3.5-4B-Action/tokenizer_config.json",
+        "checkpoints/model.pt",
+        "config.full.yaml",
+        "dataset_statistics.json",
+        "release.json"
+      ],
+      "gated": false,
+      "checked_at": "2026-11-10T10:54:50+08:00"
+    },
+    {
+      "name": "robotwin",
+      "url": "https://huggingface.co/api/models/MeituanRobotics/Meituan-Robotics-0-RoboTwin",
+      "code": 200,
+      "sha": "67d76f8eca4b4073f1bdc8c1ac788bc8e5270eaa",
+      "updated_at": "2026-11-09T17:18:58.000Z",
+      "examples": [
+        ".gitattributes",
+        "README.md",
+        "SHA256SUMS",
+        "base_vlm/Qwen3.5-4B-Action/added_custom_token_id_map.json",
+        "base_vlm/Qwen3.5-4B-Action/chat_template.jinja",
+        "base_vlm/Qwen3.5-4B-Action/config.json",
+        "base_vlm/Qwen3.5-4B-Action/generation_config.json",
+        "base_vlm/Qwen3.5-4B-Action/processor_config.json",
+        "base_vlm/Qwen3.5-4B-Action/tokenizer.json",
+        "base_vlm/Qwen3.5-4B-Action/tokenizer_config.json",
+        "checkpoints/model.pt",
+        "config.full.yaml",
+        "dataset_statistics.json",
+        "release.json"
+      ],
+      "gated": false,
+      "checked_at": "2026-11-10T10:54:50+08:00"
+    },
+    {
+      "name": "robodesk",
+      "url": "https://huggingface.co/api/datasets/MeituanRobotics/RoboDesk/tree/main?limit=12",
+      "code": 200,
+      "files": [
+        {
+          "path": "datasets",
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": ".gitattributes",
+          "size": 4660,
+          "type": "file"
+        },
+        {
+          "path": "README.md",
+          "size": 33,
+          "type": "file"
+        }
+      ],
+      "checked_at": "2026-11-10T10:54:50+08:00"
+    }
+  ],
+  "mr_release": [
+    {
+      "name": "base-release",
+      "url": "https://huggingface.co/MeituanRobotics/Meituan-Robotics-0/resolve/f798a385626c8c2ad946398dc2d2e405fd799f8a/release.json",
+      "code": 200,
+      "result": {
+        "display_name": "Meituan-Robotics-0",
+        "framework": "QwenMMDiT",
+        "checkpoint": "checkpoints/model.pt",
+        "original_checkpoint_basename": "steps_250000_pytorch_model.pt",
+        "training_step": 250000,
+        "action_dim": 20,
+        "action_horizon": 16,
+        "code_repository": "https://github.com/meituan/Meituan-Robotics-0",
+        "code_commit": "88c667933dfc941a71c9b142eb84b716ac4f0707",
+        "serialization": "PyTorch state_dict; unchanged from the selected source checkpoint",
+        "initialization": "Stage 1 FAST checkpoint at 430000 training steps",
+        "repo_id": "MeituanRobotics/Meituan-Robotics-0",
+        "backbone_metadata": "base_vlm/Qwen3.5-4B-Action/",
+        "separate_qwen_weight_file_required": false,
+        "checkpoint_tensor_count": 929
+      },
+      "checked_at": "2026-11-10T10:56:37+08:00"
+    },
+    {
+      "name": "base-commits",
+      "url": "https://huggingface.co/api/models/MeituanRobotics/Meituan-Robotics-0/commits/main",
+      "code": 200,
+      "result": [
+        {
+          "title": "Link the MR0 technical report on arXiv and refresh checksums",
+          "date": "2026-11-09T17:18:46.000Z",
+          "id": "f798a385626c8c2ad946398dc2d2e405fd799f8a"
+        },
+        {
+          "title": "Standardize file verification on a single SHA256SUMS manifest",
+          "date": "2026-11-06T13:00:52.000Z",
+          "id": "733470bbef4a4a8ac446b7b59bbd77c28f015280"
+        },
+        {
+          "title": "Use complete VLA checkpoint; remove redundant Qwen weights",
+          "date": "2026-11-05T14:26:56.000Z",
+          "id": "88267c775c8c56f7ef73ad3bd75c7e50f1e24b04"
+        },
+        {
+          "title": "Release Meituan-Robotics-0 model weights and inference assets",
+          "date": "2026-11-05T13:02:09.000Z",
+          "id": "1b2cc5329d98abfc2495f5dbe4ff823e1b3772d6"
+        },
+        {
+          "title": "initial commit",
+          "date": "2026-11-05T13:00:14.000Z",
+          "id": "919314c7012cbd3e9f09e39f5b4f82cbad942f1c"
+        }
+      ],
+      "checked_at": "2026-11-10T10:56:36+08:00"
+    },
+    {
+      "name": "robodesk-dirs",
+      "url": "https://huggingface.co/api/datasets/MeituanRobotics/RoboDesk/tree/main/datasets?limit=12",
+      "code": 200,
+      "result": [
+        {
+          "path": "datasets/droid",
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": "datasets/galaxea-open-world",
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": "datasets/let-base",
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": "datasets/robocoin",
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": "datasets/robomind-v1.2",
+          "size": 0,
+          "type": "directory"
+        }
+      ],
+      "checked_at": "2026-11-10T10:56:36+08:00"
+    }
+  ],
+  "github": {
+    "MR0": "https://github.com/Meituan-Robotics/Meituan-Robotics-0",
+    "AMP1": "https://github.com/apple-aiml-research/ml-amp"
+  }
+}

@@ -38,3 +38,7 @@
 - [2611.07850 · RoboImagine](2611.07850-RoboImagine/README.md) — Learning Robotic World Models with Semantic and Visual Feedback
 - [2611.08156 · La-JEPA](2611.08156-La-JEPA/README.md) — La-JEPA: Compact Robot Policies with Latent World Modeling
 - [2611.08373 · SLA](2611.08373-SLA/README.md) — SLA: Scaling Spatial-Language-Action Model via Continual Pre-training
+- [2611.08462 · OopsieRecover](2611.08462-OopsieRecover/README.md) — OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions
+- [2611.08577 · MR0](2611.08577-MR0/README.md) — Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation
+- [2611.08827 · ActPrune](2611.08827-ActPrune/README.md) — ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models
+- [2611.09892 · AMP1](2611.09892-AMP1/README.md) — On Agentic Manipulation Policies

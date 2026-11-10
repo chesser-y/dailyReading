@@ -70,5 +70,25 @@
       "asset_sha256": "476da97c330a85f80c146cf652e80150e9a3d788475b93eb211c76f1c2751663",
       "visual_check": "已目视检查图号、文字、边界和清晰度"
     }
+  ],
+  "latest_observed_version": "v2",
+  "version_checks": [
+    {
+      "update_type": "paper_revision",
+      "archived_version": "v1",
+      "latest_observed_version": "v2",
+      "submitted_at": "2026-11-06T21:16:19+08:00",
+      "checked_at": "2026-11-10T10:50:24+08:00",
+      "summary": "HTML提取正文差异只见版本标记与日期",
+      "record": "versions/2026-11-10-v2-check.md",
+      "sources": {
+        "v1": "https://arxiv.org/html/2611.06918v1",
+        "v2": "https://arxiv.org/html/2611.06918v2"
+      },
+      "source_hashes": {
+        "v1": "3171925dce4b17da83eba89da1078a21a81927153e72c8e8cfc46fbd7b35223b",
+        "v2": "699dcd5a0977f85a5f3fccc8038dd36dca10dbbb1e3c3954cb4031b5bfa45c03"
+      }
+    }
   ]
 }

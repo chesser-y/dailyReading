@@ -1,0 +1,63 @@
+{
+  "id": "2611.08462",
+  "short": "OopsieRecover",
+  "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+  "tags": [
+    "VLA",
+    "failure-recovery",
+    "human-intervention",
+    "inference-time-steering"
+  ],
+  "read": "选读原文第III节、第IV节实验与第V节局限，核对PDF图2。已读alphaXiv中文AI概述及作者项目页，未运行代码。",
+  "abstract": "将带语言解释的人工接管转为在特定情境触发的几何纠错程序。部署时重定位相关实体，用点集动力学估计动作候选后果，并在触发时按纠错代价选择，基础策略保持冻结。",
+  "intro": "纠正一次碰撞的动作轨迹依赖当时物体的位置。作者尝试把“移动时保持杯子与把手的间隙”这样的意图提取出来，再应用到新的物体姿态。",
+  "method": "指令、接管前与人控轨迹、语言说明 → VLM定位并跟踪实体三维点集，提出带门控的代价 → 通过干预轨迹校准触发和排名 → 在新场景触发时，用点集预测排序冻结VLA候选动作块。",
+  "design": "代价由触发门、纠错项和保留任务进展的项组成。系统检查程序能否在接管前触发，并将人的纠正排在失败片段之前。部署触发后，点集动力学沿每个候选向前预测，选择折扣累计代价最低者。可加入少量方向性候选以提高覆盖。",
+  "evidence": "RoboCasa三任务按纠正状态、同场景新物体姿态和未见场景分难度。图4显示方法在后两档处于独立领先组。图5 CoffeeMug 在 25 个同场景随机化留出状态中，用 8 次带语义纠正达 84% 二元成功率。HG-DAgger 的 28% 是 30 次纠正时的结果，标注内容与训练过程也不同。三个真机任务报告已完成阶段比例。",
+  "limits": "几何点集未显式表示接触力。实体定位、跟踪和预测误差都会影响触发和候选排序。若采样池缺乏有效动作，重排无法补足。没有核实控制延迟或算力数据。",
+  "alpha": "中文版强调从个例中抽象纠错条件，再在不同初始状态重建对应的几何关系。回查原文后分列仿真成功和真机任务进度，并保留候选覆盖限制。",
+  "inference": "可先在固定候选集上比较通用任务分与具象纠错代价。记录触发召回、误触发、候选集中是否含可行动作，以及有可行动作时的选中率。",
+  "availability": "[作者项目](https://robin-lab.cs.utexas.edu/oopsierecover/)可访问，有仿真及真机结果展示。本次未核实专用实现、干预数据或纠错程序权重公开。",
+  "extra_sources": [
+    [
+      "作者项目",
+      "https://robin-lab.cs.utexas.edu/oopsierecover/"
+    ]
+  ],
+  "submitted_at": "2026-11-06T02:53:16+08:00",
+  "date": "2026-11-06",
+  "directory": "papers/2611.08462-OopsieRecover",
+  "version": "v1",
+  "first_archived": "2026-11-10",
+  "arxiv": "https://arxiv.org/abs/2611.08462",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08462",
+  "alphaxiv_language": "zh",
+  "alpha_summary_source_language": "zh",
+  "alphaxiv_status": "已读取AI概述实际中文正文，独立提炼",
+  "update_type": "first_publication_backfill",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-10T10:49:32+08:00",
+  "alphaxiv_checked_at": "2026-11-10T10:49:33+08:00",
+  "source_html_sha256": "5d10993940d73e3d7ad40439b18c3b04e2081feb8acf7e1d3399f6c56e8c3144",
+  "pdf_sha256": "940d68450966b7193087301814b80a7ca222d7d5d8286290bfd212699ac7fe5c",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.08462v1",
+      "version": "v1",
+      "figure_number": 2,
+      "page": 4,
+      "box_pt": [
+        52,
+        49,
+        559,
+        287
+      ],
+      "captured_at": "2026-11-10T10:54:42+08:00",
+      "caption": "图2展示语义接管采集、纠错程序合成与验证，以及部署时的门控动作筛选。",
+      "asset_sha256": "79b7daed73836aee07168273a118f8d2900b2b78ce978a49dd3bb5fd920b6867",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}

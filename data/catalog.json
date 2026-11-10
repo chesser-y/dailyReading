@@ -506,7 +506,8 @@
     "update_type": "first_publication_backfill",
     "resource_update_type": "dataset_source_change",
     "resource_update_at": "2026-11-08T15:03:36+08:00",
-    "resource_update_source": "https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commit/bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02"
+    "resource_update_source": "https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commit/bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02",
+    "latest_observed_version": "v2"
   },
   {
     "id": "2611.07229",
@@ -592,5 +593,81 @@
     "version": "v1",
     "first_archived": "2026-11-08",
     "directory": "papers/2611.08373-SLA"
+  },
+  {
+    "id": "2611.08462",
+    "short": "OopsieRecover",
+    "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+    "date": "2026-11-06",
+    "tags": [
+      "VLA",
+      "failure-recovery",
+      "human-intervention",
+      "inference-time-steering"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.08462",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08462",
+    "version": "v1",
+    "first_archived": "2026-11-10",
+    "directory": "papers/2611.08462-OopsieRecover",
+    "update_type": "first_publication_backfill"
+  },
+  {
+    "id": "2611.08577",
+    "short": "MR0",
+    "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+    "date": "2026-11-06",
+    "tags": [
+      "VLA",
+      "discrete-to-continuous",
+      "flow-matching",
+      "human-intervention"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.08577",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08577",
+    "version": "v1",
+    "first_archived": "2026-11-10",
+    "directory": "papers/2611.08577-MR0",
+    "update_type": "first_announcement",
+    "resource_update_type": "hub_documentation_update",
+    "resource_update_at": "2026-11-10T01:18:46+08:00",
+    "resource_update_source": "https://huggingface.co/MeituanRobotics/Meituan-Robotics-0/commit/f798a385626c8c2ad946398dc2d2e405fd799f8a"
+  },
+  {
+    "id": "2611.08827",
+    "short": "ActPrune",
+    "title": "ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models",
+    "date": "2026-11-06",
+    "tags": [
+      "VLA",
+      "visual-token-pruning",
+      "closed-loop",
+      "efficiency"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.08827",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08827",
+    "version": "v1",
+    "first_archived": "2026-11-10",
+    "directory": "papers/2611.08827-ActPrune",
+    "update_type": "first_announcement",
+    "alphaxiv_status": "zh页面可访问，显示暂无概述"
+  },
+  {
+    "id": "2611.09892",
+    "short": "AMP1",
+    "title": "On Agentic Manipulation Policies",
+    "date": "2026-11-07",
+    "tags": [
+      "agentic-manipulation",
+      "closed-loop",
+      "code-as-policy",
+      "failure-recovery"
+    ],
+    "arxiv": "https://arxiv.org/abs/2611.09892",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.09892",
+    "version": "v1",
+    "first_archived": "2026-11-10",
+    "directory": "papers/2611.09892-AMP1",
+    "update_type": "first_announcement"
   }
 ]

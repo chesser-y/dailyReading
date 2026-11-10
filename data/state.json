@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-09",
-  "last_successful_search_cutoff": "2026-11-09T10:57:37+08:00",
+  "last_report": "2026-11-10",
+  "last_successful_search_cutoff": "2026-11-10T10:56:37+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.26765",
@@ -37,10 +37,14 @@
     "2611.07513",
     "2611.07850",
     "2611.08156",
-    "2611.08373"
+    "2611.08373",
+    "2611.08462",
+    "2611.08577",
+    "2611.08827",
+    "2611.09892"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-09十份日报，本期对照九份日报与31个arXiv ID",
-  "notes": "HandsOn新增原始轨迹，NEO-VLA与Cycle WAM首次归档，WorldBridge和STAR版本核查；历史Hub待查多项完成。",
+  "history_scope": "本仓库2026-10-30至2026-11-10十一份日报，本期对照十份日报与34个arXiv ID",
+  "notes": "三篇出现在11月9日机器人新公告，一篇重叠补漏。NEO-VLA v2文字复核，ActPrune zh概述待补查。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -87,9 +91,17 @@
       "recheck_from": "2026-11-01T07:02:33+08:00",
       "recheck_through": "2026-11-09T10:57:37+08:00",
       "partial_record": "data/source-checks/2026-11-09-hub.json"
+    },
+    {
+      "id": "2611.08827",
+      "source": "https://www.alphaxiv.org/zh/abs/2611.08827",
+      "status": "页面可访问，AI概述区域显示暂无概述",
+      "last_checked_at": "2026-11-10T10:49:31+08:00",
+      "recheck_from": "2026-11-03T10:56:37+08:00",
+      "recheck_through": "2026-11-10T10:56:37+08:00"
     }
   ],
-  "source_coverage": "多组英文关键词、arXiv cs.RO新列表和近期列表、31个历史版本页、3篇原文及实际中文概述、GitHub及官方Hub清单和提交记录。",
+  "source_coverage": "多组英文关键词、arXiv cs.RO 103条新公告及近期列表、34个历史版本页、4篇原文、三篇alphaXiv中文正文、作者项目和Hub清单。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
@@ -133,6 +145,7 @@
     "2610.34356": "v2",
     "2611.01215": "v2",
     "2610.40748": "v2",
-    "2610.41009": "v2"
+    "2610.41009": "v2",
+    "2611.06918": "v2"
   }
 }

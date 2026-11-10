@@ -2,6 +2,8 @@
 
 From Pixels to Actions - Towards Native Vision-Language-Action Policies
 
+> **v2 版本核查。** HTML 文本差异仅见版本和日期。以下保留 v1 阅读依据。[版本比较](versions/2026-11-10-v2-check.md)。
+
 [arXiv原文](https://arxiv.org/abs/2611.06918) · [v1 HTML](https://arxiv.org/html/2611.06918v1) · [alphaXiv zh中文概述](https://www.alphaxiv.org/zh/abs/2611.06918) · [官方 VLAKit](https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit) · [权重库](https://huggingface.co/weepiess2383/NEO-VLA) · [数据更新提交](https://huggingface.co/datasets/weepiess2383/NEO-VLA-Action-Pretrain/commit/bdcd6c7e411358f0da9aed6c9d2c08a9f09bff02)
 
 v1首次提交于2026-11-05T02:59:58+08:00（Asia/Shanghai）。本次在7天重叠检索中首次收录。研究方向包括VLA、native-visual-tokens、layer-routing、flow-matching。

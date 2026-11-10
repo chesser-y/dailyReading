@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-10 日报](reports/2026/11/10.md)涵盖 MR0、OopsieRecover、ActPrune、AMP1 与 NEO-VLA 版本核查。
+
 [2026-11-09 日报](reports/2026/11/09.md)涵盖 HandsOn 数据发布、NEO-VLA 跨层视觉、Cycle WAM 对照与 WorldBridge v2。
 
 [2026-11-08 日报](reports/2026/11/08.md)涵盖WISE候选选择、Concertina共享动作重建、SLA空间监督与ToyBlocks发布。
@@ -60,6 +62,10 @@
 - [2611.07850 · RoboImagine](papers/2611.07850-RoboImagine/README.md)
 - [2611.08156 · La-JEPA](papers/2611.08156-La-JEPA/README.md)
 - [2611.08373 · SLA](papers/2611.08373-SLA/README.md)
+- [2611.08462 · OopsieRecover](papers/2611.08462-OopsieRecover/README.md)
+- [2611.08577 · MR0](papers/2611.08577-MR0/README.md)
+- [2611.08827 · ActPrune](papers/2611.08827-ActPrune/README.md)
+- [2611.09892 · AMP1](papers/2611.09892-AMP1/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
 

@@ -1,0 +1,58 @@
+{
+  "id": "2611.08827",
+  "short": "ActPrune",
+  "title": "ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models",
+  "tags": [
+    "VLA",
+    "visual-token-pruning",
+    "closed-loop",
+    "efficiency"
+  ],
+  "read": "选读原文第IV、V节及表I、VII，核对PDF图2。alphaXiv zh页面已访问，显示暂无概述。未核查实现或复现。",
+  "abstract": "利用上一动作块在编码前压缩视觉patch。固定相机按机械臂轨迹保留工作区，腕部相机先补偿自身运动再找重复区域。速度收益依赖动作头占比和保留预算。",
+  "intro": "只裁掉编码后的token无法省下视觉编码成本。直接比较腕部两帧又会把相机自身移动误判为大量新内容。",
+  "method": "固定视角、腕部RGB-D及前一动作块 → 固定相机投影末端轨迹，腕视角按手眼几何补偿运动 → 保留信息块，将冗余合并为粗略上下文 → 编码及注意力裁剪 → 原VLA输出动作。",
+  "design": "固定视角把执行路径和外推区域投影到图像，加首帧语义锚点。腕视角用深度重投影前帧，再以patch相似度识别冗余，保留视域不匹配区域。编码前预算与编码中注意力预算分配无需重新训练基础策略。",
+  "evidence": "OpenVLA-OFT在LIBERO四套件共2,000回合，25%保留时96.1%对原96.5%，延迟53.61对86.17 ms，FLOPs从4.739T到1.921T。论文讨论中，π0.5降约38% FLOPs只获1.03倍速度。真机Franka四任务用π0.5，50%保留的平均成功为50%，完整视觉为60%。",
+  "limits": "腕部补偿依赖RGB-D和标定。移动目标、遮挡和动作预测误差可能改变需要保留的区域。强裁剪的真机结果低于完整输入，视觉开销的节省无法直接换算成闭环速度。",
+  "alpha": "本次alphaXiv zh页面显示暂无概述，未取得中文正文。上文中文摘要和解读依据arXiv原文独立撰写。",
+  "inference": "可以把运动补偿后新增区域比例作为自适应保留预算的输入，在遮挡、快速腕部运动和不同动作头上固定闭环成功下限后比较延迟。",
+  "availability": "未找到可核实的专用实现、权重或数据入口。评测采用论文列出的现有OpenVLA-OFT、π0.5与基准数据。",
+  "extra_sources": [],
+  "submitted_at": "2026-11-06T08:32:27+08:00",
+  "date": "2026-11-06",
+  "directory": "papers/2611.08827-ActPrune",
+  "version": "v1",
+  "first_archived": "2026-11-10",
+  "arxiv": "https://arxiv.org/abs/2611.08827",
+  "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.08827",
+  "alphaxiv_language": null,
+  "alpha_summary_source_language": null,
+  "alphaxiv_status": "zh页面可访问，显示暂无概述",
+  "update_type": "first_announcement",
+  "date_timezone": "Asia/Shanghai",
+  "retrieved_at": "2026-11-10T10:49:30+08:00",
+  "alphaxiv_checked_at": "2026-11-10T10:49:31+08:00",
+  "source_html_sha256": "c9a3e347bf771571edd9591b1d0f7de586e618330729932679aa02ee5537c180",
+  "pdf_sha256": "b6553ff41043784b8eaee9b77ce556af06678f931c53457dc42f5828d2200919",
+  "figures": [
+    {
+      "kind": "pdf_crop",
+      "file": "assets/method.png",
+      "source": "https://arxiv.org/pdf/2611.08827v1",
+      "version": "v1",
+      "figure_number": 2,
+      "page": 3,
+      "box_pt": [
+        88,
+        49,
+        532,
+        215
+      ],
+      "captured_at": "2026-11-10T11:02:57+08:00",
+      "caption": "图2展示腕部重投影、固定视角路径与语义锚点，以及编码前后两级视觉裁剪。",
+      "asset_sha256": "637b9489b789bb09e7a5981c4dddd0568ffc3d8a0b9e3a70938fccc95d2f0a1c",
+      "visual_check": "已目视检查图号、文字、边界和清晰度"
+    }
+  ]
+}
