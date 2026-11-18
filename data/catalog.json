@@ -669,5 +669,35 @@
     "first_archived": "2026-11-10",
     "directory": "papers/2611.09892-AMP1",
     "update_type": "first_announcement"
+  },
+  {
+    "id": "2611.17110",
+    "short": "SALA",
+    "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+    "date": "2026-11-13",
+    "tags": ["latent-action", "cross-embodiment", "human-video", "VLA"],
+    "arxiv": "https://arxiv.org/abs/2611.17110",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.17110",
+    "version": "v2",
+    "first_archived": "2026-11-18",
+    "directory": "papers/2611.17110-SALA",
+    "update_type": "paper_revision",
+    "latest_observed_version": "v2",
+    "revision_at": "2026-11-15T22:43:43+08:00",
+    "alphaxiv_status": "zh入口Cache miss，未取得AI Overview正文"
+  },
+  {
+    "id": "2611.19324",
+    "short": "MARS",
+    "title": "MARS: Dynamic Routing of Reinforcement-Learned Atomic Skills for Multi-Stage Robotic Manipulation",
+    "date": "2026-11-14",
+    "tags": ["VLA", "reinforcement-learning", "atomic-skills", "policy-routing"],
+    "arxiv": "https://arxiv.org/abs/2611.19324",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.19324",
+    "version": "v1",
+    "first_archived": "2026-11-18",
+    "directory": "papers/2611.19324-MARS",
+    "update_type": "first_publication",
+    "alphaxiv_status": "zh入口不可访问，未取得AI Overview正文"
   }
 ]

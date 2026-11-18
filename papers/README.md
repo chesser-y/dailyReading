@@ -42,3 +42,5 @@
 - [2611.08577 · MR0](2611.08577-MR0/README.md) — Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation
 - [2611.08827 · ActPrune](2611.08827-ActPrune/README.md) — ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models
 - [2611.09892 · AMP1](2611.09892-AMP1/README.md) — On Agentic Manipulation Policies
+- [2611.17110 · SALA](2611.17110-SALA/README.md) — SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models
+- [2611.19324 · MARS](2611.19324-MARS/README.md) — MARS: Dynamic Routing of Reinforcement-Learned Atomic Skills for Multi-Stage Robotic Manipulation

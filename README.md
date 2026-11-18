@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-18 日报](reports/2026/11/18.md)涵盖 SALA 语义对齐潜在动作与 MARS 原子技能动态路由；两篇 alphaXiv zh 正文本次未取得。
+
 [2026-11-10 日报](reports/2026/11/10.md)涵盖 MR0、OopsieRecover、ActPrune、AMP1 与 NEO-VLA 版本核查。
 
 [2026-11-09 日报](reports/2026/11/09.md)涵盖 HandsOn 数据发布、NEO-VLA 跨层视觉、Cycle WAM 对照与 WorldBridge v2。
@@ -66,6 +68,8 @@
 - [2611.08577 · MR0](papers/2611.08577-MR0/README.md)
 - [2611.08827 · ActPrune](papers/2611.08827-ActPrune/README.md)
 - [2611.09892 · AMP1](papers/2611.09892-AMP1/README.md)
+- [2611.17110 · SALA](papers/2611.17110-SALA/README.md)
+- [2611.19324 · MARS](papers/2611.19324-MARS/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
 
