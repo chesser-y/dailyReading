@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-19 日报](reports/2026/11/19.md)本期未核实到值得新增归档的 VLA/WAM 论文或资源更新；cs.RO 公告分页待补查。
+
 [2026-11-18 日报](reports/2026/11/18.md)涵盖 SALA 语义对齐潜在动作与 MARS 原子技能动态路由；两篇 alphaXiv zh 正文本次未取得。
 
 [2026-11-10 日报](reports/2026/11/10.md)涵盖 MR0、OopsieRecover、ActPrune、AMP1 与 NEO-VLA 版本核查。

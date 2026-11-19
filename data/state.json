@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-18",
-  "last_successful_search_cutoff": "2026-11-18T10:49:00+08:00",
+  "last_report": "2026-11-19",
+  "last_successful_search_cutoff": "2026-11-19T22:44:00+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.26765",
@@ -45,8 +45,8 @@
     "2611.17110",
     "2611.19324"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-18十二份日报，本期对照十一份日报与40个arXiv ID；检索窗口为11-10 10:56至11-18 10:49，重叠补漏自11-03 10:56",
-  "notes": "本期新增SALA v2与MARS v1。完整cs.RO公告逐条补抓受工具分页限制；两篇alphaXiv zh正文均未取得。",
+  "history_scope": "本仓库2026-10-30至2026-11-19十三份日报，本期对照十二份日报与40个arXiv ID；检索窗口为11-18 10:49至11-19 22:44，重叠补漏覆盖最近7天",
+  "notes": "本期未核实到值得新增归档的工作；11-18至11-19 cs.RO公告逐条分页抓取不完整，下一次补查。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -115,7 +115,7 @@
       "last_checked_at": "2026-11-18T10:49:00+08:00"
     }
   ],
-  "source_coverage": "多组英文关键词、arXiv cs.RO近期列表、历史日报与40个arXiv ID、SALA/MARS原文HTML与PDF、SALA作者项目；本期两篇alphaXiv zh正文均缺失，完整11-11至11-18公告逐条抓取待补。",
+  "source_coverage": "多组英文关键词、arXiv近期列表、历史日报与40个arXiv ID；本期未发现可核实新增，11-18至11-19 cs.RO公告逐条分页抓取不完整，SALA/MARS alphaXiv zh正文仍缺失。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
