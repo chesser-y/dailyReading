@@ -701,6 +701,20 @@
     "alphaxiv_status": "zh入口不可访问，未取得AI Overview正文"
   },
   {
+    "id": "2611.22584",
+    "short": "InteractVLA",
+    "title": "InteractVLA: Turning VLAs into Interactive Tools for Agentic Robotic Manipulation",
+    "date": "2026-11-17",
+    "tags": ["VLA", "agentic-manipulation", "geometric-guidance", "test-time-adaptation"],
+    "arxiv": "https://arxiv.org/abs/2611.22584",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.22584",
+    "version": "v1",
+    "first_archived": "2026-11-24",
+    "directory": "papers/2611.22584-InteractVLA",
+    "update_type": "first_publication",
+    "alphaxiv_status": "zh入口不可访问，未取得AI Overview正文"
+  },
+  {
     "id": "2611.25656",
     "short": "A2-VLA",
     "title": "A²-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery",

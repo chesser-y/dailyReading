@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-23",
-  "last_successful_search_cutoff": "2026-11-23T19:55:00+08:00",
+  "last_report": "2026-11-24",
+  "last_successful_search_cutoff": "2026-11-24T06:59:49+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.26765",
@@ -44,10 +44,11 @@
     "2611.09892",
     "2611.17110",
     "2611.19324",
+    "2611.22584",
     "2611.25656"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-23十四份日报，本期对照十三份日报与41个arXiv ID；检索窗口为11-19 22:44至11-23 19:55，重叠补漏覆盖最近7天",
-  "notes": "本期新增A²-VLA v1。alphaXiv zh入口不可访问；其他候选未达到与动作预测主线直接相关且原始证据充分的精选标准。",
+  "history_scope": "本仓库2026-10-30至2026-11-24十五份日报，本期对照十四份日报与41个既有arXiv ID；检索窗口为11-23 19:55至11-24 06:59，重叠补漏覆盖最近7天；本期新增InteractVLA后共42个已报告ID",
+  "notes": "本期新增InteractVLA v1。alphaXiv zh入口不可访问；其他候选未达到与动作预测主线直接相关且原始证据充分的精选标准。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -120,9 +121,15 @@
       "source": "https://www.alphaxiv.org/zh/abs/2611.25656",
       "status": "页面不可访问，未取得中文AI Overview正文",
       "last_checked_at": "2026-11-23T19:55:00+08:00"
+    },
+    {
+      "id": "2611.22584",
+      "source": "https://www.alphaxiv.org/zh/abs/2611.22584",
+      "status": "页面不可访问，未取得中文版AI Overview正文",
+      "last_checked_at": "2026-11-24T06:59:49+08:00"
     }
   ],
-  "source_coverage": "多组英文关键词、arXiv近期列表、历史日报与41个arXiv ID、A²-VLA原文HTML/PDF；本期新增A²-VLA，alphaXiv zh正文不可访问。",
+  "source_coverage": "多组英文关键词、arXiv近期列表、历史日报与42个arXiv ID、InteractVLA原文HTML/PDF及作者项目页；本期新增InteractVLA，alphaXiv zh正文不可访问。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
