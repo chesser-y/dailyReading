@@ -699,5 +699,19 @@
     "directory": "papers/2611.19324-MARS",
     "update_type": "first_publication",
     "alphaxiv_status": "zh入口不可访问，未取得AI Overview正文"
+  },
+  {
+    "id": "2611.25656",
+    "short": "A2-VLA",
+    "title": "A²-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery",
+    "date": "2026-11-19",
+    "tags": ["VLA", "tool-adaptation", "affordance", "agentic-simulation"],
+    "arxiv": "https://arxiv.org/abs/2611.25656",
+    "alphaxiv": "https://www.alphaxiv.org/zh/abs/2611.25656",
+    "version": "v1",
+    "first_archived": "2026-11-23",
+    "directory": "papers/2611.25656-A2-VLA",
+    "update_type": "first_publication",
+    "alphaxiv_status": "zh入口不可访问，未取得AI Overview正文"
   }
 ]
