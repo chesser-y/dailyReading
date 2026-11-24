@@ -45,4 +45,5 @@
 - [2611.17110 · SALA](2611.17110-SALA/README.md) — SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models
 - [2611.19324 · MARS](2611.19324-MARS/README.md) — MARS: Dynamic Routing of Reinforcement-Learned Atomic Skills for Multi-Stage Robotic Manipulation
 - [2611.22584 · InteractVLA](2611.22584-InteractVLA/README.md) — InteractVLA: Turning VLAs into Interactive Tools for Agentic Robotic Manipulation
+- [2611.24482 · LAPIS](2611.24482-LAPIS/README.md) — Latent Action Policies from Suboptimal Data
 - [2611.25656 · A2-VLA](2611.25656-A2-VLA/README.md) — A²-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery

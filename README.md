@@ -6,6 +6,8 @@
 
 ## 最新阅读
 
+[2026-11-25 日报](reports/2026/11/25.md)精选 LAPIS：在 latent action 支持集内进行离线策略改进，缓解不可执行 latent 与目标错配。
+
 [2026-11-24 日报](reports/2026/11/24.md)精选 InteractVLA：以双向几何接口把冻结 VLA 变成可被 agent 引导、诊断与纠错的动作工具。
 
 [2026-11-23 日报](reports/2026/11/23.md)精选 A²-VLA：通过 agentic affordance discovery 与模拟反馈适配未见工具。
@@ -77,6 +79,7 @@
 - [2611.17110 · SALA](papers/2611.17110-SALA/README.md)
 - [2611.19324 · MARS](papers/2611.19324-MARS/README.md)
 - [2611.22584 · InteractVLA](papers/2611.22584-InteractVLA/README.md)
+- [2611.24482 · LAPIS](papers/2611.24482-LAPIS/README.md)
 - [2611.25656 · A2-VLA](papers/2611.25656-A2-VLA/README.md)
 
 [按arXiv号浏览全部论文](papers/README.md)
