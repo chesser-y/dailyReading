@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "last_report": "2026-11-25",
-  "last_successful_search_cutoff": "2026-11-25T07:03:25+08:00",
+  "last_report": "2026-11-26",
+  "last_successful_search_cutoff": "2026-11-26T06:58:42+08:00",
   "archive_enrichment_at": "2026-10-30T19:53:57+08:00",
   "reported_ids": [
     "2610.26765",
@@ -48,8 +48,8 @@
     "2611.24482",
     "2611.25656"
   ],
-  "history_scope": "本仓库2026-10-30至2026-11-25十六份日报，本期对照十五份日报与42个既有arXiv ID；检索窗口为11-24 06:59至11-25 07:03，重叠补漏覆盖最近7天；本期新增LAPIS后共43个已报告ID",
-  "notes": "本期新增LAPIS v1。alphaXiv zh未取得可核实正文；其他候选未达到与动作预测主线直接相关且原始证据充分的精选标准。",
+  "history_scope": "本仓库2026-10-30至2026-11-26十七份日报，本期对照十六份日报与43个已登记arXiv ID；检索窗口为11-25 07:03至11-26 06:58，重叠补漏覆盖最近7天；本期无新增精选",
+  "notes": "本期未筛到需要新增归档的VLA/WAM或统一动作预测工作；alphaXiv zh与部分项目页仍有访问或代码核查缺口。",
   "pending_source_checks": [
     {
       "id": "2610.39721",
@@ -130,7 +130,7 @@
       "last_checked_at": "2026-11-24T06:59:49+08:00"
     }
   ],
-  "source_coverage": "多组英文关键词、arXiv近期列表、历史日报与43个arXiv ID、LAPIS原文HTML/PDF；本期新增LAPIS，alphaXiv zh未取得可核实正文。",
+  "source_coverage": "多组英文关键词、arXiv近期列表、历史日报与43个arXiv ID；本期完成11-25至11-26窗口和最近7天重叠补漏，未新增精选。",
   "resolved_source_checks": [
     {
       "id": "lerobot/Cosmos3-Nano",
